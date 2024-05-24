@@ -1,0 +1,219 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
+    }
+  }
+  
+  .stroketext {
+    font-size: 30px;
+    color: #eee;
+    text-transform: capitalize;
+    background-color: black;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+  }
+  
+  .orbitOne {
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+  }
+  
+  .spin-animation {
+    animation: spin 10s linear infinite; /* 10s duration */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .slider {
+    width: 2179px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slideranimation {
+    display: flex;
+    padding: 0;
+    animation: cambio 4s infinite linear;
+  }
+  .slider li {
+    padding: 0 10px;
+    list-style: none;
+  }
+  .slider span {
+    max-width: fit-content !important;
+    height: auto !important;
+  }
+  @keyframes cambio {
+    from {
+      margin-left: 0%;
+    }
+    to {
+      margin-left: -50%;
+    }
+  }
+  
+  .slideranimation2 {
+    display: flex;
+    padding: 0;
+    animation: cam 4s infinite linear;
+  }
+  
+  @keyframes cam {
+    from {
+      margin-left: 0%;
+    }
+    to {
+      margin-left: 50%;
+    }
+  }
+  
+  #start {
+    background-image: url("../public/Footerasset/bgImage.png");
+    min-width: 100%;
+    min-height: 100%;
+    background-size: 100%;
+    z-index: 0;
+  }
+  
+  #start {
+    opacity: 0;
+    transition: 1s;
+  }
+  #start:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+  
+  #start:hover button {
+    display: block;
+  }
+  
+  @layer utilities {
+    .text-balance {
+      text-wrap: balance;
+    }
+  }
+  
+  .custom-steps .ant-steps-item-icon {
+    background-color: #ff7143; /* Custom dot color */
+  }
+  
+  .custom-steps .ant-steps-item-process .ant-steps-item-icon::before {
+    background-color: #ff7143; /* Custom line color */
+  }
+  
+  .card1 {
+    background: linear-gradient(151.02deg, #ffd5d1 6.26%, #feb2ab 82.18%);
+  }
+  .card2 {
+    background: linear-gradient(131.54deg, #bde6fb 4.01%, #93d7d2 95.61%);
+  }
+  .card3 {
+    background: linear-gradient(135.22deg, #e7caee 4.88%, #c0ccfb 90.69%);
+  }
+  .card4 {
+    background: linear-gradient(131.54deg, #dcefe8 4.01%, #90dccf 95.61%);
+  }
+  
+  
+  .boxshadow{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+
+
+
+  /* styles.css */
+.responsive-image-container {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Default height */
+}
+
+@media (min-width: 768px) {
+  .responsive-image-container {
+    height: 30.5rem; /* Height for medium screens and above */
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-image-container {
+    height: 30.5rem; /* Height for large screens and above */
+  }
+}
+
+.responsive-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  z-index: 0;
+}
+
+
+.biryanicard{
+  background: linear-gradient(89.15deg, #FFD5D2 1.76%, #FEB0A9 99.2%);
+
+}
+
+.winkadscard{
+  background: linear-gradient(89.15deg, #BDE6FB 1.76%, #85D2CB 99.2%);
+
+}
+
+.vitaminscard{
+  background: linear-gradient(89.15deg, #E8CAED 1.76%, #B8C6FB 99.2%);
+
+}
+
+
+.pioneercard{
+  background: linear-gradient(89.15deg, #DEEFE9 1.76%, #8DDBCE 99.2%);
+
+}
+
+.mythricard{
+  background: linear-gradient(89.15deg, #BDE6FB 1.76%, #FFE0E0 99.2%);
+
+}
+
+.biryanibordercard{
+  border: 1.2px solid #FFA4A7;
+}
+
+.winkadscardborder{
+  border: 1.2px solid #4EC4D9;
+}
+
+.vitaminscardborder{
+  border: 1.2px solid #C89FFF;
+}
+
+.pioneercardborder{
+  border: 1.2px solid #74CBBD;
+}
+
+.mythricardborder{
+  border: 1.2px solid #BDE6FB;
+}
