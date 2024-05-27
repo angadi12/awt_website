@@ -1,9 +1,11 @@
 'use client'
 import React, { useState } from "react";
 import Team1 from "../../public/Solutionasset/Team1.png";
-import Team2 from "../../public/Solutionasset/Team2.png";
-import Team3 from "../../public/Solutionasset/Team3.png";
-import Team4 from "../../public/Solutionasset/Team4.png";
+import Praneetha from "../../public/Homeasset/Praneetha.JPEG";
+import Neha from "../../public/Homeasset/Neha.JPEG";
+import Mithul from "../../public/Homeasset/Mithul.JPG";
+import Santosh from "../../public/Homeasset/Santosh.jpg";
+import Sreeja from "../../public/Homeasset/Sreeja.jpg";
 import Image from "next/image";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -17,9 +19,33 @@ const Meetteam = () => {
 
   const teamdata = [
     {
-      name: "Santosh Alimkar",
-      designation: "Developer",
-      picture: Team1,
+      name: "Praneetha Medarametla",
+      designation: "Operations Manager",
+      picture: Praneetha,
+      insta: "",
+      facebook: "",
+      linkdin: "",
+    },
+    {
+      name: "Neha Konakalla",
+      designation: "Technical Analyst",
+      picture: Neha,
+      insta: "",
+      facebook: "",
+      linkdin: "",
+    },
+    // {
+    //   name: "Mutyala Venkata Sreeja",
+    //   designation: "DM Executive ",
+    //   picture: Sreeja,
+    //   insta: "",
+    //   facebook: "",
+    //   linkdin: "",
+    // },
+    {
+      name: "Mithul M",
+      designation: "Product Designer",
+      picture: Mithul,
       insta: "",
       facebook: "",
       linkdin: "",
@@ -27,23 +53,7 @@ const Meetteam = () => {
     {
       name: "Santosh Alimkar",
       designation: "Developer",
-      picture: Team2,
-      insta: "",
-      facebook: "",
-      linkdin: "",
-    },
-    {
-      name: "Santosh Alimkar",
-      designation: "Developer",
-      picture: Team3,
-      insta: "",
-      facebook: "",
-      linkdin: "",
-    },
-    {
-      name: "Santosh Alimkar",
-      designation: "Developer",
-      picture: Team4,
+      picture:Santosh,
       insta: "",
       facebook: "",
       linkdin: "",
@@ -58,7 +68,7 @@ const Meetteam = () => {
         </h6>
       </div>
 
-      <div className="w-11/12 mx-auto grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 gap-8 place-content-center justify-items-center overflow-hidden">
+      <div className="w-11/12 mx-auto grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 gap-6 place-content-center justify-items-center overflow-hidden">
         {teamdata.map((value, index) => (
           <div
             onMouseOver={() => Sethoverindex(index)}
@@ -69,7 +79,7 @@ const Meetteam = () => {
             className="relative"
           >
             <Image
-              className="object-fill w-full h-80 cursor-pointer"
+              className="object-fill h-80 w-72 cursor-pointer"
               src={value.picture}
               alt="pic"
             />

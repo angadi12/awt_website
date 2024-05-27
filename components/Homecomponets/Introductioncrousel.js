@@ -8,6 +8,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { Pacifico } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 import Stepper from "react-stepper-horizontal";
 
@@ -15,6 +16,7 @@ const inter = Pacifico({ subsets: ["latin"], weight: ["400"] });
 const inter2 = Montserrat({ subsets: ["latin"] });
 
 const Introductioncrousel = () => {
+  const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const datalist = [{}];
@@ -28,17 +30,23 @@ const Introductioncrousel = () => {
         className="flex flex-col justify-start items-start gap-4"
       >
         <p className="text-justify text-sm md:text-lg lg:text-lg leading-7 font-medium">
-          <span className="text-sm md:text-lg lg:text-lg font-bold">Angadi World Technologies</span>{" "}
+          <span className="text-sm md:text-lg lg:text-lg font-bold">
+            Angadi World Technologies
+          </span>{" "}
           {`is a top-tier provider of Web and App Design & Development, along with Digital Marketing services. Renowned for our innovative solutions, we excel in delivering cutting-edge mobile apps and digital experiences to a global clientele.`}
         </p>
         <div className="flex justify-center items-center gap-4">
           <Button
+            onPress={() => router.push("/Aboutus")}
             variant="solid"
             className="ring-1 bg-white uppercase ring-black rounded-full"
           >
             Learn More
           </Button>
-          <div className="flex justify-center items-center gap-2">
+          <div
+            onClick={() => router.push("/Aboutus")}
+            className="flex justify-center items-center gap-2 cursor-pointer"
+          >
             <FaCirclePlay size={30} />
             <span className="uppercase text-black text-sm font-medium">
               watch a video
@@ -96,7 +104,9 @@ const Introductioncrousel = () => {
         className="flex flex-col justify-start items-start gap-4 "
       >
         <p className="text-justify text-sm md:text-lg lg:text-lg leading-7 font-medium">
-          <span className="text-sm md:text-lg lg:text-lg leading-7 font-bold">At AWT</span>{" "}
+          <span className="text-sm md:text-lg lg:text-lg leading-7 font-bold">
+            At AWT
+          </span>{" "}
           {`, our core mission is to propel your organization's digital growth. We start by understanding your business objectives, tailoring our services to your audience, and delivering expert mobile application development, website design, and marketing solutions.`}
         </p>
         <Divider className="bg-black" />
@@ -170,13 +180,17 @@ const Introductioncrousel = () => {
             </button>
           </div>
         </div>
-       {slides.map((value,index)=>(
-
-        currentIndex===index && <div key={index} className="flex flex-col justify-start items-start gap-4 md:w-1/2 lg:w-1/2 w-full mx-auto md:px-0 lg:px-0 px-4 py-8 md:py-0 lg:py-0 h-96">
-          {value.slide}
-        </div>
-       )) 
-        }
+        {slides.map(
+          (value, index) =>
+            currentIndex === index && (
+              <div
+                key={index}
+                className="flex flex-col justify-start items-start gap-4 md:w-1/2 lg:w-1/2 w-full mx-auto md:px-0 lg:px-0 px-4 py-8 md:py-0 lg:py-0 h-96"
+              >
+                {value.slide}
+              </div>
+            )
+        )}
       </div>
       <div className="w-full flex flex-col  justify-center items-start md:-ml-12 lg:-ml-12 py-8">
         <Stepper
@@ -198,7 +212,9 @@ const Introductioncrousel = () => {
           <motion.span
             initial={{ opacity: 0.5 }}
             animate={currentIndex === 0 ? { opacity: 1 } : {}}
-            className={`text-justify md:text-base lg:text-base text-[${currentIndex===0?'0.8rem':'0.5rem'}] text-gray-600 font-medium capitalize`}
+            className={`text-justify md:text-base lg:text-base text-[${
+              currentIndex === 0 ? "0.8rem" : "0.5rem"
+            }] text-gray-600 font-medium capitalize`}
           >
             know about Angadi<br></br>{" "}
             <span className="italic font-bold text-black">
@@ -208,7 +224,9 @@ const Introductioncrousel = () => {
           <motion.span
             initial={{ opacity: 0.5 }}
             animate={currentIndex === 1 ? { opacity: 1 } : {}}
-            className={`text-justify md:text-base lg:text-base text-[${currentIndex===1?'0.8rem':'0.5rem'}] text-gray-600 font-medium capitalize`}
+            className={`text-justify md:text-base lg:text-base text-[${
+              currentIndex === 1 ? "0.8rem" : "0.5rem"
+            }] text-gray-600 font-medium capitalize`}
           >
             <span className="italic font-bold text-black">what we do</span> here
             in angadi <br></br>world technologies?
@@ -216,7 +234,9 @@ const Introductioncrousel = () => {
           <motion.span
             initial={{ opacity: 0.5 }}
             animate={currentIndex === 2 ? { opacity: 1 } : {}}
-            className={`text-justify md:text-base lg:text-base text-[${currentIndex===2?'0.8rem':'0.5rem'}] text-gray-600 font-medium capitalize`}
+            className={`text-justify md:text-base lg:text-base text-[${
+              currentIndex === 2 ? "0.8rem" : "0.5rem"
+            }] text-gray-600 font-medium capitalize`}
           >
             What will be our<br></br>
             <span className="italic font-bold text-black">vision?</span>
@@ -224,7 +244,9 @@ const Introductioncrousel = () => {
           <motion.span
             initial={{ opacity: 0.5 }}
             animate={currentIndex === 3 ? { opacity: 1 } : {}}
-            className={`text-justify md:text-base lg:text-base text-[${currentIndex===3?'0.8rem':'0.5rem'}] text-gray-600 font-medium capitalize`}
+            className={`text-justify md:text-base lg:text-base text-[${
+              currentIndex === 3 ? "0.8rem" : "0.5rem"
+            }] text-gray-600 font-medium capitalize`}
           >
             What is our <br></br>{" "}
             <span className="italic font-bold text-black">mission</span> here?

@@ -53,8 +53,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
+import { useRouter } from "next/navigation";
 const Solutionscrousel = () => {
+  const router=useRouter()
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const ThumbnailImages = [
@@ -115,7 +116,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "UI UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
-      Link: "",
+      Link: "/Oursolution/Mobileappdesign",
     },
     {
       title: (
@@ -125,7 +126,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "UI UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
-      Link: "",
+      Link: "/Oursolution/Mobileappdesign",
     },
     {
       title: (
@@ -135,7 +136,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "UI UX Design",
       desc: "Transform your online platform with sleek UI/UX design that captivates users and drives engagement to new heights.",
-      Link: "",
+      Link: "/Oursolution/Webappdesign",
     },
     {
       title: (
@@ -145,7 +146,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "UI UX Design",
       desc: "Elevate your website with immersive UI/UX design that captivates visitors and leaves a lasting impression.",
-      Link: "",
+      Link: "/Oursolution/Websitedesign",
     },
     {
       title: (
@@ -155,7 +156,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Services",
       desc: "Elevate your brand with captivating graphic design that communicates your message with impact and style.",
-      Link: "",
+      Link: "/Oursolution/Services/GraphicDesign",
     },
     {
       title: (
@@ -165,7 +166,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Services",
       desc: "Navigate the digital landscape with confidence through strategic digital transformation that revolutionizes your business processes.",
-      Link: "",
+      Link: "/Oursolution/Services/DigitalMakeover",
     },
     {
       title: (
@@ -175,7 +176,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Services",
       desc: "Partner with us for expert app development that brings your vision to life, delivering seamless functionality and engaging user experiences.",
-      Link: "",
+      Link: "/Oursolution/Development/Mobileappdev",
     },
     {
       title: (
@@ -185,7 +186,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Services",
       desc: "Trust our expertise in web development to create dynamic and responsive websites that drive your online success to new horizons.",
-      Link: "",
+      Link: "/Oursolution/Development/Websitedev",
     },
     {
       title: (
@@ -195,7 +196,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Services",
       desc: "We craft powerful software solutions tailored to your needs, driving success in the digital age.",
-      Link: "",
+      Link: "/Oursolution/Development/Softwaredev",
     },
     {
       title: (
@@ -205,7 +206,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Marketing",
       desc: "Our digital marketing strategies propel your business forward, reaching and engaging your audience with precision and impact.",
-      Link: "",
+      Link: "/Oursolution/Marketing/DigitalMarketing",
     },
     {
       title: (
@@ -215,7 +216,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Marketing",
       desc: "Our SEO expertise ensures your website ranks higher, driving increased traffic and maximizing your digital presence.",
-      Link: "",
+      Link: "/Oursolution/Marketing/Seo",
     },
     {
       title: (
@@ -225,7 +226,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Marketing",
       desc: "Our digital branding strategies establish your unique presence, resonating with audiences and driving lasting connections in the digital world.",
-      Link: "",
+      Link: "/Oursolution/Marketing/DigitalBranding",
     },
     {
       title: (
@@ -235,7 +236,7 @@ const Solutionscrousel = () => {
       ),
       subtitle: "Marketing",
       desc: "Our consulting maximizes efficiency and innovation, driving your business forward in the digital realm.",
-      Link: "",
+      Link: "/Oursolution/Services/CloudConsultation",
     },
   ];
 
@@ -354,7 +355,7 @@ const Solutionscrousel = () => {
                 <p className="md:text-sm lg:text-sm text-xs leading-6 font-medium text-start text-white md:w-96 lg:w-96 ">
                   {value.desc}
                 </p>
-                <Button className="ring-1 rounded-full ring-white bg-transparent text-white">
+                <Button onPress={()=>router.push(`${value.Link}`)} className="ring-1 rounded-full ring-white bg-transparent text-white">
                   learn more
                 </Button>
               </motion.div>
@@ -425,7 +426,7 @@ const Solutionscrousel = () => {
           {carouselIndex === 12 && (
             <div className="md:flex lg:flex hidden justify-start items-start gap-4 flex-col absolute right-60 bottom-8">
               <h6 className="text-white text-sm  font-medium">{`Do you have any doubts? Consult now!`}</h6>
-              <Button className="bg-transparent text-white uppercase ring-1 ring-white rounded-full w-40">
+              <Button onPress={()=>router.push('/Contactus')} className="bg-transparent text-white uppercase ring-1 ring-white rounded-full w-40">
                 consult
               </Button>
             </div>

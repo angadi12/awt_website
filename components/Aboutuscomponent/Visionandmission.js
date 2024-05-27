@@ -63,7 +63,7 @@ function Visionandmission() {
           src="https://res.cloudinary.com/dipr7y36n/video/upload/v1716534553/AWT-WEBSITE/qeyggrhec4utzsfajm3v.mp4"
           ref={videoRef}
           controls
-          className="h-[100vh] relative object-cover"
+          className="md:h-[90vh] lg:[90vh] w-full relative object-cover"
         />
         {/* <div
           className="absolute w-16 h-16 bg-white text-[#FF7143] flex justify-center items-center rounded-full"

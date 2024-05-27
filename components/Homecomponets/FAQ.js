@@ -5,8 +5,10 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 import { GoArrowDown } from "react-icons/go";
 import Link from "next/link";
 import Customanimationslide from "./Customanimationslide";
+import { useRouter } from "next/navigation";
 
 const FAQ = () => {
+  const router =useRouter()
   const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
@@ -20,8 +22,8 @@ const FAQ = () => {
          {`Still have some unsolved queries?`}
         </p>
         <div className="flex  items-center ">
-          <Button className=" w-60 uppercase bg-white ring-1 ring-black rounded-full text-xs   text-black font-medium">
-            <Link href={"#"}>Contact us</Link>
+          <Button onPress={()=>router.push('/Contactus')} className=" w-60 uppercase bg-white ring-1 ring-black rounded-full text-xs   text-black font-medium">
+           Contact us
           </Button>
         </div>
       </div>
