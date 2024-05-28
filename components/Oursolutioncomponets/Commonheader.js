@@ -39,7 +39,7 @@ import Oursolutionsservice from '../../public/Bannerimage/Oursolutions/Oursoluti
 import Oursolutionsdeve from '../../public/Bannerimage/Oursolutions/Oursolutionsdeve.png'
 import Oursolutionsmarketing from '../../public/Bannerimage/Oursolutions/Oursolutionsmarketing.png'
 import { NavigationContext } from "../../app/Oursolution/NavigationContext";
-
+import { useRouter } from "next/navigation";
 
 const imageMapping = {
   UIUX: Oursolutionsuiux,
@@ -49,6 +49,7 @@ const imageMapping = {
 };
 
 const Commonheader = () => {
+  const router=useRouter()
   const { selectedTab } = useContext(NavigationContext);
   const [title, setTitle] = useState({
     main: "Our",
@@ -253,21 +254,32 @@ const Commonheader = () => {
         <span className="text-[#FF7143] ml-2">{title.highlight}</span>
       </motion.h1>
       <div className="absolute md:bottom-12 lg:bottom-12 bottom-10 md:gap-4 lg:gap-4 gap-1 flex justify-center items-center md:right-12 lg:right-12 right-3  z-10">
+        <div onClick={()=>router.push('https://www.facebook.com/angadiworld.t')}>
+
         <Image
           className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
           src={Facebook}
           alt="Facebook"
         />
+        </div>
+
+        <div onClick={()=>router.push('https://www.instagram.com/angadiworldtech/')}>
+
         <Image
           className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
           src={Insta}
           alt="Insta"
         />
+        </div>
+
+        <div onClick={()=>router.push('https://www.linkedin.com/company/14456022/?msgControlName=view_message_button&msgConversationId=2-MzU0ZWE3YTQtODFhMC00OTM1LTg2NDgtZjEwZWQ5YmM4ZDI0XzAxMA%3D%3D&msgOverlay=true')}>
         <Image
           className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
           src={Linkdin}
           alt="Linkdin"
         />
+
+        </div>
         <Image
           className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
           src={X}

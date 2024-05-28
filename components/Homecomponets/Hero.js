@@ -10,8 +10,10 @@ import Image from "next/image";
 import { GiRoundStar } from "react-icons/gi";
 import { Divider } from "@nextui-org/react";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router =useRouter()
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
@@ -61,21 +63,32 @@ const Hero = () => {
         />
 
         <div className="absolute md:bottom-12 lg:bottom-12 bottom-5 md:gap-4 lg:gap-4 gap-1 flex justify-center items-center md:right-12 lg:right-12 right-3  z-10">
-          <Image
-            className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
-            src={Facebook}
-            alt="Facebook"
-          />
-          <Image
-            className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
-            src={Insta}
-            alt="Insta"
-          />
-          <Image
-            className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
-            src={Linkdin}
-            alt="Linkdin"
-          />
+        <div onClick={()=>router.push('https://www.facebook.com/angadiworld.t')}>
+
+<Image
+  className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
+  src={Facebook}
+  alt="Facebook"
+/>
+</div>
+
+<div onClick={()=>router.push('https://www.instagram.com/angadiworldtech/')}>
+
+<Image
+  className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
+  src={Insta}
+  alt="Insta"
+/>
+</div>
+
+<div onClick={()=>router.push('https://www.linkedin.com/company/14456022/?msgControlName=view_message_button&msgConversationId=2-MzU0ZWE3YTQtODFhMC00OTM1LTg2NDgtZjEwZWQ5YmM4ZDI0XzAxMA%3D%3D&msgOverlay=true')}>
+<Image
+  className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
+  src={Linkdin}
+  alt="Linkdin"
+/>
+
+</div>
           <Image
             className="z-0 md:h-8 md:w-8 lg:h-8 lg:w-8 h-6 w-6 cursor-pointer "
             src={X}

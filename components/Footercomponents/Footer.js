@@ -111,8 +111,8 @@ const Footer = () => {
                 +91-9492963103<br></br>+91-9110314465
               </h6>
               <div className="flex justify-start items-center gap-2 mt-2 pb-4">
-                <AiFillInstagram size={45} className="text-white hover:text-[#FF7143]" />
-                <FaFacebookSquare  size={40} className="text-white  hover:text-[#FF7143]"/>
+                <AiFillInstagram onClick={()=>router.push('https://www.instagram.com/angadiworldtech/')} size={45} className="text-white hover:text-[#FF7143]" />
+                <FaFacebookSquare  onClick={()=>router.push('https://www.facebook.com/angadiworld.t')} size={40} className="text-white  hover:text-[#FF7143]"/>
                 <IoLogoLinkedin onClick={()=>router.push('https://www.linkedin.com/company/14456022/?msgControlName=view_message_button&msgConversationId=2-MzU0ZWE3YTQtODFhMC00OTM1LTg2NDgtZjEwZWQ5YmM4ZDI0XzAxMA%3D%3D&msgOverlay=true')} size={40} className="text-white hover:text-[#FF7143] "/>
                 <FaSquareTwitter size={40} className="text-white hover:text-[#FF7143]"/>
                 <IoLogoYoutube size={45} className="text-white hover:text-[#FF7143] "/>
