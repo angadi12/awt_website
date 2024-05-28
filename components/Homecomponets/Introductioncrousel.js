@@ -114,7 +114,7 @@ const Introductioncrousel = () => {
           {`Join us in our Mission -`}{" "}
           <span
           onClick={()=>router.push('/Careers')}
-            className={`text-[#FF7143] underline font-medium inline-block `}
+            className={`text-[#FF7143] underline font-medium inline-block cursor-pointer `}
           >
             We are Hiring
           </span>
