@@ -2,6 +2,7 @@ import React from "react";
 import Commonheader from "@/components/Oursolutioncomponets/Commonheader";
 import QRANGADI from '../../public/Solutionasset/QRANGADI.png'
 import IBGTLOGO from '../../public/Solutionasset/IBGTLOGO.png'
+import Jobstremers from '../../public/Portfolioasset/Jobstremers.jpeg'
 import Customproductcard from "@/components/Productscomponent/Customproductcard";
 
 const page = () => {
@@ -37,7 +38,7 @@ const productdata=[
     productname:"Job Streamers Ai",
     desc:'At International Business Expedition Trailblazers, we are dedicated to revolutionizing the world of franchising and international business expansion. As your trusted partner, we offer comprehensive solutions for franchise listing, module development, and global market entry, ensuring a seamless transition from local to global business landscapes.',
     link:'',
-    productimage:QRANGADI,
+    productimage:Jobstremers,
     style:'order-last'
 },
  
