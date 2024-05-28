@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from "react";
 import Team1 from "../../public/Solutionasset/Team1.png";
-import Praneetha from "../../public/Homeasset/Praneetha.JPEG";
-import Neha from "../../public/Homeasset/Neha.JPEG";
+import Praneetha from "../../public/Homeasset/Praneetha.jpeg";
+import Neha from "../../public/Homeasset/Neha.jpeg";
 import Mithul from "../../public/Homeasset/Mithul.JPG";
 import Santosh from "../../public/Homeasset/Santosh.jpg";
 import Sreeja from "../../public/Homeasset/Sreeja.jpg";
