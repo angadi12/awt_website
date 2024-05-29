@@ -7,6 +7,7 @@ import Link from "next/link";
 import Customanimationslide from "./Customanimationslide";
 import { useRouter } from "next/navigation";
 
+
 const general = [
   {
     questions: "What services does AWT offer?",
@@ -18,8 +19,7 @@ const general = [
   },
   {
     questions: "How can I get a quote for my project?",
-    ans:`Requesting a quote is simple. Reach out to us through our website's contact form or email us directly at info@angadiworldtech.com, and our team will get back to you promptly.
-    `
+    ans:<span>{`Requesting a quote is simple. Reach out to us through our website's contact form or email us directly at`} <span  className="text-[#FF7143] font-semibold cursor-pointer"> <Link href={'mailto:info@angadiworldtech.com'}>info@angadiworldtech.com</Link></span>{`,and our team will get back to you promptly.`}</span>,
   },
   {
     questions: "How long has AWT been in business?",
@@ -27,8 +27,8 @@ const general = [
     `
   },
   {
-    questions: "5. How can I contact AWT for support?",
-    ans:`You can reach our support team via our website, email at info@angadiworldtech.com, or by calling the customer service number listed on our contact page. We are here to assist you with any queries or support needs.`
+    questions: " How can I contact AWT for support?",
+    ans:<span>{`You can reach our support team via our website, email at`}<span  className="text-[#FF7143] font-semibold cursor-pointer"> <Link href={'mailto:info@angadiworldtech.com'}>info@angadiworldtech.com</Link></span>{`, or by calling the customer service number listed on our contact page. We are here to assist you with any queries or support needs.`}</span>
   },
 ];
 
@@ -247,10 +247,10 @@ const FAQ = () => {
             ))}
           </Accordion>
           <div className="flex justify-end items-center px-1 gap-2">
-            <Button variant="light">
+            {/* <Button variant="light">
               <p className="text-[#FF7143] text-sm">See more questions</p>
               <GoArrowDown className="text-[#FF7143] text-sm" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

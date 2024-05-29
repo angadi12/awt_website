@@ -4,10 +4,11 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Customportfoliocard = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+const router=useRouter()
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % 2);
@@ -38,7 +39,7 @@ const Customportfoliocard = ({ data }) => {
         </div>
         <div className="flex justify-start items-center md:gap-8 lg:gap-8 gap-2 w-full">
           <div>
-            <Button className="ring-1 rounded-full text-xs md:text-sm lg:text-sm font-bold uppercase ring-black text-black bg-transparent text-center md:w-60 lg:w-60">
+            <Button onPress={()=>router.push(`${data.link}`)} className="ring-1 rounded-full text-xs md:text-sm lg:text-sm font-bold uppercase ring-black text-black bg-transparent text-center md:w-60 lg:w-60">
               View website
             </Button>
           </div>

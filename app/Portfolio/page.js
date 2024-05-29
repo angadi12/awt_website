@@ -38,7 +38,8 @@ const page = () => {
       iconcolor:'#A71E22',
       cardborder:'biryanibordercard',
       className:'biryanicard',
-      tag:['Branding','web dev','social media handling']
+      tag:['Branding','web dev','social media handling'],
+      link:''
   },
     {
       image:[Winkadsdesktop,Winkadsiphone],
@@ -47,7 +48,8 @@ const page = () => {
       iconcolor:'#00BFB5',
       cardborder:'winkadscardborder',
       className:'winkadscard',
-      tag:['Branding','web dev','social media handling']
+      tag:['Branding','web dev','social media handling'],
+      link:'https://winkads.in/'
   },
     {
       image:[Vitamindesktop,Vitaminiphone],
@@ -56,7 +58,8 @@ const page = () => {
       iconcolor:'#9747FF',
       cardborder:'vitaminscardborder',
       className:'vitaminscard',
-      tag:['Branding','web dev','social media handling']
+      tag:['Branding','web dev','social media handling'],
+      link:''
   },
     {
       image:[Pioneerdesktop,Pioneeriphone],
@@ -65,7 +68,8 @@ const page = () => {
       iconcolor:'#3FBFAA',
       cardborder:'pioneercardborder',
       className:'pioneercard',
-      tag:['Branding','web dev','social media handling']
+      tag:['Branding','web dev','social media handling'],
+      link:''
   },
     {
       image:[Mythridesktop,Mythriiphone],
@@ -74,7 +78,8 @@ const page = () => {
       iconcolor:'#1877F2',
       cardborder:'mythricardborder',
       className:'mythricard',
-      tag:['Branding','web dev','social media handling']
+      tag:['Branding','web dev','social media handling'],
+      link:'https://wordpress-1272405-4594953.cloudwaysapps.com/'
   },
 
 ]
