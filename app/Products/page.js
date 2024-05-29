@@ -13,7 +13,7 @@ const productdata=[
     title:'Customized QR Generation',
     productname:"QR Angadi",
     desc:'QR Angadi is a flagship product of Angadi World Technologies Pvt Ltd, a company founded with a commitment to innovation and excellence. Our team of dedicated professionals is driven to simplify and enhance the QR code experience for users across various industries.',
-    link:'',
+    link:'https://www.qrangadi.com/',
     productimage:QRANGADI,
     style:'md:order-first order-last'
 },
