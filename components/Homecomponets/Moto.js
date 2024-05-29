@@ -50,8 +50,8 @@ const Moto = () => {
             your satisfaction is our top <span className="inline-block md:hidden lg:hidden rounded-md bg-[#FF7143] text-white ml-1 px-2">priority.</span>
           </p>
           <Customanimationslide
-            text={"Prority"}
-            width={120}
+            text={"priority."}
+            width={130}
             style={"md:inline-block ml-2 hidden "}
           />
         </motion.h6>
