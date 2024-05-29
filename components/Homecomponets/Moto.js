@@ -47,7 +47,7 @@ const Moto = () => {
           <p className="inline-block text-white">every action and decision,</p>{" "}
           ensuring<br></br>{" "}
           <p className="inline-block text-white">
-            your satisfaction is our top <span className="inline-block md:hidden lg:hidden rounded-md bg-[#FF7143] text-white ml-1 px-2">Prority</span>
+            your satisfaction is our top <span className="inline-block md:hidden lg:hidden rounded-md bg-[#FF7143] text-white ml-1 px-2">priority.</span>
           </p>
           <Customanimationslide
             text={"Prority"}
@@ -73,7 +73,7 @@ const Moto = () => {
         <div className="flex justify-between items-center  md:w-[60%] w-40  overflow-hidden">
           <motion.div className="">
             <Image
-              className="md:h-14 md:w-14 h-10 w-10  absolute -top-24 lg:left-60 md:left-60 left-12"
+              className="md:h-14 md:w-14 h-10 w-10 rounded-full object-contain  absolute -top-24 lg:left-60 md:left-60 left-12"
               src={Animateicon1}
               alt="iconsimage"
             />
