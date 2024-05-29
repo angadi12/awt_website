@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@nextui-org/react'
 import React from 'react'
 import Image from 'next/image'
