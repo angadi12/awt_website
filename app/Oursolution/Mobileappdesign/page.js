@@ -31,7 +31,7 @@ const Page = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 place-content-center justify-between items-center w-11/12 mx-auto  ">
           <div className="w-full flex flex-col justify-center items-start gap-4 order-2 md:order-1 lg:order-1">
             <div>
-              <p className="text-justify text-sm font-medium leading-7">{`we know good mobile apps matter. With our specialized design services, we assist businesses in creating powerful and effective mobile applications that cater to their unique needs and objectives.`}</p>
+              <p className="text-justify text-sm font-medium leading-7">{`We know good mobile apps matter. With our specialized design services, we assist businesses in creating powerful and effective mobile applications that cater to their unique needs and objectives.`}</p>
             </div>
             <div>
               <div class="relative border-s border-[#FF7143]">
