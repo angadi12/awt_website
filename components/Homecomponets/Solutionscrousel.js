@@ -117,6 +117,8 @@ const Solutionscrousel = () => {
       subtitle: "UI UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
       Link: "/Oursolution/Mobileappdesign",
+      alt:' MOBILE APP DESIGN - Angadi World Technologies'
+
     },
     {
       title: (
@@ -127,6 +129,8 @@ const Solutionscrousel = () => {
       subtitle: "UI UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
       Link: "/Oursolution/Mobileappdesign",
+      alt:' MOBILE APP DESIGN - Angadi World Technologies'
+
     },
     {
       title: (
@@ -137,6 +141,8 @@ const Solutionscrousel = () => {
       subtitle: "UI UX Design",
       desc: "Transform your online platform with sleek UI/UX design that captivates users and drives engagement to new heights.",
       Link: "/Oursolution/Webappdesign",
+      alt:' web APP DESIGN - Angadi World Technologies'
+
     },
     {
       title: (
@@ -147,6 +153,8 @@ const Solutionscrousel = () => {
       subtitle: "UI UX Design",
       desc: "Elevate your website with immersive UI/UX design that captivates visitors and leaves a lasting impression.",
       Link: "/Oursolution/Websitedesign",
+      alt:'website DESIGN - Angadi World Technologies'
+
     },
     {
       title: (
@@ -157,6 +165,8 @@ const Solutionscrousel = () => {
       subtitle: "Services",
       desc: "Elevate your brand with captivating graphic design that communicates your message with impact and style.",
       Link: "/Oursolution/Services/GraphicDesign",
+      alt:'graphic DESIGN - Angadi World Technologies'
+
     },
     {
       title: (
@@ -167,6 +177,8 @@ const Solutionscrousel = () => {
       subtitle: "Services",
       desc: "Navigate the digital landscape with confidence through strategic digital transformation that revolutionizes your business processes.",
       Link: "/Oursolution/Services/DigitalMakeover",
+      alt:'digital makeover - Angadi World Technologies'
+
     },
     {
       title: (
@@ -177,6 +189,7 @@ const Solutionscrousel = () => {
       subtitle: "Services",
       desc: "Partner with us for expert app development that brings your vision to life, delivering seamless functionality and engaging user experiences.",
       Link: "/Oursolution/Development/Mobileappdev",
+      alt:'Mobile App Development Company - Angadi World Technologies'
     },
     {
       title: (
@@ -187,6 +200,8 @@ const Solutionscrousel = () => {
       subtitle: "Services",
       desc: "Trust our expertise in web development to create dynamic and responsive websites that drive your online success to new horizons.",
       Link: "/Oursolution/Development/Websitedev",
+      alt:' web development - Angadi World Technologies'
+
     },
     {
       title: (
@@ -197,6 +212,8 @@ const Solutionscrousel = () => {
       subtitle: "Services",
       desc: "We craft powerful software solutions tailored to your needs, driving success in the digital age.",
       Link: "/Oursolution/Development/Softwaredev",
+      alt:' software development - Angadi World Technologies'
+
     },
     {
       title: (
@@ -207,6 +224,7 @@ const Solutionscrousel = () => {
       subtitle: "Marketing",
       desc: "Our digital marketing strategies propel your business forward, reaching and engaging your audience with precision and impact.",
       Link: "/Oursolution/Marketing/DigitalMarketing",
+      alt:'Digital Marketing - Angadi World Technologies'
     },
     {
       title: (
@@ -217,6 +235,8 @@ const Solutionscrousel = () => {
       subtitle: "Marketing",
       desc: "Our SEO expertise ensures your website ranks higher, driving increased traffic and maximizing your digital presence.",
       Link: "/Oursolution/Marketing/Seo",
+      alt:' search engine optimization - Angadi World Technologies'
+
     },
     {
       title: (
@@ -227,6 +247,8 @@ const Solutionscrousel = () => {
       subtitle: "Marketing",
       desc: "Our digital branding strategies establish your unique presence, resonating with audiences and driving lasting connections in the digital world.",
       Link: "/Oursolution/Marketing/DigitalBranding",
+      alt:' digital branding - Angadi World Technologies'
+
     },
     {
       title: (
@@ -237,6 +259,8 @@ const Solutionscrousel = () => {
       subtitle: "Marketing",
       desc: "Our consulting maximizes efficiency and innovation, driving your business forward in the digital realm.",
       Link: "/Oursolution/Services/CloudConsultation",
+      alt:' cloud consulting - Angadi World Technologies'
+
     },
   ];
 

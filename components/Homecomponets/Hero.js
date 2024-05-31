@@ -59,7 +59,7 @@ const Hero = () => {
         <img
           className="z-0 object-fill md:object-fill lg:object-fill h-48 mx-auto md:h-[30.5rem] lg:h-[30.5rem] w-full "
           src={`https://firebasestorage.googleapis.com/v0/b/awt-website-769f8.appspot.com/o/Hero.gif?alt=media&token=a6b8aae7-9596-4ca8-a037-66a051a89770`}
-          alt="herogif"
+          alt="Best Website Designing Company - Angadi World Technologies"
         />
 
         <div className="absolute md:bottom-12 lg:bottom-12 bottom-5 md:gap-4 lg:gap-4 gap-1 flex justify-center items-center md:right-12 lg:right-12 right-3  z-10">

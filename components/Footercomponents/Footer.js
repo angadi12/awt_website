@@ -18,7 +18,7 @@ const Footer = () => {
       <div onClick={()=>router.push('/Contactus')} className="md:m-10 m-4 flex items-center justify-center border border-white rounded-lg md:p-32 lg:p-32 p-12 relative ">
         <p className="md:text-5xl lg:text-5xl text-lg font-semibold relative z-30 text-white">
          {`Let's start a`}
-          <span className="font-[Pacifico] md:text-7xl lg:text-7xl text-2xl font-normal text-white">
+          <span className="font-[Pacifico] md:text-7xl lg:text-7xl text-2xl font-normal text-white ml-2">
             Project
           </span>
         </p>
@@ -115,7 +115,7 @@ const Footer = () => {
                 <FaFacebookSquare  onClick={()=>router.push('https://www.facebook.com/angadiworld.t')} size={40} className="text-white  hover:text-[#FF7143]"/>
                 <IoLogoLinkedin onClick={()=>router.push('https://www.linkedin.com/company/14456022/?msgControlName=view_message_button&msgConversationId=2-MzU0ZWE3YTQtODFhMC00OTM1LTg2NDgtZjEwZWQ5YmM4ZDI0XzAxMA%3D%3D&msgOverlay=true')} size={40} className="text-white hover:text-[#FF7143] "/>
                 <FaSquareTwitter size={40} className="text-white hover:text-[#FF7143]"/>
-                <IoLogoYoutube size={45} className="text-white hover:text-[#FF7143] "/>
+                <IoLogoYoutube onClick={()=>router.push('https://www.youtube.com/@angadiworldtechnologies7108')}  size={45} className="text-white hover:text-[#FF7143] "/>
               </div>
             </div>
           </div>

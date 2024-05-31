@@ -15,7 +15,8 @@ const productdata=[
     desc:'QR Angadi is a flagship product of Angadi World Technologies Pvt Ltd, a company founded with a commitment to innovation and excellence. Our team of dedicated professionals is driven to simplify and enhance the QR code experience for users across various industries.',
     link:'https://www.qrangadi.com/',
     productimage:QRANGADI,
-    style:'md:order-first order-last'
+    style:'md:order-first order-last',
+    alt:'QR Code Technology - Angadi World Technologies'
 },
   {
     title:'franchising and business expansion',
