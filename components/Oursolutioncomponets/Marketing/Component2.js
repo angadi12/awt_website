@@ -73,10 +73,10 @@ const Component2 = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center md:w-[50%] lg:w-[50%] w-full mt-4 gap-10  mx-auto ">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center  w-full mt-4 gap-10  mx-auto ">
           {lastTwoCards.map((value, index) => (
             <div
-              className="ring-1 ring-white flex flex-col bg-black rounded-lg md:h-60 lg:h-60 h-32 w-11/12 md:w-auto lg:w-auto py-6 px-4 justify-self-center"
+              className="ring-1 ring-white flex flex-col bg-black rounded-lg md:h-60 lg:h-60 h-32 md:w-64 lg:w-64 w-11/12 py-6 px-4 justify-self-center"
               key={index}
             >
               <h6 className="text-3xl font-extrabold text-right text-white">
