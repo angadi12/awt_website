@@ -104,9 +104,9 @@ const page = () => {
         ))
        }
     </div>
-      <div className='fixed bottom-4 z-50'>
+      {/* <div className='fixed bottom-4 z-50'>
         <Button className='bg-black uppercase font-bold rounded-full text-white flex justify-center items-center'>Categories <BiSolidCategory size={30} className='inline-block ml-2 text-white'/></Button>
-      </div>
+      </div> */}
  </section>
   )
 }
