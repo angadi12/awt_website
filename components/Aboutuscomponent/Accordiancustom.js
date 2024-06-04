@@ -17,7 +17,7 @@ const Accordiancustom = () => {
     <div className="flex flex-col gap-8 justify-center items-center w-11/12 mx-auto py-12">
       <div className="w-full mx-auto ">
         <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
-          Meet the pillars of aWT.
+          Meet the pillars of AWT.
         </h6>
       </div>
       <Accordion
