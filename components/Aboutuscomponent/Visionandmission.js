@@ -7,10 +7,14 @@ import Image from "next/image";
 import Customanimationslide from "../Homecomponets/Customanimationslide";
 import { IoPlay } from "react-icons/io5";
 import { FaPause } from "react-icons/fa6";
+import { Button, Divider } from "@nextui-org/react";
+import FAQ from '../../public/Homeasset/FAQ.png'
+import { useRouter } from "next/navigation";
 
 function Visionandmission() {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const router=useRouter()
 
   const handlePlayPause = () => {
     if (videoRef.current.paused) {
@@ -55,22 +59,48 @@ function Visionandmission() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-4 w-full mx-auto flex-col py-16 mt-8">
-        <h6 className="md:text-2xl lg:text-2xl text-lg font-bold tracking-wider px-2">
-          Watch a small video of ourselves and get to know us better.
-        </h6>
-        <video
-          src="https://res.cloudinary.com/dipr7y36n/video/upload/v1716534553/AWT-WEBSITE/qeyggrhec4utzsfajm3v.mp4"
-          ref={videoRef}
-          controls
-          className="md:h-[90vh] lg:[90vh] w-full relative object-cover"
-        />
-        {/* <div
-          className="absolute w-16 h-16 bg-white text-[#FF7143] flex justify-center items-center rounded-full"
-          onClick={handlePlayPause}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-11/12 mx-auto gap-8 place-content-center justify-center items-start py-16 mt-8">
+        <div className="flex justify-center items-start gap-4 flex-col md:order-1 lg:order-1 order-2">
+          <h6 className="md:text-3xl lg:text-3xl text-2xl font-semibold tracking-wider">
+            Watch a small video of ourselves and get to know us better.
+          </h6>
+           <p className="text-start text-sm leading-7 font-medium">{`Here is a video about our company. If you have any further questions or need additional information, please contact our team. We are dedicated to assisting you and will resolve your inquiries within 48 hours, ensuring prompt and efficient service.`}</p>
+           <div className='flex justify-center items-center gap-4 md:flex-row lg:flex-row flex-col'>
+
+        <Button
+        onPress={()=>router.push('/Contactus')}
+          variant="solid"
+          className="ring-1 ring-black font-bold uppercase text-black rounded-full mt-4 md:w-60 lg:w-60 w-full bg-white"
         >
-          {isPlaying ? <IoPlay size={30} /> : <FaPause size={30} />}
-        </div>{" "} */}
+         Contact us
+        </Button>
+        <Divider className='bg-gray-500  h-12 mt-4 hidden md:block' orientation='vertical'/>
+        <div className='flex justify-between gap-8 items-center mt-4'>
+            <div className='flex justify-center items-start ring-1 ring-black rounded-full p-2'>
+               <Image className="w-8 h-8 object-contain" src={FAQ} alt="FAQ"/>
+            </div>
+            <div className='flex flex-col justify-center items-start'>
+                <span className='uppercase font-medium text-[#FF7143]'>common queries</span>
+                <span className='font-bold'>FAQs</span>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div className="flex justify-center items-center relative bg-[#FF7143] md:p-4 p-2 lg:p-4 order-1 md:order-2 lg:order-2">
+          {/* <div
+            className="absolute w-16 h-16 bg-white text-[#FF7143] flex justify-center items-center rounded-full"
+            onClick={handlePlayPause}
+          >
+            {isPlaying ? <IoPlay size={30} /> : <FaPause size={30} />}
+          </div>{" "} */}
+          <video
+            src="https://res.cloudinary.com/dipr7y36n/video/upload/v1716534553/AWT-WEBSITE/qeyggrhec4utzsfajm3v.mp4"
+            ref={videoRef}
+            controls
+            className=" w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     </div>
   );

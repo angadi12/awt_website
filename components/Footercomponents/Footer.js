@@ -10,6 +10,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import Image from "next/image";
 import brand from '../../public/Homeasset/AWT.png'
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
   const router=useRouter()
@@ -93,23 +94,51 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col md:w-80 mt-4 md:mt-0 justify-start items-center gap-8">
+          <div className="flex flex-col md:w-80 mt-4 md:mt-0 justify-start items-center gap-2">
             <div className="flex justify-start items-start gap-2 flex-col">
-              <p onClick={()=>router.push('/Contactus')} className="text-[#FF7143] font-semibold text-sm uppercase">
+              <p  className="text-[#FF7143] font-semibold text-sm uppercase">
                 contact us
               </p>
               <span className="text-sm text-white cursor-pointer uppercase">
                 email
               </span>
               <h6 className="md:text-2xl lg:text-2xl text-lg font-medium text-white">
-              info@angadiworldtech.com
+               <Link href={'mailto:info@angadiworldtech.com'}>info@angadiworldtech.com</Link>  
               </h6>
-              <span className="text-sm text-white cursor-pointer uppercase">
+
+              <div className="flex md:flex-col lg:flex-col justify-between items-start  gap-8 md:gap-2 lg:gap-2">
+                  <div>
+                  <span className="text-sm text-white cursor-pointer uppercase">
                 Phone
               </span>
               <h6 className="md:text-2xl lg:text-2xl text-sm font-medium text-white">
                 +91-9492963103<br></br>+91-9110314465
               </h6>
+             
+                  </div>
+                  <div>
+                  <span className="text-sm text-white cursor-pointer uppercase">
+               UK
+              </span>
+              <h6 className="md:text-2xl lg:text-2xl text-sm font-medium text-white">
+              +44 7918255464
+              </h6>
+                  </div>
+              </div>
+              {/* <span className="text-sm text-white cursor-pointer uppercase">
+                Phone
+              </span>
+              <h6 className="md:text-2xl lg:text-2xl text-sm font-medium text-white">
+                +91-9492963103<br></br>+91-9110314465
+              </h6>
+              <span className="text-sm text-white cursor-pointer uppercase">
+               UK
+              </span>
+              <h6 className="md:text-2xl lg:text-2xl text-sm font-medium text-white">
+              +44 7918255464
+              </h6> */}
+
+
               <div className="flex justify-start items-center gap-2 mt-2 pb-4">
                 <AiFillInstagram onClick={()=>router.push('https://www.instagram.com/angadiworldtech/')} size={45} className="text-white hover:text-[#FF7143]" />
                 <FaFacebookSquare  onClick={()=>router.push('https://www.facebook.com/angadiworld.t')} size={40} className="text-white  hover:text-[#FF7143]"/>

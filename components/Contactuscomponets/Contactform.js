@@ -3,6 +3,7 @@ import React from 'react'
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import Link from 'next/link';
 
 const Contactform = () => {
   return (
@@ -67,13 +68,15 @@ const Contactform = () => {
              <div>
                 <h6 className='uppercase font-bold '>call us</h6>
                 <p className='text-gray-500 text-sm font-medium'>From Monday - Sunday we will be available<br></br> all week!</p>
-                <h6 className='flex items-center gap-2 font-bold mt-2 text-[#FF7143]'><FaPhone/>+91-9110314465</h6>
+                <h6 className='flex items-center gap-2 font-bold mt-2 text-[#FF7143]'><FaPhone/><Link href={'tel:+91-9110314465'}>+91-9110314465</Link></h6>
+                <span className='text-gray-500 text-sm font-medium'>UK</span>
+                <h6 className='flex items-center gap-2 font-bold mt-2 text-[#FF7143]'><FaPhone/><Link href="tel:+447918255464">+44 7918255464</Link></h6>
              </div> 
     
              <div>
                 <h6 className='uppercase font-bold '>email us</h6>
                 <p className='text-gray-500 text-sm font-medium'>From Monday - Sunday we will be available all week!</p>
-                <h6 className='flex items-center gap-2 font-bold mt-2 text-[#FF7143]'><MdEmail/>info@angadiworldtech.com</h6>
+                <h6 className='flex items-center gap-2 font-bold mt-2 text-[#FF7143] cursor-pointer'><MdEmail/><Link href={'mailto:info@angadiworldtech.com'}>info@angadiworldtech.com</Link></h6>
              </div> 
     
              <div>

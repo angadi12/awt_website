@@ -16,7 +16,7 @@ const page = () => {
        <Visionandmission/>
        <Skillsbar/>
        <Companytrust/>
-       <Meetteam/>
+       {/* <Meetteam/> */}
        <Accordiancustom/>
        <Locationcard/>
     </section>
