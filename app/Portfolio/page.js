@@ -22,6 +22,27 @@ import Mythridesktop from '../../public/Portfolioasset/Mythridesktop.png'
 import Mythriiphone from '../../public/Portfolioasset/Mythriiphone.png' 
 import Mythrilogo from '../../public/Portfolioasset/Mythrilogo.png' 
 
+import Solardesktop from '../../public/Portfolioasset/Solardesktop.png' 
+import Solariphone from '../../public/Portfolioasset/Solariphone.png' 
+import Solarlogo from '../../public/Portfolioasset/Solarlogo.png' 
+
+
+import Prospectdesktop from '../../public/Portfolioasset/Prospectdesktop.png' 
+import Prospectiphone from '../../public/Portfolioasset/Prospectiphone.png' 
+import Prospectlogo from '../../public/Portfolioasset/Prospectlogo.png' 
+
+
+import Brandsagadesktop from '../../public/Portfolioasset/Brandsagadesktop.png' 
+import Brandsagaiphone from '../../public/Portfolioasset/Brandsagaiphone.png' 
+import Brandsagalogo from '../../public/Portfolioasset/Brandsagalogo.png' 
+
+
+import Amazondesktop from '../../public/Portfolioasset/Amazondesktop.png' 
+import Amazoniphone from '../../public/Portfolioasset/Amazoniphone.png' 
+import Amazonlogo from '../../public/Portfolioasset/Amazonlogo.png' 
+
+
+
 
 import Customanimationslide from '@/components/Homecomponets/Customanimationslide'
 import { Button } from '@nextui-org/react'
@@ -81,6 +102,51 @@ const page = () => {
       tag:['Branding','web dev','social media handling'],
       link:'https://wordpress-1272405-4594953.cloudwaysapps.com/'
   },
+    {
+      image:[Solardesktop,Solariphone],
+      logo:Solarlogo,
+      desc:`We proudly partnered with Petrichor Solar to pioneer the future of sustainable energy solutions. Our collaboration with Petrichor Solar forecasts rooftop solar panel installations as the leading force in the renewable energy sector. This visionary project exemplifies our commitment to revolutionizing the energy landscape, reducing carbon footprints, and promoting green energy adoption. Through expert consultation, top-notch installation services, and ongoing support, we aim to empower households and businesses worldwide to harness the power of the sun.`,
+      iconcolor:'#F3850E',
+      cardborder:'Solarcardborder',
+      className:'Solarcard',
+      tag:['Branding','web dev','social media handling'],
+      link:'#'
+  },
+
+    {
+      image:[Prospectdesktop,Prospectiphone],
+      logo:Prospectlogo,
+      desc:`We proudly partnered with Prospect Tutors to redefine educational success. Our collaboration introduces a comprehensive tutoring system that caters to students across all levels, from beginner to advanced. This initiative not only enhances the learning experience with expert instruction but also empowers parents to monitor their children's progress in real-time. Together, we are committed to fostering academic excellence and providing a transparent, effective, and engaging educational journey for students worldwide.`,
+      iconcolor:'#028ED9',
+      cardborder:'Propspectcardborder',
+      className:'Prospectcard',
+      tag:['Branding','web dev','social media handling'],
+      link:'#'
+  },
+
+    {
+      image:[Brandsagadesktop,Brandsagaiphone],
+      logo:Brandsagalogo,
+      desc:`We are excited to collaborate with BrandSaga, a leader in celebrity and influencer marketing services. By partnering with top influencers and celebrities, BrandSaga helps brands amplify their presence and achieve remarkable growth. This initiative reflects our dedication to innovating marketing strategies and driving brand success in the ever-evolving digital landscape.`,
+      iconcolor:'#A71E22',
+      cardborder:'Brandsagacardborder',
+      className:'Brandsagacard',
+      tag:['Branding','web dev','social media handling'],
+      link:'#'
+  },
+
+    {
+      image:[Amazondesktop,Amazoniphone],
+      logo:Amazonlogo,
+      desc:`We developed an AI-based Helmet Adherence System for Amazon, enhancing delivery associate safety by verifying helmet usage through real-time image analysis. The system features automatic helmet detection, real-time monitoring, and a user-friendly interface, ensuring easy adoption and compliance. It safeguards data privacy by recording only helmet status and timestamps. This solution reduces head injury risks, streamlines verification, and ensures compliance with safety regulations.`,
+      iconcolor:'#00ACD7',
+      cardborder:'Amazoncardborder',
+      className:'Amazoncard',
+      tag:['Branding','web dev','social media handling'],
+      link:'#'
+  },
+
+
 
 ]
 

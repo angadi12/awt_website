@@ -198,6 +198,29 @@
 
 }
 
+.Solarcard{
+  background: linear-gradient(92.93deg, #DABEFF 4.11%, #F3850E 131.17%);
+
+}
+
+
+.Prospectcard{
+
+  background: linear-gradient(92.93deg, #E5F4FB 4.11%, #028ED9 131.17%);
+
+}
+
+
+.Brandsagacard{
+  background: linear-gradient(92.93deg, #FFADA6 4.11%, #AB1E00 131.17%);
+
+}
+
+.Amazoncard{
+  background: linear-gradient(89.15deg, #FFCAE8 1.76%, #52DDFF 99.2%);
+
+}
+
 .biryanibordercard{
   border: 1.2px solid #FFA4A7;
 }
@@ -216,4 +239,25 @@
 
 .mythricardborder{
   border: 1.2px solid #BDE6FB;
+}
+
+
+.Solarcardborder{
+  border: 1.2px solid #F06034;
+}
+
+.Propspectcardborder{
+  border: 1.2px solid #028ED9;
+}
+
+.Propspectcardborder{
+  border: 1.2px solid #028ED9;
+}
+
+.Brandsagacardborder{
+  border: 1.2px solid #D33313;
+}
+
+.Amazoncardborder{
+  border: 1.2px solid #00ACD7;
 }

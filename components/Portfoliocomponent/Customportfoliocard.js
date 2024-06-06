@@ -23,10 +23,10 @@ const router=useRouter()
     >
       <div className="flex flex-col justify-between items-start gap-24 w-full">
         <div className="flex flex-col justify-center items-start gap-2">
-          <Image src={data.logo} className="object-contain" alt="logo" />
+          <Image src={data.logo} className="object-contain w-60 h-20" alt="logo" />
           <Divider />
           <p className="text-sm font-medium leading-7">{data.desc}</p>
-          <div className="flex items-center gap-2 flex-wrap">
+        {data.className !=='Amazoncard' &&  <div className="flex items-center gap-2 flex-wrap">
             {data.tag.map((item, i) => (
               <div
                 key={i}
@@ -35,9 +35,9 @@ const router=useRouter()
                 {item}
               </div>
             ))}
-          </div>
+          </div>}
         </div>
-        <div className="flex justify-start items-center md:gap-8 lg:gap-8 gap-2 w-full">
+       {data.className !=='Amazoncard' && <div className="flex justify-start items-center md:gap-8 lg:gap-8 gap-2 w-full">
           <div>
             <Button onPress={()=>router.push(`${data.link}`)} className="ring-1 rounded-full text-xs md:text-sm lg:text-sm font-bold uppercase ring-black text-black bg-transparent text-center md:w-60 lg:w-60">
               View website
@@ -55,7 +55,7 @@ const router=useRouter()
               Case Study
             </p>
           </div>
-        </div>
+        </div>}
       </div>
 
       <div
