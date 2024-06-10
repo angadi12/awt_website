@@ -38,7 +38,7 @@ import Brandsagalogo from '../../public/Portfolioasset/Brandsagalogo.png'
 
 
 import Amazondesktop from '../../public/Portfolioasset/Amazondesktop.png' 
-import Amazoniphone from '../../public/Portfolioasset/Amazoniphone.png' 
+import Amazoniphone from '../../public/Portfolioasset/AmazonIphone.png' 
 import Amazonlogo from '../../public/Portfolioasset/Amazonlogo.png' 
 
 

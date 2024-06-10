@@ -14,7 +14,7 @@ const page = () => {
         <Currentopening/>
         <Whywork/>
         <Ourhiringprocess/>
-        <Meetteam/>
+        {/* <Meetteam/> */}
     </section>
 
   )
