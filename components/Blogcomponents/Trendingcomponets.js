@@ -5,7 +5,7 @@ import Trending5 from '../../public/Solutionasset/Trending5.png';
 import { useRouter } from 'next/navigation';
 import Cardskeleton from './Cardskeleton';
 import Error from "../../public/Homeasset/Error.gif";
-import NoData from "../../public/Homeasset/NoData.gif"; 
+import NoData from "../../public/Homeasset/Nodata.gif"; 
 
 const Trendingcomponets = () => {
     const router=useRouter()

@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { Button, Divider, Pagination } from "@nextui-org/react";
 import Error from "../../public/Homeasset/Error.gif";
-import NoData from "../../public/Homeasset/NoData.gif"; // Assuming you have a no data image
+import NoData from "../../public/Homeasset/Nodata.gif"; 
 import Navlogo from "../../public/Solutionasset/Navlogo.png";
 import { useRouter } from "next/navigation";
 
@@ -170,7 +170,7 @@ const Ourblogs = () => {
           page={currentPage}
           onChange={setCurrentPage}
           classNames={{
-        wrapper: "gap-0 overflow-visible h-10 p-1 rounded border border-divider",
+        wrapper: "gap-0 overflow-visible h-10 p-1 rounded ",
         item: "w-8 h-8 text-small rounded-none bg-transparent",
         cursor:
           " bg-gradient-to-b shadow-lg from-[#FF7143] to-[#FF7143]",

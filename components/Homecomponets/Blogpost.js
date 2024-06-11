@@ -6,7 +6,7 @@ import { Pagination } from "@nextui-org/react";
 import Cardskeleton from '../Blogcomponents/Cardskeleton';
 import Navlogo from "../../public/Solutionasset/Navlogo.png";
 import Error from "../../public/Homeasset/Error.gif";
-import NoData from "../../public/Homeasset/NoData.gif"; 
+import NoData from "../../public/Homeasset/Nodata.gif"; 
 import { useRouter } from 'next/navigation';
 
 const Blogpost = () => {
