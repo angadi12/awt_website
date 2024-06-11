@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
@@ -11,6 +11,8 @@ import Uiuxdesign from "../../public/Solutionasset/Jobicon.png";
 import Appdeveloper from "../../public/Solutionasset/Jobicon1.png";
 import Bussinessanalyst from "../../public/Solutionasset/Jobicon2.png";
 import DefaultIcon from "../../public/Solutionasset/Jobicon1.png"; // Add a default icon
+import Error from "../../public/Homeasset/Error.gif";
+import Nodata from "../../public/Homeasset/Nodata.gif";
 
 const Currentopening = () => {
   const router = useRouter();
@@ -28,7 +30,7 @@ const Currentopening = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/awt/jobs/Get");
+        const response = await fetch("https://awt-backend.onrender.com/api/awt/jobs/Get");
         if (!response.ok) {
           throw new Error("Failed to fetch jobs");
         }
@@ -50,7 +52,16 @@ const Currentopening = () => {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return (
+      <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
+        <h6 className="md:text-2xl lg:text-2xl text-lg tracking-wider font-bold">Current Available Openings</h6>
+       <div className="w-full flex justify-center items-center  flex-col ">
+        <Image src={Error} alt="error" />
+        {error}
+
+       </div>
+      </div>
+    );
   }
 
   return (
@@ -60,7 +71,10 @@ const Currentopening = () => {
       </div>
 
       {jobs.length === 0 ? (
-        <div className="text-center text-gray-500 text-lg">No current openings available.</div>
+        <div className="text-center text-gray-500 text-lg flex justify-center items-center gap-2">
+         <Image src={Nodata} alt="Nodata"/>
+          No current openings available.
+        </div>
       ) : (
         <div className="flex flex-col w-11/12 mx-auto justify-center items-center gap-8">
           {jobs.map((job, index) => (
