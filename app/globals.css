@@ -264,3 +264,32 @@
 
 
 
+/* slider */
+
+/* app/slider.css */
+
+/* app/slider.css */
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slider-content {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.slide {
+  display: inline-block;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 176px; /* Adjust according to your image size */
+  height: 128px; /* Adjust according to your image size */
+  margin-right: 20px; /* Adjust the gap between images */
+}

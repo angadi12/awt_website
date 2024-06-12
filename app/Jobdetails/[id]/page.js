@@ -4,7 +4,8 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Button, Divider } from '@nextui-org/react';
+import { Divider } from '@nextui-org/react';
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import { IoIosArrowRoundBack } from 'react-icons/io';
 import { FaLocationDot, FaCalendar } from 'react-icons/fa6';
 import { MdOutlineWork, MdAccessTimeFilled } from 'react-icons/md';
@@ -20,6 +21,7 @@ import Jobicon from '../../../public/Solutionasset/Jobicon.png';
 import Jobicon1 from '../../../public/Solutionasset/Jobicon1.png';
 import Jobicon2 from '../../../public/Solutionasset/Jobicon2.png';
 import DefaultIcon from '../../../public/Solutionasset/Jobicon1.png';
+import Loading from '@/app/loading';
 
 const Jobdetails = ({ params }) => {
   const { id } = params;
@@ -27,6 +29,8 @@ const Jobdetails = ({ params }) => {
   const [job, setJob] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
 
   const iconMapping = {
     'UI UX Designer': Jobicon,
@@ -55,7 +59,7 @@ const Jobdetails = ({ params }) => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading/>;
   }
 
   if (error) {
@@ -216,9 +220,56 @@ const Jobdetails = ({ params }) => {
         </div>
 
         <div className="w-full justify-center items-center text-center">
-          <Button className="text-white bg-[#FF7143] rounded-full text-center w-60">Apply</Button>
+          <Button onPress={onOpen} className="text-white bg-[#FF7143] rounded-full text-center w-60">Apply</Button>
         </div>
       </section>
+
+
+      <Modal 
+        backdrop="opaque" 
+        isOpen={isOpen} 
+        size='full'
+        onOpenChange={onOpenChange}
+        motionProps={{
+          variants: {
+            enter: {
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.3,
+                ease: "easeOut",
+              },
+            },
+            exit: {
+              y: -20,
+              opacity: 0,
+              transition: {
+                duration: 0.2,
+                ease: "easeIn",
+              },
+            },
+          }
+        }}
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Apply</ModalHeader>
+              <ModalBody>
+                
+              </ModalBody>
+              <ModalFooter className='flex justify-center items-center'>
+                {/* <Button color="danger" variant="light" onPress={onClose}>
+                  Cancel
+                </Button> */}
+                <Button className='bg-[#FF7143] rounded-full text-white font-bold' onPress={onClose}>
+                 Submit Details
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </>
   );
 };

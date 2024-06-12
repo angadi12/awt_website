@@ -65,7 +65,7 @@ const Companytrust = () => {
 
 
   return (
-    <section className="flex flex-col justify-start items-start py-8 gap-8">
+    <section className="flex flex-col justify-start items-start py-8 gap-8 w-full">
       <div className="w-11/12 mx-auto">
         <h6 className="md:text-3xl text-2xl font-bold capitalize">
         companies who 
@@ -77,7 +77,7 @@ const Companytrust = () => {
         </h6>
       </div>
 
-      <div className="w-full   md:h-52 lg:h-52 flex justify-center items-center  ">
+      {/* <div className="w-full   md:h-52 lg:h-52 flex justify-center items-center  ">
         <div className="flex justify-evenly gap-4 items-center slideranimation  overflow-hidden">
           {shuffledImages.map((value, i) => (
             <Image
@@ -88,7 +88,7 @@ const Companytrust = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -2,6 +2,7 @@ import Aboutawt from '@/components/Aboutuscomponent/Aboutawt'
 import Accordiancustom from '@/components/Aboutuscomponent/Accordiancustom'
 import Companytrust from '@/components/Aboutuscomponent/Companytrust'
 import Meetteam from '@/components/Aboutuscomponent/Meetteam'
+import Newslider from '@/components/Aboutuscomponent/Newslider'
 import Skillsbar from '@/components/Aboutuscomponent/Skillsbar'
 import Visionandmission from '@/components/Aboutuscomponent/Visionandmission'
 import Locationcard from '@/components/Contactuscomponets/Locationcard'
@@ -16,6 +17,7 @@ const page = () => {
        <Visionandmission/>
        <Skillsbar/>
        <Companytrust/>
+      <Newslider/>
        {/* <Meetteam/> */}
        <Accordiancustom/>
        <Locationcard/>

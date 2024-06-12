@@ -80,7 +80,7 @@ const Currentopening = () => {
           {jobs.map((job, index) => (
             <motion.div
               onClick={() => router.push(`/Jobdetails/${job._id}`)}
-              whileTap={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.8 }}
               key={index}
               className="bg-white w-full md:h-40 lg:h-40 h-auto px-4 py-4 flex flex-col md:flex-row lg:flex-row lg:items-center items-start justify-between gap-12 md:gap-0 lg:gap-0 md:items-center"
