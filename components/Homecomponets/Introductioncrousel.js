@@ -102,7 +102,7 @@ const Introductioncrousel = () => {
         transition={{ duration: 1 }}
         className="flex flex-col justify-start items-start gap-4 "
       >
-        <p className="text-justify text-sm md:text-lg lg:text-lg leading-7 font-medium">{`we envision a future where every digital interaction is seamlessly connected, enriching lives and empowering businesses worldwide. We strive to be pioneers in innovation, crafting best solutions that redefine the digital landscape. Our vision is to inspire and transform, the world where possibilities are limitless.`}</p>
+        <p className="text-justify text-sm md:text-lg lg:text-lg leading-7 font-medium">{`We envision a future where every digital interaction is seamlessly connected, enriching lives and empowering businesses worldwide. We strive to be pioneers in innovation, crafting best solutions that redefine the digital landscape. Our vision is to inspire and transform, the world where possibilities are limitless.`}</p>
         <Divider className="bg-black" />
         <span className={`text-2xl font-bold text-black ${inter.className}`}>
           {`“Shaping a boundless digital future where innovation thrives and businesses flourish.”`}{" "}

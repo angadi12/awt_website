@@ -12,6 +12,7 @@ import Aboutawtimg2 from '../../public/Solutionasset/Aboutawtimg.png'
 import Exptag from '../../public/Solutionasset/Exptag.png'
 import Customanimationslide from '../Homecomponets/Customanimationslide';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Aboutawt = () => {
   const router =useRouter()
@@ -43,12 +44,12 @@ const Aboutawt = () => {
         </Button>
         <Divider className='bg-gray-500  h-12 mt-4 hidden md:block' orientation='vertical'/>
         <div className='flex justify-between gap-8 items-center mt-4'>
-            <div className='flex justify-center items-start ring-1 ring-black rounded-full p-2'>
+            <Link href={'tel:9110314465'}><div className='flex justify-center items-start ring-1 ring-black rounded-full p-2'>
                 <MdLocalPhone size={40}/>
-            </div>
+            </div></Link>
             <div className='flex flex-col justify-center items-start'>
                 <span className='uppercase font-medium text-[#FF7143]'>call us at</span>
-                <span className='font-bold'>+91-9110314465</span>
+                <Link href={'tel:9110314465'}><span className='font-bold'>+91-9110314465</span></Link>
             </div>
         </div>
         </div>

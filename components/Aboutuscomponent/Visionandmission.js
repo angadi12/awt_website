@@ -26,6 +26,15 @@ function Visionandmission() {
     }
   };
 
+
+  const handleScrollToFAQ = () => {
+    const faqPosition = 4000; // Replace with your desired scroll position
+    window.scrollTo({
+      top: faqPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="flex flex-col gap-8 justify-center items-center mx-auto w-full">
       <div className="w-11/12 mx-auto">
@@ -75,7 +84,7 @@ function Visionandmission() {
          Contact us
         </Button>
         <Divider className='bg-gray-500  h-12 mt-4 hidden md:block' orientation='vertical'/>
-        <div className='flex justify-between gap-8 items-center mt-4'>
+        <div onClick={handleScrollToFAQ} className='flex justify-between gap-8 items-center mt-4 cursor-pointer'>
             <div className='flex justify-center items-start ring-1 ring-black rounded-full p-2'>
                <Image className="w-8 h-8 object-contain" src={FAQ} alt="FAQ"/>
             </div>

@@ -53,32 +53,63 @@ const page = () => {
 
   const data=[
     {
+      image:[Amazondesktop,Amazoniphone],
+      logo:Amazonlogo,
+      desc:`We developed an AI-based Helmet Adherence System for Amazon, enhancing delivery associate safety by verifying helmet usage through real-time image analysis. The system features automatic helmet detection, real-time monitoring, and a user-friendly interface, ensuring easy adoption and compliance. It safeguards data privacy by recording only helmet status and timestamps. This solution reduces head injury risks, streamlines verification, and ensures compliance with safety regulations.`,
+      iconcolor:'#00ACD7',
+      cardborder:'Amazoncardborder',
+      className:'Amazoncard',
+      tag:['Branding','web dev','social media handling'],
+      link:'#'
+  },
+  {
+    image:[Prospectdesktop,Prospectiphone],
+    logo:Prospectlogo,
+    desc:`We proudly partnered with Prospect Tutors to redefine educational success. Our collaboration introduces a comprehensive tutoring system that caters to students across all levels, from beginner to advanced. This initiative not only enhances the learning experience with expert instruction but also empowers parents to monitor their children's progress in real-time. Together, we are committed to fostering academic excellence and providing a transparent, effective, and engaging educational journey for students worldwide.`,
+    iconcolor:'#028ED9',
+    cardborder:'Propspectcardborder',
+    className:'Prospectcard',
+    tag:['Branding','web dev','social media handling'],
+    link:'#'
+},
+{
+  image:[Winkadsdesktop,Winkadsiphone],
+  logo:Winklogo,
+  desc:`Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
+  iconcolor:'#00BFB5',
+  cardborder:'winkadscardborder',
+  className:'winkadscard',
+  tag:['Branding','web dev','social media handling'],
+  link:'https://winkads.in/'
+},
+{
+  image:[Solardesktop,Solariphone],
+  logo:Solarlogo,
+  desc:`We proudly partnered with Petrichor Solar to pioneer the future of sustainable energy solutions. Our collaboration with Petrichor Solar forecasts rooftop solar panel installations as the leading force in the renewable energy sector. This visionary project exemplifies our commitment to revolutionizing the energy landscape, reducing carbon footprints, and promoting green energy adoption. Through expert consultation, top-notch installation services, and ongoing support, we aim to empower households and businesses worldwide to harness the power of the sun.`,
+  iconcolor:'#F3850E',
+  cardborder:'Solarcardborder',
+  className:'Solarcard',
+  tag:['Branding','web dev','social media handling'],
+  link:'#'
+},
+
+{
+  image:[Vitamindesktop,Vitaminiphone],
+  logo:Vitaminslogo,
+  desc:`Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
+  iconcolor:'#9747FF',
+  cardborder:'vitaminscardborder',
+  className:'vitaminscard',
+  tag:['Branding','web dev','social media handling'],
+  link:''
+},
+    {
       image:[biryanidesktop,biryaniiphone],
       logo:biryani,
       desc:`We proudly partnered with 90s Biryani to pioneer the future of Indian culinary delights. Our collaboration with 90s Biryani.com forecasts 'Biryani' as the reigning champion in the realm of Indian food service and delivery. This visionary project exemplifies our commitment to revolutionizing the culinary landscape and delighting taste buds worldwide.`,
       iconcolor:'#A71E22',
       cardborder:'biryanibordercard',
       className:'biryanicard',
-      tag:['Branding','web dev','social media handling'],
-      link:''
-  },
-    {
-      image:[Winkadsdesktop,Winkadsiphone],
-      logo:Winklogo,
-      desc:`Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
-      iconcolor:'#00BFB5',
-      cardborder:'winkadscardborder',
-      className:'winkadscard',
-      tag:['Branding','web dev','social media handling'],
-      link:'https://winkads.in/'
-  },
-    {
-      image:[Vitamindesktop,Vitaminiphone],
-      logo:Vitaminslogo,
-      desc:`Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
-      iconcolor:'#9747FF',
-      cardborder:'vitaminscardborder',
-      className:'vitaminscard',
       tag:['Branding','web dev','social media handling'],
       link:''
   },
@@ -102,27 +133,8 @@ const page = () => {
       tag:['Branding','web dev','social media handling'],
       link:'https://wordpress-1272405-4594953.cloudwaysapps.com/'
   },
-    {
-      image:[Solardesktop,Solariphone],
-      logo:Solarlogo,
-      desc:`We proudly partnered with Petrichor Solar to pioneer the future of sustainable energy solutions. Our collaboration with Petrichor Solar forecasts rooftop solar panel installations as the leading force in the renewable energy sector. This visionary project exemplifies our commitment to revolutionizing the energy landscape, reducing carbon footprints, and promoting green energy adoption. Through expert consultation, top-notch installation services, and ongoing support, we aim to empower households and businesses worldwide to harness the power of the sun.`,
-      iconcolor:'#F3850E',
-      cardborder:'Solarcardborder',
-      className:'Solarcard',
-      tag:['Branding','web dev','social media handling'],
-      link:'#'
-  },
+    
 
-    {
-      image:[Prospectdesktop,Prospectiphone],
-      logo:Prospectlogo,
-      desc:`We proudly partnered with Prospect Tutors to redefine educational success. Our collaboration introduces a comprehensive tutoring system that caters to students across all levels, from beginner to advanced. This initiative not only enhances the learning experience with expert instruction but also empowers parents to monitor their children's progress in real-time. Together, we are committed to fostering academic excellence and providing a transparent, effective, and engaging educational journey for students worldwide.`,
-      iconcolor:'#028ED9',
-      cardborder:'Propspectcardborder',
-      className:'Prospectcard',
-      tag:['Branding','web dev','social media handling'],
-      link:'#'
-  },
 
     {
       image:[Brandsagadesktop,Brandsagaiphone],
@@ -135,16 +147,7 @@ const page = () => {
       link:'#'
   },
 
-    {
-      image:[Amazondesktop,Amazoniphone],
-      logo:Amazonlogo,
-      desc:`We developed an AI-based Helmet Adherence System for Amazon, enhancing delivery associate safety by verifying helmet usage through real-time image analysis. The system features automatic helmet detection, real-time monitoring, and a user-friendly interface, ensuring easy adoption and compliance. It safeguards data privacy by recording only helmet status and timestamps. This solution reduces head injury risks, streamlines verification, and ensures compliance with safety regulations.`,
-      iconcolor:'#00ACD7',
-      cardborder:'Amazoncardborder',
-      className:'Amazoncard',
-      tag:['Branding','web dev','social media handling'],
-      link:'#'
-  },
+    
 
 
 
