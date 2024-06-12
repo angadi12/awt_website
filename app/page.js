@@ -12,10 +12,17 @@ import Technologies from "@/components/Homecomponets/Technologies";
 import Technologiesmobile from "@/components/Homecomponets/Technologiesmobile";
 import Whoworkmobile from "@/components/Homecomponets/Whoworkmobile";
 import Workwith from "@/components/Homecomponets/Workwith";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <main className="w-full m-0 p-0">
+      <Script
+        src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js"
+        type="text/javascript"
+        data-bot="118221755"
+      ></Script>
+
       <Hero />
       <Moto />
       <Brandslider />
@@ -25,12 +32,10 @@ export default function Home() {
       </div>
       <Digitalsuccess />
       <div className="hidden md:flex lg:flex">
-
-      <Technologies/>
-
+        <Technologies />
       </div>
       <div className="md:hidden lg:hidden flex">
-        <Technologiesmobile/>
+        <Technologiesmobile />
       </div>
       <Slidertext />
       <div className="hidden md:flex lg:flex">
