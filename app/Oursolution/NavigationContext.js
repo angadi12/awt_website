@@ -42,7 +42,7 @@ export const NavigationProvider = ({ children }) => {
 
   const handleTabSelectionChange = (key) => {
     setSelectedTab(key);
-    window.scrollTo({ top: 530, behavior: 'smooth' });
+    // window.scrollTo({ top: 530, behavior: 'smooth' });
     router.push('/Oursolution')
   };
 
