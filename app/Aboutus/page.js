@@ -11,7 +11,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <section className='flex flex-col justify-center items-center gap-8 mx-auto overflow-hidden'>
+    <section className='flex flex-col justify-center items-center gap-8 mx-auto overflow-hidden mb-6'>
        <Commonheader/>
        <Aboutawt/>
        <Visionandmission/>
