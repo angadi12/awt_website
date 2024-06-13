@@ -219,8 +219,9 @@ const Jobdetails = ({ params }) => {
           </div>
         </div>
 
-        <div className="w-full justify-center items-center text-center">
-          <Button onPress={onOpen} className="text-white bg-[#FF7143] rounded-full text-center w-60">Apply</Button>
+        <div className="w-full flex flex-col justify-center items-center text-center">
+          <p className='text-xs'>Share your resume </p>
+          <Button   className="text-white bg-[#FF7143] rounded-full text-center w-60">careers@angadiworldtech.com</Button>
         </div>
       </section>
 

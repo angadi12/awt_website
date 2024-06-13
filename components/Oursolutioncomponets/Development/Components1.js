@@ -6,6 +6,7 @@ import Image from "next/image";
 import Appdesignicon from "../../../public/Solutionasset/Appdev.png";
 import Websiteicon from "../../../public/Solutionasset/Webdev.png";
 import Appwebicon from "../../../public/Solutionasset/Softdev.png";
+import Qrtech from "../../../public/Solutionasset/Qrtech.png";
 import { Divider } from "@nextui-org/react";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Link from "next/link";
@@ -39,10 +40,19 @@ const Component1 = () => {
       icon: Appwebicon,
       title: (
         <span className={`uppercase text-sm font-bold`}>
-           <span className={hoverIndex === 2 ? "text-white mr-2" : "text-[#FF7143] mr-2"} >Software</span> Development
+           <span className={hoverIndex === 2 ? "text-white mr-2" : "text-[#FF7143] mr-2"} >Software</span><br></br> Development
         </span>
       ),
       link: "/Oursolution/Development/Softwaredev"
+    },
+    {
+      icon: Qrtech,
+      title: (
+        <span className={`uppercase text-sm font-bold`}>
+           <span className={hoverIndex === 3 ? "text-white mr-2" : "text-[#FF7143] mr-2"} >qr code</span><br></br> technology
+        </span>
+      ),
+      link: "/Oursolution/Development/qr-code-technology"
     },
   ];
 
@@ -58,7 +68,7 @@ const Component1 = () => {
         </div>
         <div className="w-full flex justify-center items-start flex-col">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 auto-cols-auto	 gap-8 w-full">
-            {carddata.slice(0, 2).map((value, index) => (
+            {carddata.map((value, index) => (
               <motion.div
                 key={index}
                 className={
@@ -81,7 +91,7 @@ const Component1 = () => {
               </motion.div>
             ))}
           </div>
-          <div className="mt-8 w-full">
+          {/* <div className="mt-8 w-full">
             <motion.div
               className="w-full h-48 gap-4 p-2 ring-1 ring-gray-400 flex flex-col justify-end items-start cursor-pointer"
               whileTap={{ scale: 1.2, backgroundColor: "#FF7143" }}
@@ -98,7 +108,7 @@ const Component1 = () => {
                   Learn more <HiArrowLongRight />
                 </span>
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between items-center gap-24 w-11/12 mx-auto py-24">

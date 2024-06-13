@@ -10,13 +10,11 @@ import { Divider } from "@nextui-org/react";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 const Component1 = () => {
   const router = useRouter();
   const [hoverIndex, setHoverIndex] = useState(null);
-
-
 
   const handleCardClick = (link) => {
     router.push(link);
@@ -27,7 +25,10 @@ const Component1 = () => {
       icon: Appdesignicon,
       title: (
         <span className="uppercase text-sm font-bold">
-          <span className={hoverIndex==0?"text-white":"text-[#FF7143]"}>digital</span> <br></br>marketing
+          <span className={hoverIndex == 0 ? "text-white" : "text-[#FF7143]"}>
+            digital
+          </span>{" "}
+          <br></br>marketing
         </span>
       ),
       link: "/Oursolution/Marketing/DigitalMarketing",
@@ -36,7 +37,9 @@ const Component1 = () => {
       icon: Websiteicon,
       title: (
         <span className="uppercase text-sm font-bold">
-          <span  className={hoverIndex==1?"text-white":"text-[#FF7143]"}>search engine </span>
+          <span className={hoverIndex == 1 ? "text-white" : "text-[#FF7143]"}>
+            search engine{" "}
+          </span>
           <br></br> optimization
         </span>
       ),
@@ -46,7 +49,14 @@ const Component1 = () => {
       icon: Appwebicon,
       title: (
         <span className="uppercase text-sm font-bold">
-          <span  className={hoverIndex==2?"text-white mr-2":"text-[#FF7143] mr-2"}>digital</span>branding
+          <span
+            className={
+              hoverIndex == 2 ? "text-white mr-2" : "text-[#FF7143] mr-2"
+            }
+          >
+            digital
+          </span>
+          branding
         </span>
       ),
       link: "/Oursolution/Marketing/DigitalBranding",
@@ -67,7 +77,7 @@ const Component1 = () => {
                 className="ring-1 w-full h-64 gap-4 p-2 ring-gray-400 flex flex-col justify-end items-start cursor-pointer"
                 whileTap={{ scale: 1.2, backgroundColor: "#FF7143" }}
                 whileHover={{ scale: 1.1, backgroundColor: "#FF7143" }}
-                transition={{duration:1,type:'spring'}}
+                transition={{ duration: 1, type: "spring" }}
                 onClick={() => handleCardClick(value.link)}
                 onMouseOver={() => setHoverIndex(index)}
                 onMouseLeave={() => setHoverIndex(null)}
@@ -75,9 +85,9 @@ const Component1 = () => {
                 <Image className="" src={value.icon} alt="icon" />
                 {value.title}
                 <Divider />
-                  <span className="flex gap-2 justify-end w-full text-xs uppercase items-center text-right">
-                    Learn more <HiArrowLongRight />
-                  </span>
+                <span className="flex gap-2 justify-end w-full text-xs uppercase items-center text-right">
+                  Learn more <HiArrowLongRight />
+                </span>
               </motion.div>
             ))}
           </div>
@@ -89,15 +99,14 @@ const Component1 = () => {
               onMouseOver={() => setHoverIndex(2)}
               onMouseLeave={() => setHoverIndex(null)}
               onClick={() => handleCardClick(cardData[2].link)}
-              transition={{duration:1,type:'spring'}}
-
+              transition={{ duration: 1, type: "spring" }}
             >
               <Image className="" src={cardData[2].icon} alt="icon" />
               {cardData[2].title}
               <Divider />
-                <span className="flex gap-2 w-full justify-end text-xs uppercase items-center text-right">
-                  Learn more <HiArrowLongRight />
-                </span>
+              <span className="flex gap-2 w-full justify-end text-xs uppercase items-center text-right">
+                Learn more <HiArrowLongRight />
+              </span>
             </motion.div>
           </div>
         </div>

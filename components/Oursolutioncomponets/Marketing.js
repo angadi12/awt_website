@@ -25,7 +25,7 @@ const Marketing = () => {
       </h6>
     </div>
 
-    <div className="w-full flex-col flex justify-center items-center mx-auto py-12">
+    <div className="w-full flex-col flex justify-center items-center mx-auto ">
       <div className="">
         <Component1/>
       </div>

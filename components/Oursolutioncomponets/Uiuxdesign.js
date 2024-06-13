@@ -30,7 +30,7 @@ const Uiuxdesign = () => {
         </h6>
       </div>
 
-      <div className="w-full flex-col flex justify-center items-center mx-auto md:py-12 lg:py-12 ">
+      <div className="w-full flex-col flex justify-center items-center mx-auto">
         <div className="">
           <Component1/>
         </div>

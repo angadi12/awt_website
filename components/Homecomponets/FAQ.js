@@ -199,7 +199,7 @@ const FAQ = () => {
   const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
-    <div className="w-full flex flex-col-reverse md:flex-col lg:flrx-col justify-center items-center py-16  mx-auto">
+    <div className="w-full flex flex-col-reverse md:flex-col lg:flrx-col justify-center items-center  mx-auto">
       <div className="w-11/12 grid md:grid-cols-6 lg:grid-cols-6 grid-cols-3 place-content-center justify-evenly items-start gap-2">
         {tab.map((value, index) => (
           <Button

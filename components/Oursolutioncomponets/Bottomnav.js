@@ -20,8 +20,8 @@ const Bottomnav = () => {
 
 
   return (
-    <footer className="fixed -bottom-12 w-full z-40 " >
-    <Navbar  shouldHideOnScroll maxWidth="" className="w-full z-40 h-12 justify-center items-center bg-white ">
+    <footer className="fixed bottom-0 w-full z-40 " >
+    <Navbar  maxWidth="" className="w-full z-40 h-12 justify-center items-center bg-white ring-1 ring-gray-300">
     <NavbarContent className="flex justify-center items-center mx-auto w-full  md:-ml-20 lg:-ml-20 -ml-8">
 
     <Tabs

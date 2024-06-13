@@ -109,6 +109,13 @@ const Commonheader = () => {
           image:Softwaredevelopment
         });
         break;
+      case "/Oursolution/Development/qr-code-technology":
+        setTitle({
+          main: "QR-Code ",
+          highlight: "Technology",
+          image:Softwaredevelopment
+        });
+        break;
       case "/Oursolution/Services/DigitalMakeover":
         setTitle({
           main: "Digital ",
@@ -127,6 +134,13 @@ const Commonheader = () => {
         setTitle({
           main: "Cloud  ",
           highlight: "Consultation",
+          image:Clodcomputing
+        });
+        break;
+      case "/Oursolution/Services/project-consulting":
+        setTitle({
+          main: "Project  ",
+          highlight: "Consulting",
           image:Clodcomputing
         });
         break;
@@ -220,10 +234,10 @@ const Commonheader = () => {
   useEffect(() => {
     if (pathname === '/Oursolution') {
       const tabTitleMap = {
-        UIUX: { main: 'Our', highlight: 'Solutions', image: imageMapping.UIUX },
-        SERVICES: { main: 'Our', highlight: 'Solutions', image: imageMapping.SERVICES },
-        MARKETING: { main: 'Our', highlight: 'Solutions', image: imageMapping.MARKETING },
-        DEVELOPMENT: { main: 'Our', highlight: 'Solutions', image: imageMapping.DEVELOPMENT }
+        UIUX: { main: 'Our Solutions', highlight:` - UI UX Design `, image: imageMapping.UIUX },
+        SERVICES: { main: 'Our Solutions', highlight: '- Services', image: imageMapping.SERVICES },
+        MARKETING: { main: 'Our Solutions', highlight: '- Marketing', image: imageMapping.MARKETING },
+        DEVELOPMENT: { main: 'Our Solutions', highlight: '- Development', image: imageMapping.DEVELOPMENT }
       };
 
       if (tabTitleMap[selectedTab]) {
@@ -235,7 +249,7 @@ const Commonheader = () => {
   }, [selectedTab, pathname]);
 
 
-
+console.log(selectedTab)
 
   return (
     <header className="  relative w-full py-8 ">

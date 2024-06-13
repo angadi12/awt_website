@@ -9,6 +9,7 @@ import { Divider } from "@nextui-org/react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRouter } from 'next/navigation';
+import Projectcon from "../../../public/Solutionasset/Projectcon.png";
 
 const Component8 = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -62,13 +63,27 @@ const Component8 = () => {
           ),
           link: "/Oursolution/Services/GraphicDesign",
         },
+        {
+          icon: Projectcon,
+          title: (
+            <span className="uppercase text-sm font-bold">
+              <span className={hoverIndex===3?"text-white mr-2":"text-[#FF7143] mr-2"}>project</span><br></br>consultation
+            </span>
+          ),
+          Redirect: (
+            <span className="flex gap-2 justify-end text-xs ml-auto w-full uppercase items-center text-right">
+              Learn more <HiArrowLongRight />
+            </span>
+          ),
+          link: "/Oursolution/Services/project-consulting",
+        },
       ];
   return (
     <section className='w-full mt-16'>
         <div className='w-11/12 mx-auto'>
             <h6 className='md:text-3xl lg:text-3xl text-2xl font-bold'>Our Development Solutions!</h6>
         </div>
-        <div className="grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 justify-center auto-cols-auto py-10	 gap-8 w-11/12 mx-auto">
+        <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 justify-center auto-cols-auto py-10	 gap-8 w-11/12 mx-auto">
             {carddata.map((value, index) => (
               <motion.div
                 whileTap={{ scale: 1.2, backgroundColor: "#FF7143" }}

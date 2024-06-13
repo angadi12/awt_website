@@ -5,7 +5,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <section className='flex flex-col justify-center items-center gap-8 mx-auto'>
+    <section className='flex flex-col justify-center items-center gap-8 mx-auto mb-6'>
        <Commonheader/>
        <Contactform/>
        <Locationcard/>
