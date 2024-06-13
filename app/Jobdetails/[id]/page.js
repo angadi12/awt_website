@@ -22,6 +22,7 @@ import Jobicon1 from '../../../public/Solutionasset/Jobicon1.png';
 import Jobicon2 from '../../../public/Solutionasset/Jobicon2.png';
 import DefaultIcon from '../../../public/Solutionasset/Jobicon1.png';
 import Loading from '@/app/loading';
+import Link from 'next/link';
 
 const Jobdetails = ({ params }) => {
   const { id } = params;
@@ -221,7 +222,7 @@ const Jobdetails = ({ params }) => {
 
         <div className="w-full flex flex-col justify-center items-center text-center">
           <p className='text-xs'>Share your resume </p>
-          <Button   className="text-white bg-[#FF7143] rounded-full text-center w-60">careers@angadiworldtech.com</Button>
+          <Link href={'mailto:careers@angadiworldtech.com'}><Button   className="text-white bg-[#FF7143] rounded-full text-center w-60">careers@angadiworldtech.com</Button></Link>
         </div>
       </section>
 
