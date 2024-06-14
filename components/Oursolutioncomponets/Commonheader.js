@@ -33,6 +33,8 @@ import Clodcomputing from '../../public/Bannerimage/Clodcomputing.png'
 import Digitalmarketing from '../../public/Bannerimage/Digitalmarketing.png'
 import SEO from '../../public/Bannerimage/SEO.png'
 import Digitalbranding from '../../public/Bannerimage/Digitalbranding.png'
+import QRtech from '../../public/Bannerimage/QRtech.png'
+import Projectcounsulring from '../../public/Bannerimage/Projectcounsulring.png'
 
 import Oursolutionsuiux from '../../public/Bannerimage/Oursolutions/Oursolutionsuiux.png'
 import Oursolutionsservice from '../../public/Bannerimage/Oursolutions/Oursolutionsservice.png'
@@ -113,7 +115,7 @@ const Commonheader = () => {
         setTitle({
           main: "QR-Code ",
           highlight: "Technology",
-          image:Softwaredevelopment
+          image:QRtech
         });
         break;
       case "/Oursolution/Services/DigitalMakeover":
@@ -141,7 +143,7 @@ const Commonheader = () => {
         setTitle({
           main: "Project  ",
           highlight: "Consulting",
-          image:Clodcomputing
+          image:Projectcounsulring
         });
         break;
       case "/Oursolution/Marketing/Seo":

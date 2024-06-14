@@ -86,6 +86,14 @@ const Ourblogs = () => {
     );
   }
 
+  const truncateText = (text, length) => {
+    if (text.length <= length) {
+      return text;
+    }
+    return text.slice(0, length) + "...";
+  };
+  
+
   return (
     <section className="w-full flex flex-col justify-center items-center md:py-12 lg:py-12 mx-auto ">
       <div className="w-11/12 mx-auto py-12" ref={postsSectionRef}>
@@ -109,9 +117,9 @@ const Ourblogs = () => {
                 height={300}
               />
               <h6 className="text-xl font-semibold ">{post.title}</h6>
-              <p className="text-sm font-medium text-justify text-gray-700">
-                {post.description}{" "}
-                <span
+              <p className="text-sm font-medium text-justify text-gray-700 ">
+              {truncateText(post.description, 100)}{" "}
+              <span
                   onClick={() => router.push(`Blogdetails/${post._id}`)}
                   className="text-sm font-bold cursor-pointer"
                 >
@@ -136,7 +144,7 @@ const Ourblogs = () => {
             </div>
           ))}
         </div>
-        <div className="md:flex lg:flex flex-col justify-start items-start mx-auto px-4 gap-8 hidden ">
+        <div className="md:flex lg:flex w-2/6 flex-col justify-start items-start mx-auto px-4 gap-8 hidden ">
           <h6 className="text-xl font-bold ">Popular this week!</h6>
           <div>
             {posts.slice(0, 7).map((post, index) => (

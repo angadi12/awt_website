@@ -86,10 +86,10 @@ if (error) {
       <div className='grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 gap-4 justify-items-center items-center w-11/12 mx-auto'>
         {trendingPosts.map((post, index) => (
           <div onClick={()=>router.push(`Blogdetails/${post._id}`)} key={post._id} className='overflow-hidden h-80 cursor-pointer'>
-            <div className='flex justify-center items-center overflow-hidden relative'>
-              <Image className='brightness-[0.3] object-fill h-80' src={post.imageUrl} alt="imagepost" width={300} height={200} />
-              <Image className='absolute w-24 h-24' src={Trending5} alt="imagepost" />
-              <h6 className='absolute bottom-2 text-lg text-white text-start px-2 font-semibold'>{post.title}</h6>
+            <div className='flex justify-center  items-center overflow-hidden relative'>
+              <Image className='brightness-[0.3] object-fill h-80 ' src={post.imageUrl} alt="imagepost" width={300} height={200} />
+              <Image className='absolute w-24 h-24 mb-4' src={Trending5} alt="imagepost" />
+              <h6 className='absolute bottom-2 w-full text-white text-start px-2 font-semibold '>{post.title}</h6>
             </div>
           </div>
         ))}

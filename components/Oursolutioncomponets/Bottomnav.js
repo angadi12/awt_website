@@ -28,7 +28,7 @@ const Bottomnav = () => {
       selectedKey={selectedTab}
       onSelectionChange={handleTabSelectionChange}
       aria-label="Options"
-      variant="underlined"
+      variant="light"
       classNames={{
         tabList: "md:gap-8 lg:gap-8  mx-auto w-full text-black relative rounded-none p-0",
         cursor: "w-full bg-[#FF7143] text-black",

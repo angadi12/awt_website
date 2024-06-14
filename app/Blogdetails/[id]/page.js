@@ -21,6 +21,7 @@ import Jobicon2 from '../../../public/Solutionasset/Jobicon2.png';
 import DefaultIcon from '../../../public/Solutionasset/Jobicon1.png';
 import Dailyblogs from '../../../public/Bannerimage/Dailyblogs.png'
 import Loading from '@/app/loading';
+import Blogpost from '@/components/Homecomponets/Blogpost';
 
 const Blogdetails = ({ params }) => {
   const { id } = params;
@@ -41,7 +42,7 @@ const Blogdetails = ({ params }) => {
       try {
         const response = await fetch(`https://awt-backend.onrender.com/api/awt/blogs/Get/${id}`);
         if (!response.ok) {
-          throw new Error('Failed to fetch job details');
+          throw new Error('Failed to fetch Blogs details');
         }
         const data = await response.json();
         setblogs(data.data);
@@ -111,7 +112,7 @@ const Blogdetails = ({ params }) => {
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center gap-8 md:gap-0 lg:gap-0 justify-between items-start w-11/12 mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center gap-8  justify-between items-start w-11/12 mx-auto">
           <div className="flex flex-col justify-center items-start gap-8">
             <div className="flex flex-col justify-center items-start gap-2">
               <h6 className="text-3xl font-semibold tracking-wider">{Blogs.title}</h6>
@@ -119,7 +120,7 @@ const Blogdetails = ({ params }) => {
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
               <h6 className="capitalize font-bold tracking-wider">Description</h6>
-              <p className="text-justify text-sm font-medium leading-6">{Blogs.description}</p>
+              <p className="text-justify text-sm font-medium leading-7">{Blogs.description}</p>
             </div>
           </div>
           <div className="flex md:justify-end lg:justify-end justify-center items-start w-full">
@@ -134,13 +135,13 @@ const Blogdetails = ({ params }) => {
 
           <div className="w-full justify-center items-start gap-6">
               <div className="flex items-center gap-2 mb-2">
-                <p className="text-sm font-medium leading-6">{Blogs.content}</p>
+                <p className="text-sm font-medium leading-7 text-justify">{Blogs.content}</p>
               </div>
           
           </div>
         </div>
 
-        
+        <Blogpost/>
       </section>
     </>
   );
