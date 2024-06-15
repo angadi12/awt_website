@@ -20,9 +20,9 @@ const Bottomnav = () => {
 
 
   return (
-    <footer className="fixed bottom-0 w-full z-40 " >
-    <Navbar  maxWidth="" className="w-full z-40 h-12 justify-center items-center bg-white ring-1 ring-gray-300">
-    <NavbarContent className="flex justify-center items-center mx-auto w-full  md:-ml-20 lg:-ml-20 -ml-8">
+    <footer className="fixed bottom-0 w-full z-40 px-1 md:px-0 lg:px-0 " >
+    <Navbar  maxWidth="" className="w-full z-40 h-12 justify-center items-center bg-white ring-1 ring-gray-300 ">
+    <NavbarContent className="flex justify-center items-center mx-auto w-full   md:-ml-20 lg:-ml-20 -ml-8">
 
     <Tabs
       selectedKey={selectedTab}
@@ -30,8 +30,8 @@ const Bottomnav = () => {
       aria-label="Options"
       variant="light"
       classNames={{
-        tabList: "md:gap-8 lg:gap-8  mx-auto w-full text-black relative rounded-none p-0",
-        cursor: "w-full bg-[#FF7143] text-black",
+        tabList: "md:gap-8 lg:gap-8  mx-auto w-full text-black relative rounded-none",
+        cursor: "w-full bg-[#FF7143] text-black rounded-none",
         tab: "md:w-64 lg:w-64   h-12 text-black",
         tabContent: "group-data-[selected=true]:text-black text-gray-400  ",
       }}

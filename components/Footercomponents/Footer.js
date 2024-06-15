@@ -79,7 +79,7 @@ const Footer = () => {
         <Divider orientation="horizontal" />
       </div>
       <div className="flex flex-col justify-center items-center bg-black md:h-[60vh] lg:h-[60vh] h-[55vh]">
-        <div className="w-11/12 mx-auto flex md:flex-row flex-col justify-between items-start md:px-12">
+        <div className="w-11/12 mx-auto flex md:flex-row flex-col justify-between items-start ">
           <div className="flex flex-wrap md:gap-24 lg:gap-24 gap-4 w-full items-start">
             <div className="flex flex-col gap-4 justify-start items-start text-white uppercase">
               <p className="text-[#FF7143] font-semibold md:text-sm lg:text-sm text-[0.7rem]">

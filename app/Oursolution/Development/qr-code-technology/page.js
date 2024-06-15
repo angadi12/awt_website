@@ -10,6 +10,7 @@ import Component1 from "@/components/Oursolutioncomponets/Development/Qrtechnolo
 import Component2 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component2";
 import Component3 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component3";
 import Component4 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component4";
+import Component5 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component5";
 
 
 const Development = () => {
@@ -60,6 +61,7 @@ const Development = () => {
        <Component2/>
        <Component3/>
        <Component4/>
+       <Component5/>
         <Component6 />
         <Divider />
         <Component7 />
