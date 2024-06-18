@@ -20,7 +20,7 @@ export default function Home() {
       <Script
         src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js"
         type="text/javascript"
-        data-bot="118221755"
+        data-bot="111784435"
       ></Script>
 
       <Hero />
