@@ -15,20 +15,41 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
   const router = useRouter();
 
-  const handleSubscribe = () => {
-    // Simulate subscription process
-    if (email) {
-      // Here, you can integrate your actual subscription logic
-      toast.success("Thank you for subscribing!");
-      setEmail("");
-    } else {
-      toast.error("Please enter a valid email address.");
-    }
+  const validateEmail = (email) => {
+    const re =
+      /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return re.test(String(email).toLowerCase());
   };
 
+  const handleSubscribe = async () => {
+    try {
+      // Validate email format
+      if (!validateEmail(email)) {
+        throw new Error("Please enter a valid email address.");
+      }
+
+      // Make POST request to subscribe endpoint
+      const response = await fetch("https://awt-backend.onrender.com/api/awt/Contactus/Newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        toast.success("Thank you for subscribing!");
+        setEmail("");
+      } else {
+        throw new Error("Failed to subscribe. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Subscription error:", error.message);
+      toast.error(error.message);
+    }
+  };
   return (
     <div className="w-full flex flex-col bg-black">
       <div
