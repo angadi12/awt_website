@@ -19,9 +19,10 @@ import Jobicon from '../../../public/Solutionasset/Jobicon.png';
 import Jobicon1 from '../../../public/Solutionasset/Jobicon1.png';
 import Jobicon2 from '../../../public/Solutionasset/Jobicon2.png';
 import DefaultIcon from '../../../public/Solutionasset/Jobicon1.png';
-import Dailyblogs from '../../../public/Bannerimage/Dailyblogs.png'
+import Dailyblogs from '../../../public/Bannerimage/Dailyblogs.png';
 import Loading from '@/app/loading';
 import Blogpost from '@/components/Homecomponets/Blogpost';
+import parse from 'html-react-parser';
 
 const Blogdetails = ({ params }) => {
   const { id } = params;
@@ -29,13 +30,6 @@ const Blogdetails = ({ params }) => {
   const [Blogs, setblogs] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  const iconMapping = {
-    'UI UX Designer': Jobicon,
-    'App Developer': Jobicon1,
-    'Business Analyst': Jobicon2,
-    // Add other mappings if needed
-  };
 
   useEffect(() => {
     const fetchJobDetails = async () => {
@@ -57,26 +51,17 @@ const Blogdetails = ({ params }) => {
   }, [id]);
 
   if (loading) {
-    return <Loading/>;
+    return <Loading />;
   }
 
   if (error) {
-    return <div  className='h-screen flex justify-center items-center'>Error: {error}</div>;
+    return <div className='h-screen flex justify-center items-center'>Error: {error}</div>;
   }
 
   if (!Blogs) {
-    return <div  className='h-screen flex justify-center items-center'>No Blogs details available</div>;
+    return <div className='h-screen flex justify-center items-center'>No Blogs details available</div>;
   }
 
-
-//   const formatDate = (dateString) => {
-//     const date = new Date(dateString);
-  
-//     const options = { year: 'numeric', month: 'long', day: 'numeric' };
-//     return date.toLocaleDateString('en-US', options);
-//   };
-  
-//   const formattedDate = formatDate(job.closingDate);
   return (
     <>
       <header className="relative w-full py-8">
@@ -116,7 +101,6 @@ const Blogdetails = ({ params }) => {
           <div className="flex flex-col justify-center items-start gap-8">
             <div className="flex flex-col justify-center items-start gap-2">
               <h6 className="text-3xl font-semibold tracking-wider">{Blogs.title}</h6>
-            
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
               <h6 className="capitalize font-bold tracking-wider">Description</h6>
@@ -124,24 +108,21 @@ const Blogdetails = ({ params }) => {
             </div>
           </div>
           <div className="flex md:justify-end lg:justify-end justify-center items-start w-full">
-           <Image width={300} height={200} className='object-fill w-full h-80' src={Blogs.imageUrl} alt='thumbimage'/>
+            <Image width={300} height={200} className='object-fill w-full h-80' src={Blogs.imageUrl} alt='thumbimage' />
           </div>
         </div>
 
         <div className="w-11/12 mx-auto flex justify-center items-center flex-col gap-4 py-8">
-          {/* <div className="w-full mx-auto">
-            <h6 className="text-2xl font-semibold tracking-wider">Key Responsibilities</h6>
-          </div> */}
-
           <div className="w-full justify-center items-start gap-6">
-              <div className="flex items-center gap-2 mb-2">
-                <p className="text-sm font-medium leading-7 text-justify">{Blogs.content}</p>
+            <div className="flex items-center gap-2 mb-2">
+              <div className="text-sm font-medium leading-7 text-justify">
+                {parse(Blogs.content)}
               </div>
-          
+            </div>
           </div>
         </div>
 
-        <Blogpost/>
+        <Blogpost />
       </section>
     </>
   );
