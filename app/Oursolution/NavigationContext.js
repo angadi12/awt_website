@@ -47,7 +47,7 @@ export const NavigationProvider = ({ children }) => {
   };
 
   return (
-    <NavigationContext.Provider value={{ selectedTab, handleTabSelectionChange }}>
+    <NavigationContext.Provider value={{ selectedTab, handleTabSelectionChange,setSelectedTab }}>
       {children}
     </NavigationContext.Provider>
   );

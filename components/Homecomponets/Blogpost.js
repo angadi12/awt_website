@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Customanimationslide from "./Customanimationslide";
-import { Pagination } from "@nextui-org/react";
+import { Button, Pagination } from "@nextui-org/react";
 import Cardskeleton from "../Blogcomponents/Cardskeleton";
 import Navlogo from "../../public/Solutionasset/Navlogo.png";
 import Error from "../../public/Homeasset/Error.gif";
@@ -132,7 +132,7 @@ const Blogpost = () => {
       <div className="grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-8 place-content-center justify-items-center w-full md:py-12 ">
         {currentPosts.map((post) => (
           <div
-             onClick={() => {
+            onClick={() => {
               const destination = `/Blogdetails/${post._id}`;
               console.log(`Navigating to: ${destination}`);
               router.push(destination);
@@ -148,10 +148,19 @@ const Blogpost = () => {
               height={240}
             />
             <h6 className="text-xl font-semibold ">{post.title}</h6>
-            <p className="text-sm font-medium text-justify text-gray-700">
+            <p className="text-sm font-medium text-justify text-gray-700 cursor-pointer">
               {" "}
               {truncateText(post.description, 100)}{" "}
-              <span className="text-sm font-bold">Read More</span>
+              <Button
+                onClick={() => {
+                  const destination = `/Blogdetails/${post._id}`;
+                  console.log(`Navigating to: ${destination}`);
+                  router.push(destination);
+                }}
+                className="text-sm font-bold cursor-pointer bg-white text-[#FF7143]"
+              >
+                Read More
+              </Button>
             </p>
             <div className="flex justify-start items-center gap-4 py-4">
               <Image

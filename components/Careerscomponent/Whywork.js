@@ -39,12 +39,12 @@ const data=[
      <div className='w-11/12 py-8 mx-auto grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 place-content-center justify-center justify-items-center gap-8'>
         {
             data.map((value,index)=>(
-                <div key={index} className='flex flex-col justify-start items-start gap-4 md:w-40 lg:w-40'>
+                <div key={index} className='flex flex-col justify-start items-start gap-4 '>
                   <div className=' flex justify-center items-center'>
                     <Image className='w-16 h-16 object-contain ' src={value.icon} alt='icon'/>
                   </div>
                     <h6 className='text-lg font-semibold uppercase'>{value.title}</h6>
-                    <p className='text-sm font-medium text-justify md:break-all lg:break-all md:px-0 lg:px-0 px-2'>{value.desc}</p>
+                    <p className='text-sm font-medium text-start  md:px-0 lg:px-0 px-2'>{value.desc}</p>
                 </div>
             ))
         }

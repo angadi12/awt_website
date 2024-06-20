@@ -18,7 +18,7 @@ const Component3 = () => {
       desc: "A well-designed UI/UX enhances user satisfaction by providing a seamless and enjoyable experience. When users can easily navigate and accomplish tasks within the product, they are more likely to have a positive perception of it.",
     },
     {
-      title: "User Engagement1",
+      title: "User Engagement",
       desc: "An intuitive and visually appealing interface encourages user engagement. By incorporating elements that capture user attention and encourage interaction, UI/UX design helps keep users engaged and invested in the product.",
     },
     {
@@ -78,7 +78,7 @@ const Component3 = () => {
     <section className="flex flex-col justify-center items-center gap-8  py-12 full mx-auto">
       <div className="w-11/12 ">
         <h6 className="md:text-3xl lg:text-3xl text-lg font-bold tracking-wider">
-          Why do you need UI UX for your<br></br> Project?
+          Why do you need UI/UX for your<br></br> Project?
         </h6>
       </div>
       <div className="w-11/12 grid gap-8 place-content-center justify-center items-center md:grid-cols-2 lg:grid-cols-2 grid-cols-1">

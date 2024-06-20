@@ -4,12 +4,12 @@ import Component6 from "../../../../components/Oursolutioncomponets/Uiuxdesign/C
 import { Divider } from "@nextui-org/react";
 import Component7 from "../../../../components/Oursolutioncomponets/Uiuxdesign/Component7";
 import Component8 from "../../../../components/Oursolutioncomponets/Services/Component8";
-import qrcodegif from "../../../../public/Solutionasset/qrcodegif.gif";
+import Consulting from "../../../../public/Solutionasset/Consulting.gif";
 import Image from "next/image";
 import Component1 from "@/components/Oursolutioncomponets/Services/Projectconsultant/Component1";
-import Component2 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component2";
+import Component2 from "@/components/Oursolutioncomponets/Services/Projectconsultant/Component2";
 import Component3 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component3";
-import Component4 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component4";
+import Component4 from "@/components/Oursolutioncomponets/Services/Projectconsultant/Component4";
 import Component5 from "@/components/Oursolutioncomponets/Development/Qrtechnology/Component5";
 
 
@@ -51,7 +51,7 @@ const Development = () => {
             </div>
           </div>
           <div className="w-full flex justify-center items-start order-1 md:order-2 lg:order-2">
-            <Image className="" src={qrcodegif} alt="gif" />
+            <Image className="" src={Consulting} alt="gif" />
           </div>
         </div>
        <div className="w-11/12 mx-auto">
@@ -59,7 +59,7 @@ const Development = () => {
 
        </div>
        <Component2/>
-       <Component3/>
+       {/* <Component3/> */}
        <Component4/>
        <Component5/>
         <Component6 />

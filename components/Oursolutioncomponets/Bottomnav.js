@@ -40,7 +40,7 @@ const Bottomnav = () => {
         key="UIUX"
         title={
           <div className="flex items-center md:space-x-2 ">
-            <span className="md:text-sm lg:text-sm text-[0.6rem] font-bold">UI UX DESIGN</span>
+            <span className="md:text-sm lg:text-sm text-[0.6rem] font-bold">UI/UX DESIGN</span>
           </div>
         }
       />

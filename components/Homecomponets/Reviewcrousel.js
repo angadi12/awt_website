@@ -63,10 +63,10 @@ const Reviewcrousel = () => {
       desc: "Wanna get your business online? Then AWT is the best you can get!",
     },
     {
-      pic:Userpic7,
-      name: "Shashank HP ",
+      pic:Userpic6,
+      name: "Abhi Cookie",
       desg:'app development',
-      desc: "I needed digital marketing services, I came to AWT, now my brand is in top! Thanks to AWT!",
+      desc: "Its an employee friendly and fast growing Start up IT company. I got chance to learn new technologies n implement ideas, great team to work, supportive CEO.",
     },
     
   ];

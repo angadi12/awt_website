@@ -182,7 +182,7 @@ const Hero = () => {
           </div>
 
           <div>
-            <p className="md:text-sm lg:text-base text-sm  md:break-all  text-justify md:w-11/12 lg:w-11/12 w-full mx-auto  font-semibold leading-7">
+            <p className="md:text-sm lg:text-base text-sm   text-justify  w-full mx-auto  font-semibold leading-7">
               {`  At the heart of our service lies a dedication to fulfilling your
               needs, prioritizing your requirements, and ensuring your utmost
               satisfaction.`}

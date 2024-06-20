@@ -115,8 +115,8 @@ const Currentopening = () => {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-4">
-                <span className="md:text-lg lg:text-lg text-xs font-extrabold ">
-                  ₹ {job.package}.0 L/year
+                <span className="md:text-lg lg:text-lg text-xs font-bold ">
+                  ₹ {job.package} LPA / Year
                 </span>
               </div>
             </motion.div>

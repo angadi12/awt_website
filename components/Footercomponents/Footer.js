@@ -1,6 +1,6 @@
 "use client";
 import { Divider, Input } from "@nextui-org/react";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -12,10 +12,19 @@ import brand from "../../public/Homeasset/AWT.png";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import toast, { Toaster } from 'react-hot-toast';
+import { NavigationContext } from "../../app/Oursolution/NavigationContext"; 
 
 const Footer = () => {
   const [email, setEmail] = useState("");
   const router = useRouter();
+  const { selectedTab, handleTabSelectionChange,setSelectedTab } = useContext(NavigationContext);
+console.log(selectedTab)
+
+  // const handleTabSelectionChange = (key) => {
+  //   setSelectedTab(key);
+  //   // window.scrollTo({ top: 530, behavior: 'smooth' });
+  //   router.push('/Oursolution')
+  // };
 
   const validateEmail = (email) => {
     const re =
@@ -142,31 +151,31 @@ const Footer = () => {
                 solutions
               </p>
               <span
-                onClick={() => router.push("/Oursolution")}
+                onClick={() =>  handleTabSelectionChange("UIUX")}
                 className="md:text-xs hover:text-[#FF7143] lg:text-xs text-[0.7rem] text-white cursor-pointer"
               >
-                ui ux design
+                ui/ux design
               </span>
               <span
-                onClick={() => router.push("/Oursolution")}
+                onClick={() => {setSelectedTab("DEVELOPMENT"),router.push("/Oursolution/Development/Mobileappdev")}}
                 className="md:text-xs hover:text-[#FF7143] lg:text-xs text-[0.7rem] text-white cursor-pointer"
               >
                 development
               </span>
               <span
-                onClick={() => router.push("/Oursolution")}
+                onClick={() => {setSelectedTab("SERVICES"),router.push("/Oursolution/Services/DigitalMakeover")}}
                 className="md:text-xs hover:text-[#FF7143] lg:text-xs text-[0.7rem] text-white cursor-pointer"
               >
                 services
               </span>
               <span
-                onClick={() => router.push("/Oursolution")}
+                onClick={() => {setSelectedTab("MARKETING"),router.push("/Oursolution/Marketing/DigitalMarketing")}}
                 className="md:text-xs hover:text-[#FF7143] lg:text-xs text-[0.7rem] text-white cursor-pointer"
               >
                 marketing
               </span>
               <span
-                onClick={() => router.push("/Oursolution")}
+                onClick={() => router.push("/Oursolution/Services/project-consulting")}
                 className="md:text-xs hover:text-[#FF7143] lg:text-xs text-[0.7rem] text-white cursor-pointer"
               >
                 consultation
@@ -198,7 +207,7 @@ const Footer = () => {
               <span className="text-sm text-white cursor-pointer uppercase">
                 email
               </span>
-              <h6 className="md:text-2xl lg:text-2xl text-lg font-medium text-white">
+              <h6 className=" text-lg font-medium text-white">
                 <Link href={"mailto:info@angadiworldtech.com"}>
                   info@angadiworldtech.com
                 </Link>
@@ -209,7 +218,7 @@ const Footer = () => {
                   <span className="text-sm text-white cursor-pointer uppercase">
                     Phone
                   </span>
-                  <h6 className="md:text-2xl lg:text-2xl text-sm font-medium text-white">
+                  <h6 className="md:text-xl lg:text-xl text-sm font-medium text-white">
                     +91-9492963103
                     <br></br>+91-9110314465
                   </h6>
@@ -218,7 +227,7 @@ const Footer = () => {
                   <span className="text-sm text-white cursor-pointer uppercase">
                     UK
                   </span>
-                  <h6 className="md:text-2xl lg:text-2xl text-sm font-medium text-white">
+                  <h6 className="md:text-xl lg:text-xl text-sm font-medium text-white">
                     +44 7918255464
                   </h6>
                 </div>

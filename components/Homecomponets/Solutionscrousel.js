@@ -114,7 +114,7 @@ const Solutionscrousel = () => {
           MOBILE APP<br></br> DESIGN
         </h6>
       ),
-      subtitle: "UI UX Design",
+      subtitle: "UI/UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
       Link: "/Oursolution/Mobileappdesign",
       alt:' MOBILE APP DESIGN - Angadi World Technologies'
@@ -138,7 +138,7 @@ const Solutionscrousel = () => {
           web APP<br></br> DESIGN
         </h6>
       ),
-      subtitle: "UI UX Design",
+      subtitle: "UI/UX Design",
       desc: "Transform your online platform with sleek UI/UX design that captivates users and drives engagement to new heights.",
       Link: "/Oursolution/Webappdesign",
       alt:' web APP DESIGN - Angadi World Technologies'

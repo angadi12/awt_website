@@ -185,7 +185,7 @@ const Jobdetails = ({ params }) => {
 
           <div className="w-full justify-center items-start gap-6">
               <div className="flex items-center gap-2 mb-2">
-                <LuDot />
+               
                 <p className="text-sm font-medium leading-6">{job.responsibilities}</p>
               </div>
           
@@ -199,7 +199,7 @@ const Jobdetails = ({ params }) => {
 
           <div className="w-full justify-center items-start gap-6">
               <div  className="flex items-center gap-2 mb-2">
-                <LuDot />
+               
                 <p className="text-sm font-medium leading-6">{job.qualifications}</p>
               </div>
           
@@ -213,7 +213,7 @@ const Jobdetails = ({ params }) => {
 
           <div className="w-full justify-center items-start gap-6">
               <div  className="flex items-center gap-2 mb-2">
-                <LuDot />
+               
                 <p className="text-sm font-medium leading-6">{job.preferredQualifications}</p>
               </div>
           
@@ -221,8 +221,8 @@ const Jobdetails = ({ params }) => {
         </div>
 
         <div className="w-full flex flex-col justify-center items-center text-center">
-          <p className='text-xs'>Share your resume </p>
-          <Link href={'mailto:careers@angadiworldtech.com'}><Button   className="text-white bg-[#FF7143] rounded-full text-center w-60">careers@angadiworldtech.com</Button></Link>
+          <p className='text-xl font-semibold p-1'>Share your resume </p>
+          <Link href={'mailto:careers@angadiworldtech.com'}><Button   className="text-white bg-[#FF7143] rounded-full font-bold text-center px-2">careers@angadiworldtech.com</Button></Link>
         </div>
       </section>
 

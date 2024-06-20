@@ -75,7 +75,7 @@ const Accordiancustom = () => {
           <div className="flex justify-between items-center px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-8 w-full place-content-center justify-between items-center px-2 mx-auto">
               <div className="flex flex-col gap-4 justify-center items-start">
-                <p className="text-sm font-medium leading-7 "><span className="font-bold mr-2">Mr.Sravan Kumar Angadi</span>{`the CEO & Co-Founder of Angadi world Technologies (AWT) has been responsible for running all facets of AWT ever since its inception in 2018, he is an budding industry leader driving excellence and growth in the field of Software Technologies and Business Solution.`}</p>
+                <p className="text-base font-medium leading-7 "><span className="font-bold mr-2">Mr.Sravan Kumar Angadi</span>{`the CEO & Co-Founder of Angadi world Technologies (AWT) has been responsible for running all facets of AWT ever since its inception in 2018, he is an budding industry leader driving excellence and growth in the field of Software Technologies and Business Solution.`}</p>
                 {/* <Button className="w-60 rounded-bl-xl rounded-tr-xl rounded-tl-none rounded-br-none flex items-center gap-4 ring-1 ring-black ml-2 bg-white text-black hover:bg-black hover:text-white">
                   View Site
                   <IoIosArrowRoundForward />
@@ -105,7 +105,7 @@ const Accordiancustom = () => {
           <div className="flex justify-between items-center px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-8 w-full place-content-center justify-between items-center px-2 mx-auto">
               <div className="flex flex-col gap-4 justify-center items-start">
-                <p className="text-sm font-medium leading-7 "><span className="font-bold mr-2">Ms. Ramya</span>{`at AWT acts as a strategic partner across all the chief operations and Business at AWT. She is an highly motivated and purpose driven professional, who has in-built business instincts that not only makes her stand apart but also helps our clients and their projects to have an edge over others.`}</p>
+                <p className="text-base font-medium leading-7 "><span className="font-bold mr-2">Ms. Ramya</span>{`at AWT acts as a strategic partner across all the chief operations and Business at AWT. She is an highly motivated and purpose driven professional, who has in-built business instincts that not only makes her stand apart but also helps our clients and their projects to have an edge over others.`}</p>
                 {/* <Button className="w-60 rounded-bl-xl rounded-tr-xl rounded-tl-none rounded-br-none flex items-center gap-4 ring-1 ring-black ml-2 bg-white text-black hover:bg-black hover:text-white">
                   View Site
                   <IoIosArrowRoundForward />

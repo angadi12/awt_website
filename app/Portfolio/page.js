@@ -62,7 +62,7 @@ const page = () => {
       cardborder: "Propspectcardborder",
       className: "Prospectcard",
       tag: ["Branding", "web dev", "social media handling"],
-      link: "https://wordpress-1272405-4595010.cloudwaysapps.com/",
+      link: "https://prospecttutors.co.uk/",
     },
     {
       image: [Winkadsdesktop, Winkadsiphone],

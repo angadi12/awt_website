@@ -119,12 +119,12 @@ const Ourblogs = () => {
               <h6 className="text-xl font-semibold ">{post.title}</h6>
               <p className="text-sm font-medium text-justify text-gray-700 ">
               {truncateText(post.description, 100)}{" "}
-              <span
+              <Button
                   onClick={() => router.push(`Blogdetails/${post._id}`)}
-                  className="text-sm font-bold cursor-pointer"
+                  className="text-sm font-bold cursor-pointer bg-white text-[#FF7143]"
                 >
                   Read More
-                </span>
+                </Button>
               </p>
               <div className="flex justify-start items-center gap-4 py-4">
                 <Image
