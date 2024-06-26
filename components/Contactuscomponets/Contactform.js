@@ -14,6 +14,7 @@ const Contactform = () => {
     email: "",
     subject: "",
     message: "",
+    phone:""
   });
 
   const [status, setStatus] = useState(null);
@@ -34,7 +35,8 @@ const Contactform = () => {
       !formData.lastName ||
       !formData.email ||
       !formData.subject ||
-      !formData.message
+      !formData.message ||
+      !formData.phone
     ) {
       toast.error("Please fill out all the required fields.");
       return;
@@ -123,13 +125,22 @@ const Contactform = () => {
           </div>
 
           <input
+            id="phone"
+            name="phone"
+            type="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="MOBILE NUMBER"
+            className="placeholder:text-black pb-4 placeholder:font-bold border-b border-b-[black] placeholder:text-[14px] flex-1 w-full  focus-visible:outline-none"
+          />
+          <input
             id="email"
             name="email"
             type="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="EMAIL ID"
-            className="placeholder:text-black pb-4 placeholder:font-bold border-b border-b-[black] placeholder:text-[14px] flex-1 w-full  focus-visible:outline-none"
+            className="placeholder:text-black mt-4 pb-4 placeholder:font-bold border-b border-b-[black] placeholder:text-[14px] flex-1 w-full  focus-visible:outline-none"
           />
           <input
             id="subject"
