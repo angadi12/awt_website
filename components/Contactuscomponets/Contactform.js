@@ -1,20 +1,19 @@
-"use client"
+"use client";
 import { Button, Divider } from "@nextui-org/react";
 import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
-import toast, { Toaster } from 'react-hot-toast';
-
+import toast, { Toaster } from "react-hot-toast";
 
 const Contactform = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    subject: '',
-    message: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const [status, setStatus] = useState(null);
@@ -23,53 +22,65 @@ const Contactform = () => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
- 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.subject || !formData.message) {
-      toast.error('Please fill out all the required fields.');
+    if (
+      !formData.firstName ||
+      !formData.lastName ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      toast.error("Please fill out all the required fields.");
       return;
     }
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      toast.error('Please enter a valid email address.');
+      toast.error("Please enter a valid email address.");
       return;
     }
 
-    setStatus('loading');
+    setStatus("loading");
 
     try {
-      const response = await fetch('https://awt-backend.onrender.com/api/awt/Contactus/Create', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://awt-backend.onrender.com/api/awt/Contactus/Create",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
-        setStatus('success');
-        toast.success('Your message has been sent successfully!');
+        setStatus("success");
+        toast.success("Your message has been sent successfully!");
         setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          subject: '',
-          message: '',
-          phone: '', // Make sure to clear other fields if needed
+          firstName: "",
+          lastName: "",
+          email: "",
+          subject: "",
+          message: "",
+          phone: "", // Make sure to clear other fields if needed
         });
       } else {
-        setStatus('error');
-        toast.error('There was an error submitting your message. Please try again.');
+        setStatus("error");
+        toast.error(
+          "There was an error submitting your message. Please try again."
+        );
       }
     } catch (error) {
       console.error(error);
-      setStatus('error');
-      toast.error('There was an error submitting your message. Please try again.');
+      setStatus("error");
+      toast.error(
+        "There was an error submitting your message. Please try again."
+      );
     }
   };
 
@@ -86,10 +97,13 @@ const Contactform = () => {
       </div>
 
       <div className="w-11/12 mx-auto flex justify-between  items-start  h-auto md:flex-row flex-col">
-        <form  onSubmit={handleSubmit} className=" flex-[0.9] gap-12 text-black font-bold">
+        <form
+          onSubmit={handleSubmit}
+          className=" flex-[0.9] gap-12 text-black font-bold"
+        >
           <div className="flex flex-col md:flex-row lg:flex-row md:gap-5 lg:gap-5 gap-8 my-5 py-4 flex-wrap">
             <input
-               id="firstName"
+              id="firstName"
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
@@ -118,12 +132,12 @@ const Contactform = () => {
             className="placeholder:text-black pb-4 placeholder:font-bold border-b border-b-[black] placeholder:text-[14px] flex-1 w-full  focus-visible:outline-none"
           />
           <input
-              id="subject"
+            id="subject"
             name="subject"
             type="text"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="SUBJECT"
+            placeholder="REQUIREMENT"
             className="placeholder:text-black placeholder:font-bold border-b py-8 border-b-[black] placeholder:text-[14px] flex-1 w-full  focus-visible:outline-none"
           />
 
@@ -137,7 +151,7 @@ const Contactform = () => {
             className="placeholder:text-black py-4 placeholder:font-bold border-b border-b-[black] placeholder:text-[14px] flex-1 w-full focus-visible:outline-none"
           />
           <Button
-           type="submit"
+            type="submit"
             variant="solid"
             className="ring-1 ring-black bg-white font-bold uppercase w-full rounded-full mt-8"
           >
@@ -187,30 +201,30 @@ const Contactform = () => {
         </div>
       </div>
       <Toaster
-  position="top-center"
-  reverseOrder={false}
-  gutter={8}
-  containerClassName=""
-  containerStyle={{}}
-  toastOptions={{
-    // Define default options
-    className: '',
-    duration: 5000,
-    style: {
-      background: '#363636',
-      color: '#fff',
-    },
+        position="top-center"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 5000,
+          style: {
+            background: "#363636",
+            color: "#fff",
+          },
 
-    // Default options for specific types
-    success: {
-      duration: 3000,
-      theme: {
-        primary: 'green',
-        secondary: 'black',
-      },
-    },
-  }}
-/>
+          // Default options for specific types
+          success: {
+            duration: 3000,
+            theme: {
+              primary: "green",
+              secondary: "black",
+            },
+          },
+        }}
+      />
     </div>
   );
 };
