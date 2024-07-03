@@ -38,9 +38,9 @@ const Trendingcomponets = () => {
 
   if (loading) {
     return  <div className="w-full mx-auto flex flex-col justify-start items-start gap-8">
-    <h6 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold px-12">
+    <h1 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold px-12">
     Trending Now.
-    </h6>
+    </h1>
     <div className="w-full">
       <Cardskeleton/>
     </div>
@@ -55,9 +55,9 @@ const Trendingcomponets = () => {
 if (trendingPosts.length === 0) {
     return (
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
-        <h6 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
+        <h1 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
         Trending Now.
-        </h6>
+        </h1>
         <div className="w-full flex justify-center items-center flex-col">
           <Image className="h-80 object-contain" src={NoData} alt="No data" />
         </div>
@@ -68,9 +68,9 @@ if (trendingPosts.length === 0) {
 if (error) {
     return (
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
-        <h6 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
+        <h1 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
         Trending Now.
-        </h6>
+        </h1>
         <div className="w-full flex justify-center items-center flex-col">
           <Image src={Error} alt="error" />
         </div>
@@ -81,7 +81,7 @@ if (error) {
   return (
     <div className='w-full flex flex-col justify-center items-start gap-8 mx-auto'>
       <div className='w-11/12 mx-auto'>
-        <h6 className='md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider'>Trending Now.</h6>
+        <h1 className='md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider'>Trending Now.</h1>
       </div>
       <div className='grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 gap-4 justify-items-center items-center w-11/12 mx-auto'>
         {trendingPosts.map((post, index) => (
@@ -89,7 +89,7 @@ if (error) {
             <div className='flex justify-center  items-center overflow-hidden relative'>
               <Image className='brightness-[0.3] object-fill h-80 ' src={post.imageUrl} alt="imagepost" width={300} height={200} />
               <Image className='absolute w-24 h-24 mb-4' src={Trending5} alt="imagepost" />
-              <h6 className='absolute bottom-2 w-full text-white text-start px-2 font-semibold '>{post.title}</h6>
+              <h1 className='absolute bottom-2 w-full text-white text-start px-2 font-semibold '>{post.title}</h1>
             </div>
           </div>
         ))}

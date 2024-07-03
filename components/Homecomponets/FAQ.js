@@ -213,14 +213,14 @@ const FAQ = () => {
       </div>
       <div className="flex justify-center md:items-start items-center md:gap-32 gap-8 py-8 w-11/12 mx-auto flex-col lg:flex-row h-auto">
         <div className="gap-4 flex flex-col justify-start  mx-auto mt-4 h-auto lg:w-2/4 w-full">
-          <h6 className="text-3xl font-bold md:w-[23rem] leading-9 text-black">
+          <h1 className="text-3xl font-bold md:w-[23rem] leading-9 text-black">
             Frequently Asked{" "}
             <Customanimationslide
               text={"Questions"}
               width={170}
               style={"block"}
             />
-          </h6>
+          </h1>
           <p className=" text-gray-400 text-xs capitalize font-medium">
             {`Still have some unsolved queries?`}
           </p>

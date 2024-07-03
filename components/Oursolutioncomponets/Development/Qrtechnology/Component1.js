@@ -35,17 +35,17 @@ const Component1 = () => {
   return (
     <section className="flex flex-col justify-start items-start gap-8 w-full py-12">
       <div>
-        <h6 className="text-3xl font-bold tracking-wider">
+        <h1 className="text-3xl font-bold tracking-wider">
           Why Choose Our QR Code Technology?{" "}
-        </h6>
+        </h1>
       </div>
       <div className="w-full grid gap-8 place-content-center items-center md:grid-cols-2 relative">
         {carddata.map((value, index) => (
           <div key={index} className={value.className}>
-            <h6 className="flex items-center gap-0 md:gap-2 lg:gap-2 text-justify  uppercase text-base font-bold">
+            <h1 className="flex items-center gap-0 md:gap-2 lg:gap-2 text-justify  uppercase text-base font-bold">
               <GoDotFill className="" />
               {value.title}
-            </h6>
+            </h1>
             <p className="text-justify text-sm font-medium break-all">
               {value.desc}
             </p>

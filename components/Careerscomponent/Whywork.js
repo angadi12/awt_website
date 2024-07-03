@@ -34,7 +34,7 @@ const data=[
   return (
     <div className='w-full flex flex-col justify-center items-center gap-8 mx-auto'>
      <div className='w-11/12 mx-auto'>
-        <h6 className='text-3xl font-bold tracking-wider'>Why work with AWT?</h6>
+        <h1 className='text-3xl font-bold tracking-wider'>Why work with AWT?</h1>
      </div>
      <div className='w-11/12 py-8 mx-auto grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 place-content-center justify-center justify-items-center gap-8'>
         {
@@ -43,7 +43,7 @@ const data=[
                   <div className=' flex justify-center items-center'>
                     <Image className='w-16 h-16 object-contain ' src={value.icon} alt='icon'/>
                   </div>
-                    <h6 className='text-lg font-semibold uppercase'>{value.title}</h6>
+                    <h1 className='text-lg font-semibold uppercase'>{value.title}</h1>
                     <p className='text-sm font-medium text-start  md:px-0 lg:px-0 px-2'>{value.desc}</p>
                 </div>
             ))

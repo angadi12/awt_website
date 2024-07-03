@@ -41,9 +41,9 @@ const Component1 = () => {
   return (
     <section className="flex flex-col w-full mx-auto justify-center items-start py-16">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Why do you need a Design for your Web App?{" "}
-        </h6>
+        </h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between items-center w-11/12 mx-auto py-12">
@@ -62,7 +62,7 @@ const Component1 = () => {
                 />
               </div>
               <div>
-                <h6 className="text-lg font-bold uppercase">{value.titile}</h6>
+                <h1 className="text-lg font-bold uppercase">{value.titile}</h1>
                 <p className="text-justify font-medium text-sm leading-7">
                   {value.subtitle}
                 </p>

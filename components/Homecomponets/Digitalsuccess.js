@@ -47,10 +47,10 @@ const Digitalsuccess = () => {
   return (
     <div className="flex flex-col justify-start items-start gap-4 w-11/12 mx-auto md:py-12 lg:py-12 -mt-24 md:mt-0 lg:mt-0">
       <div>
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-semibold capitalize w-full ">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-semibold capitalize w-full ">
           why <span className="text-white rounded-md bg-[#FF7143] px-2">Choose Us</span>{" "}
           for your<br></br> digital success?
-        </h6>
+        </h1>
       </div>
       <div className="flex flex-col justify-center items-center py-8 gap-4 w-full">
         {Datalist.map((value, index) => (

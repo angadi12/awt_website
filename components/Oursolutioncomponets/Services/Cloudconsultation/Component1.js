@@ -79,9 +79,9 @@ const Cloudconsultationpage = () => {
   return (
     <section className="w-full mx-auto flex flex-col justify-center items-center gap-8">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Our Cloud Computing Services for you.
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto flex flex-col justify-center items-center gap-4">
         {carddata.map((value, index) => (
@@ -100,16 +100,16 @@ const Cloudconsultationpage = () => {
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-2">
-               <h6 className="uppercase font-bold">{value.title}</h6>
+               <h1 className="uppercase font-bold">{value.title}</h1>
               <p className="text-sm leading-6 font-medium">{value.subtitle}</p>
             </div>
           </div>
         ))}
       </div>
       <div className="w-11/12 mx-auto py-4">
-        <h6 className="md:text-3xl text-2xl lg:text-3xl font-bold tracking-wider">
+        <h1 className="md:text-3xl text-2xl lg:text-3xl font-bold tracking-wider">
         What Technologies we use for your Project?
-       </h6>
+       </h1>
       </div>
       <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 justify-items-center items-center mx-auto w-11/12 ">
         {
@@ -123,7 +123,7 @@ const Cloudconsultationpage = () => {
       </div>
       <section className="flex justify-start items-start flex-col w-full py-16">
      <div className="w-11/12 mx-auto" >
-      <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">Why choose AWS for Cloud Computing?</h6>
+      <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">Why choose AWS for Cloud Computing?</h1>
      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between gap-4 md:gap-16 lg:gap-16 items-center w-11/12 mx-auto py-14">
         <div className="w-full flex flex-col justify-center items-start gap-8 order-2">

@@ -63,12 +63,12 @@ const Whoworkmobile = () => {
         (value, index) =>
           setindex === index && (
             <>
-                <h6 className="text-3xl tracking-widest  capitalize font-semibold text-black w-full left-0">
+                <h1 className="text-3xl tracking-widest  capitalize font-semibold text-black w-full left-0">
                   who<br></br> we
                   <motion.span className="bg-[#FF7143] pl-1 rounded-md text-white ml-2">
                     work with?
                   </motion.span>
-                </h6>
+                </h1>
               <div key={index} className="w-full flex  justify-center items-center  ">
                 <motion.div
                   initial={{ opacity: 0.3 }}

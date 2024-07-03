@@ -38,18 +38,18 @@ function Visionandmission() {
   return (
     <div className="flex flex-col gap-8 justify-center items-center mx-auto w-full">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Our Vision &
           <Customanimationslide
             text={" Mission"}
             width={140}
             style={"inline-block ml-2"}
           />
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 justify-items-center items-center md:gap-12 lg:gap-12 gap-24">
         <div className="bg-[#FF714333] h-80 rounded-lg relative p-12 flex justify-start items-start gap-4 flex-col">
-          <h6 className="text-2xl font-bold">Our Vision</h6>
+          <h1 className="text-2xl font-bold">Our Vision</h1>
           <p className="text-gray-500 font-medium text-sm md:text-base lg:text-base">{`Empower aspiring entrepreneurs with a dynamic digital hub for starting, growing & scaling businesses.`}</p>
           <Image
             className="absolute w-40 h-40 -bottom-12 right-8"
@@ -58,7 +58,7 @@ function Visionandmission() {
           />
         </div>
         <div className="bg-[#FFC70033] h-80 rounded-lg relative p-12  flex justify-start items-start gap-4 flex-col">
-          <h6 className="text-2xl font-bold">Our Mission</h6>
+          <h1 className="text-2xl font-bold">Our Mission</h1>
           <p className="text-gray-500 font-medium text-sm md:text-base lg:text-base">{`We empower entrepreneurs with tools, insights, and expert guidance to achieve their goals.`}</p>
           <Image
             className="absolute w-40 h-40 -bottom-12 right-8"
@@ -70,9 +70,9 @@ function Visionandmission() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-11/12 mx-auto gap-8 place-content-center justify-center items-start py-16 mt-8">
         <div className="flex justify-center items-start gap-4 flex-col md:order-1 lg:order-1 order-2">
-          <h6 className="md:text-3xl lg:text-3xl text-2xl font-semibold tracking-wider">
+          <h1 className="md:text-3xl lg:text-3xl text-2xl font-semibold tracking-wider">
             Watch a small video of ourselves and get to know us better.
-          </h6>
+          </h1>
            <p className="text-start text-sm leading-7 font-medium">{`Here is a video about our company. If you have any further questions or need additional information, please contact our team. We are dedicated to assisting you and will resolve your inquiries within 48 hours, ensuring prompt and efficient service.`}</p>
            <div className='flex justify-center items-center gap-4 md:flex-row lg:flex-row flex-col'>
 

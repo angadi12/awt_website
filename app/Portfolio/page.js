@@ -143,7 +143,7 @@ const page = () => {
       <Commonheader />
       <div className="w-full flex flex-col justify-center items-center mx-auto gap-8 md:py-12 lg:py-12">
         <div className="w-11/12 mx-auto">
-          <h6 className="text-2xl md:text-3xl lg:text-3xl font-bold tracking-wider">
+          <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold tracking-wider">
             Take a look at our{" "}
             <span className="md:hidden lg:hidden inline-block rounded-md px-2 text-white bg-[#FF7143]">
               Portfolio!
@@ -153,7 +153,7 @@ const page = () => {
               width={180}
               style={"md:inline-block hidden lg:inline-block ml-2"}
             />
-          </h6>
+          </h1>
         </div>
 
         {data.map((value, index) => (

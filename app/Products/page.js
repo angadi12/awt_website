@@ -52,9 +52,9 @@ const productdata=[
     <section className="flex flex-col justify-center items-center gap-8 mx-auto">
       <Commonheader />
       <div className="w-11/12 mx-auto md:py-12 lg:py-12">
-        <h6 className="text-3xl tracking-wider font-bold">
+        <h1 className="text-3xl tracking-wider font-bold">
         Our Companies.
-        </h6>
+        </h1>
       </div>
        
        <div className="w-full mx-auto flex flex-col justify-center items-center gap-8">

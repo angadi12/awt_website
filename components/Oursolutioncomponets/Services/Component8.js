@@ -81,7 +81,7 @@ const Component8 = () => {
   return (
     <section className='w-full mt-16'>
         <div className='w-11/12 mx-auto'>
-            <h6 className='md:text-3xl lg:text-3xl text-2xl font-bold'>Our Development Solutions!</h6>
+            <h1 className='md:text-3xl lg:text-3xl text-2xl font-bold'>Our Development Solutions!</h1>
         </div>
         <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 justify-center auto-cols-auto py-10	 gap-8 w-11/12 mx-auto">
             {carddata.map((value, index) => (

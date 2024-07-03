@@ -24,10 +24,10 @@ const carddata=[
   return (
     <div className="flex flex-col w-full mx-auto justify-center items-center gap-8 md:py-12 lg:py-12 py-0">
       <div className="w-11/12 mx-auto ">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Step into our SEO process and discover how<br></br> we elevate your
           online presence.
-        </h6>
+        </h1>
       </div>
       <div className="flex justify-center items-start gap-8 md:p-12 p-4 mx-auto flex-col md:flex-row">
         <div>
@@ -114,9 +114,9 @@ const carddata=[
         </div>
       </div>
       <div className="w-11/12 mx-auto ">
-        <h6 className="md:text-3xl lg:text-3xl text-xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-xl font-bold tracking-wider">
         What happens when your website ranks<br></br> higher in Google search results?
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto py-12 p-2 grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 justify-items-center items-center gap-8">
            {

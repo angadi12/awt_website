@@ -119,7 +119,7 @@ const Hero = () => {
               your go-to company for it solutions
             </p>
           </div>
-          <h6 className="md:text-5xl lg:text-5xl text-3xl font-semibold   w-full ">
+          <h1 className="md:text-5xl lg:text-5xl text-3xl font-semibold   w-full ">
             Your partner for <br></br> Digital{" "}
             <AnimatePresence>
               {title.map(
@@ -137,7 +137,7 @@ const Hero = () => {
                   )
               )}
             </AnimatePresence>
-          </h6>
+          </h1>
           <p className="md:text-sm lg:text-base text-sm w-full font-semibold leading-7">
             We amplify the value of your digital presence, <br className=" hidden md:block lg:block"></br>propelling
             your brand to new heights.

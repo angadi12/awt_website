@@ -54,7 +54,7 @@ const Currentopening = () => {
   if (error) {
     return (
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
-        <h6 className="md:text-2xl lg:text-2xl text-lg tracking-wider font-bold">Current Available Openings</h6>
+        <h1 className="md:text-2xl lg:text-2xl text-lg tracking-wider font-bold">Current Available Openings</h1>
        <div className="w-full flex justify-center items-center  flex-col ">
         <Image src={Error} alt="error" />
         {error}
@@ -67,7 +67,7 @@ const Currentopening = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-8 mx-auto py-12 bg-slate-100 overflow-hidden">
       <div className="w-11/12 mx-auto md:text-2xl lg:text-2xl text-lg tracking-wider font-bold">
-        <h6>Current Available Openings</h6>
+        <h1>Current Available Openings</h1>
       </div>
 
       {jobs.length === 0 ? (
@@ -94,12 +94,12 @@ const Currentopening = () => {
                   />
                 </div>
                 <div className="flex flex-col justify-start items-start md:gap-2 w-full">
-                  <h6 className="capitalize font-bold md:text-lg ">
+                  <h1 className="capitalize font-bold md:text-lg ">
                     {job.title}
                     <span className="text-xs text-[#FF7143] ml-2">
                       . {job.openings} openings
                     </span>
-                  </h6>
+                  </h1>
                   <p className="flex justify-center items-center gap-2 text-gray-400 capitalize font-medium text-xs md:text-sm lg:text-sm">
                     <FaLocationDot className="text-[#FF7143] text-xs md:text-base lg:text-base" />
                     {job.location}

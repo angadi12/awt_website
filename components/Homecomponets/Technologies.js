@@ -226,9 +226,9 @@ const Technologies = () => {
                       className="flex flex-col justify-center items-start gap-4 mt-8"
                     >
                       <Image src={value.image} />
-                      <h6 className="text-xl font-semibold uppercase text-white">
+                      <h2 className="text-xl font-semibold uppercase text-white">
                         {value.tittle}
-                      </h6>
+                      </h2>
                       <p className="text-sm leading-7 font-medium text-white text-start">
                         {value.desc}
                       </p>

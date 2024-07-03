@@ -49,9 +49,9 @@ const Techstack = () => {
   return (
     <section className='w-full flex flex-col gap-4 justify-center items-start mx-auto'>
          <div className=" w-11/12 mx-auto">
-          <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+          <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
             What Technologies we use for your Project?
-          </h6>
+          </h1>
         </div>
         <div className="w-11/12 mx-auto mt-4 grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 md:gap-12 lg:gap-12 py-12 place-content-center justify-center items-center">
           {branddata.map((value, index) => (

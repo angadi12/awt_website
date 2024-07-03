@@ -77,9 +77,9 @@ const Component3 = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-8  py-12 full mx-auto">
       <div className="w-11/12 ">
-        <h6 className="md:text-3xl lg:text-3xl text-lg font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-lg font-bold tracking-wider">
           Why do you need UI/UX for your<br></br> Project?
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 grid gap-8 place-content-center justify-center items-center md:grid-cols-2 lg:grid-cols-2 grid-cols-1">
         {carddata.map((value, index) => (
@@ -87,10 +87,10 @@ const Component3 = () => {
             key={index}
             className="ring-1 ring-gray-300 p-4 h-48 flex justify-center items-start gap-4 flex-col"
           >
-            <h6 className="flex items-center text-justify gap-2 uppercase text-base font-bold">
+            <h1 className="flex items-center text-justify gap-2 uppercase text-base font-bold">
               <GoDotFill />
               {value.title}
-            </h6>
+            </h1>
             <p className="text-justify text-sm font-medium ">{value.desc}</p>
           </div>
         ))}
@@ -98,9 +98,9 @@ const Component3 = () => {
 
       <div className="flex flex-col justify-center items-start gap-8 w-11/12 mx-auto">
         <div className="md:py-12 lg:py-12 mt-4 md:mt-0 lg:mt-0">
-          <h6 className="md:text-3xl lg:text-3xl text-lg font-bold tracking-wider">
+          <h1 className="md:text-3xl lg:text-3xl text-lg font-bold tracking-wider">
             What Technologies we use for your Project?
-          </h6>
+          </h1>
         </div>
 
         <div className="w-full md:mt-4 lg:mt-4 mt-0 grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 md:gap-12 lg:gap-12  mx-auto place-content-center justify-center items-center">

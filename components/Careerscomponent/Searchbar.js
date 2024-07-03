@@ -10,7 +10,7 @@ const Searchbar = () => {
   return (
     <div className='flex flex-col justify-center items-center w-full gap-8 md:py-12 lg:py-12 mt-8'>
            <div className='w-full flex justify-center items-center gap-4 text-center flex-col'>
-            <h6 className='md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider'>{`Let’s Work`} <Customanimationslide text={'Together!'} width={170} style={'inline-block '}/></h6>
+            <h1 className='md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider'>{`Let’s Work`} <Customanimationslide text={'Together!'} width={170} style={'inline-block '}/></h1>
             <p className='md:text-sm lg:text-sm font-medium md:leading-8 text-gray-500'>Start your career with Angadi World Technologies!</p>
            </div>
 

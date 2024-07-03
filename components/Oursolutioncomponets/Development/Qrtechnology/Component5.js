@@ -37,9 +37,9 @@ const Component5 = () => {
   return (
     <section className="flex justify-start items-start flex-col w-full py-4">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Benefits of using QR Code Technology!
-        </h6>
+        </h1>
       </div>
       <div className="flex justify-center items-start gap-8 md:p-12 p-4 mx-auto mt-4 flex-col md:flex-row">
         <div>
@@ -126,9 +126,9 @@ const Component5 = () => {
         </div>
       </div>
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Industries We Serve.{" "}
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto mt-4 grid md:grid-cols-5 lg:grid-cols-5 grid-cols-2 md:gap-12 lg:gap-12 py-12 place-content-center justify-center items-center">
       {branddata.map((value, index) => (

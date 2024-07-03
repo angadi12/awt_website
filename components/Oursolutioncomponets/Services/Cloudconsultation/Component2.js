@@ -65,9 +65,9 @@ const Cloudsolutions = () => {
   return (
     <section className="flex flex-col w-full  gap-8 md:py-8 lg:py-8 py-0">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Our Graphic Design Services.
-        </h6>
+        </h1>
       </div>
       <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 justify-center w-11/12 mx-auto py-8 justify-items-center items-center gap-8">
         {carddata.map((value, index) => (
@@ -81,7 +81,7 @@ const Cloudsolutions = () => {
             >
               <Image className="w-10 h-10" src={value.icon} alt="icon" />
             </div>
-            <h6 className="uppercase font-bold ">{value.titile}</h6>
+            <h1 className="uppercase font-bold ">{value.titile}</h1>
             <p className="text-xs font-medium w-full">{value.text}</p>
           </div>
         ))}

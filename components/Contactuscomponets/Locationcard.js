@@ -36,10 +36,10 @@ const Locationcard = () => {
   return (
     <div className="bg-black  w-full flex flex-col gap-8 justify-center items-center py-12">
       <div>
-        <h6 className="uppercase text-2xl font-bold text-white text-center ">
+        <h1 className="uppercase text-2xl font-bold text-white text-center ">
           we have <span className="text-[#FF7143]">three</span> locations{" "}
           <span className="text-[#FF7143]">globally!</span>
-        </h6>
+        </h1>
       </div>
       <div>
         <p className="text-center text-white font-medium md:text-sm lg:text-sm text-xs">
@@ -65,9 +65,9 @@ const Locationcard = () => {
             </div>
             {showqrcode === index ? (
               <div className="flex flex-col -mt-4 justify-center items-center  relative">
-                <h6 className="text-white uppercase text-sm font-bold ">
+                <h1 className="text-white uppercase text-sm font-bold ">
                   scan for location
-                </h6>
+                </h1>
                 <Image
                   onClick={()=>Setshowqrcode(null)}
                   className="object-fill w-40 h-40"
@@ -87,9 +87,9 @@ const Locationcard = () => {
                 transition={{ duration: 0.5 }}
                 className="flex flex-col -mt-4 justify-center items-center gap-4 relative"
               >
-                <h6 className="text-white uppercase text-sm font-bold ">
+                <h1 className="text-white uppercase text-sm font-bold ">
                   {value.cityname}
-                </h6>
+                </h1>
                 <p className="text-center text-white text-xs px-4 mb-4">
                   {value.desc}
                 </p>

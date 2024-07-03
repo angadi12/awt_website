@@ -122,9 +122,9 @@ const Technologiesmobile = () => {
   return (
     <div className="flex flex-col justify-center gap-2 items-center w-full mx-auto px-4 py-12 h-auto bg-black">
       <div className="flex flex-col justify-start items-start gap-3">
-        <h6 className="text-3xl tracking-wider text-white font-semibold">
+        <h1 className="text-3xl tracking-wider text-white font-semibold">
           Technologies <br></br> we use.
-        </h6>
+        </h1>
         <p className="text-gray-500 capitalize text-sm leading-5">{`We specialize in crafting innovative solutions, platforms, and experiences that engage your consumers in groundbreaking ways.`}</p>
       </div>
 

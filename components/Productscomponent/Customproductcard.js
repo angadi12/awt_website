@@ -10,10 +10,10 @@ const Customproductcard = ({data}) => {
     <div className='w-11/12 grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 justify-items-center items-center'>
         <div className={`${data.style} flex justify-center items-start flex-col gap-4` }>
              <div className='w-full border-b-2 border-[#FF7143] pb-2'>
-                <h6 className='uppercase text-[#FF7143] test-sm font-semibold'>{data.title}</h6>
+                <h1 className='uppercase text-[#FF7143] test-sm font-semibold'>{data.title}</h1>
              </div>
              <div className='flex justify-center items-start gap-4 flex-col'>
-                <h6 className='text-2xl font-bold capitalize'>{data.productname}</h6>
+                <h1 className='text-2xl font-bold capitalize'>{data.productname}</h1>
                 <p className='text-justify font-medium text-sm'>{data.desc}</p>
              </div>
              <div>

@@ -110,9 +110,9 @@ const Solutionscrousel = () => {
   const Carddata = [
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider text-white">
+        <h1 className="text-3xl font-bold tracking-wider text-white">
           MOBILE APP<br></br> DESIGN
-        </h6>
+        </h1>
       ),
       subtitle: "UI/UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
@@ -122,9 +122,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider text-white">
+        <h1 className="text-3xl font-bold tracking-wider text-white">
           MOBILE APP<br></br> DESIGN
-        </h6>
+        </h1>
       ),
       subtitle: "UI UX Design",
       desc: "Transform your app with cutting-edge UI/UX design that captivates and engages users effortlessly.",
@@ -134,9 +134,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           web APP<br></br> DESIGN
-        </h6>
+        </h1>
       ),
       subtitle: "UI/UX Design",
       desc: "Transform your online platform with sleek UI/UX design that captivates users and drives engagement to new heights.",
@@ -146,9 +146,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           website<br></br> DESIGN
-        </h6>
+        </h1>
       ),
       subtitle: "UI UX Design",
       desc: "Elevate your website with immersive UI/UX design that captivates visitors and leaves a lasting impression.",
@@ -158,9 +158,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           graphic<br></br> DESIGN
-        </h6>
+        </h1>
       ),
       subtitle: "Services",
       desc: "Elevate your brand with captivating graphic design that communicates your message with impact and style.",
@@ -170,9 +170,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           digital<br></br>makeover
-        </h6>
+        </h1>
       ),
       subtitle: "Services",
       desc: "Navigate the digital landscape with confidence through strategic digital transformation that revolutionizes your business processes.",
@@ -182,9 +182,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           app <br></br>development
-        </h6>
+        </h1>
       ),
       subtitle: "Services",
       desc: "Partner with us for expert app development that brings your vision to life, delivering seamless functionality and engaging user experiences.",
@@ -193,9 +193,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           web <br></br>development
-        </h6>
+        </h1>
       ),
       subtitle: "Services",
       desc: "Trust our expertise in web development to create dynamic and responsive websites that drive your online success to new horizons.",
@@ -205,9 +205,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           software <br></br>development
-        </h6>
+        </h1>
       ),
       subtitle: "Services",
       desc: "We craft powerful software solutions tailored to your needs, driving success in the digital age.",
@@ -217,9 +217,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           digital <br></br>marketing
-        </h6>
+        </h1>
       ),
       subtitle: "Marketing",
       desc: "Our digital marketing strategies propel your business forward, reaching and engaging your audience with precision and impact.",
@@ -228,9 +228,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           search engine <br></br>optimization
-        </h6>
+        </h1>
       ),
       subtitle: "Marketing",
       desc: "Our SEO expertise ensures your website ranks higher, driving increased traffic and maximizing your digital presence.",
@@ -240,9 +240,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           digital <br></br>branding
-        </h6>
+        </h1>
       ),
       subtitle: "Marketing",
       desc: "Our digital branding strategies establish your unique presence, resonating with audiences and driving lasting connections in the digital world.",
@@ -252,9 +252,9 @@ const Solutionscrousel = () => {
     },
     {
       title: (
-        <h6 className="text-3xl font-bold tracking-wider uppercase text-white">
+        <h1 className="text-3xl font-bold tracking-wider uppercase text-white">
           cloud <br></br>consulting
-        </h6>
+        </h1>
       ),
       subtitle: "Marketing",
       desc: "Our consulting maximizes efficiency and innovation, driving your business forward in the digital realm.",
@@ -345,7 +345,7 @@ const Solutionscrousel = () => {
       </AnimatePresence>
 
       <div className="w-11/12 mx-auto absolute md:top-36 lg:top-36 top-16">
-        <h6 className="md:text-3xl lg:text-4xl text-3xl uppercase font-bold text-white tracking-wider">
+        <h1 className="md:text-3xl lg:text-4xl text-3xl uppercase font-bold text-white tracking-wider">
           <Customanimationslide
             text={"solutions"}
             width={240}
@@ -358,7 +358,7 @@ const Solutionscrousel = () => {
           >
             <span className="text-white bg-[#FF7143] px-2 rounded-md mr-2 inline-block md:hidden lg:hidden">solutions</span>we provide
           </motion.span>
-        </h6>
+        </h1>
       </div>
 
       <div className="absolute top-[50%] w-11/12 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-between items-center gap-12">
@@ -372,9 +372,9 @@ const Solutionscrousel = () => {
                 key={index}
                 className="flex flex-col justify-start items-start gap-4 -mt-16 md:mt-0 lg:mt-0 h-72 md:h-auto lg:h-auto"
               >
-                <h6 className="md:text-base lg:text-base text-sm font-medium uppercase text-white">
+                <h1 className="md:text-base lg:text-base text-sm font-medium uppercase text-white">
                   {value.subtitle}
-                </h6>
+                </h1>
                 {value.title}
                 <p className="md:text-sm lg:text-sm text-xs leading-6 font-medium text-start text-white md:w-96 lg:w-96 ">
                   {value.desc}
@@ -449,7 +449,7 @@ const Solutionscrousel = () => {
           </div>
           {carouselIndex === 12 && (
             <div className="md:flex lg:flex hidden justify-start items-start gap-4 flex-col absolute right-60 bottom-8">
-              <h6 className="text-white text-sm  font-medium">{`Do you have any doubts? Consult now!`}</h6>
+              <h2 className="text-white text-sm  font-medium">{`Do you have any doubts? Consult now!`}</h2>
               <Button onPress={()=>router.push('/Contactus')} className="bg-transparent text-white uppercase ring-1 ring-white rounded-full w-40">
                 consult
               </Button>

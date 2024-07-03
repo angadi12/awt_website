@@ -166,7 +166,7 @@ const Introductioncrousel = () => {
       <div className="flex relative flex-col justify-start items-start gap-4 w-full py-16">
         <div className="flex flex-col md:flex-row lg:flex-row  justify-center md:h-60 lg:h-60   md:items-start lg:items-start items-center md:w-11/12 lg:w-11/12 w-full mx-auto">
           <div className="flex  flex-col md:justify-start lg:justify-start justify-center px-4 md:items-start lg:items-start items-center md:ml-4 lg:ml-4 gap-12 md:w-1/2 lg:w-1/2 w-full ">
-            <h6 className="md:text-4xl lg:text-4xl text-3xl hidden md:block lg:block font-semibold ">
+            <h1 className="md:text-4xl lg:text-4xl text-3xl hidden md:block lg:block font-semibold ">
               A brief
               <Customanimationslide
                 text={"introduction"}
@@ -174,10 +174,10 @@ const Introductioncrousel = () => {
                 style={"inline-block md:ml-2"}
               />
               <br></br>about us!
-            </h6>
-            <h6 className="md:text-4xl lg:text-4xl text-3xl capitalize  md:hidden lg:hidden font-semibold ">
+            </h1>
+            <h1 className="md:text-4xl lg:text-4xl text-3xl capitalize  md:hidden lg:hidden font-semibold ">
               about us!
-            </h6>
+            </h1>
             <div className=" flex items-center gap-2 absolute bottom-0">
               <button
                 onClick={handlePrev}

@@ -41,11 +41,11 @@ const Component1 = () => {
   const data = [
     {
       image: Withoutdesigner,
-      text:<h6 className="font-bold text-center uppercase "><span className="text-[#FF7143] mr-2">without</span>a designer</h6>
+      text:<h1 className="font-bold text-center uppercase "><span className="text-[#FF7143] mr-2">without</span>a designer</h1>
     },
     {
       image: Withdesigner,
-      text:<h6 className="font-bold text-center uppercase "><span className="text-[#FF7143] mr-2">with</span>a designer</h6>
+      text:<h1 className="font-bold text-center uppercase "><span className="text-[#FF7143] mr-2">with</span>a designer</h1>
     },
   ];
 
@@ -60,9 +60,9 @@ const Component1 = () => {
   return (
     <section className="flex flex-col  w-full mx-auto justify-center items-start py-16">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           Why do you need a Design for your Site?
-        </h6>
+        </h1>
       </div>
 
       <div className="flex flex-col gap-8 justify-between items-center w-11/12 mx-auto py-12">
@@ -113,7 +113,7 @@ const Component1 = () => {
                 />
               </div>
               <div>
-                <h6 className="text-lg font-bold uppercase">{value.titile}</h6>
+                <h1 className="text-lg font-bold uppercase">{value.titile}</h1>
                 <p className="text-justify font-medium text-sm leading-7">
                   {value.subtitle}
                 </p>

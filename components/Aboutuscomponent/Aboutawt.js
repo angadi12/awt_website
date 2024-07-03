@@ -19,9 +19,9 @@ const Aboutawt = () => {
   return (
     <div className="w-11/12 md:py-20 lg:py-20 mx-auto flex lg:flex-row-reverse flex-col justify-center items-start gap-20">
       <div className="flex flex-col justify-start items-start gap-8 lg:w-[46%] md:w-[46%] w-full">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
         Let’s know <br></br> more about<Customanimationslide text={'AWT.'} width={90} style={'inline-block ml-2'}/>
-        </h6>
+        </h1>
         <p className="text-justify  text-sm font-medium leading-7 lg:w-[32rem]"><span className='font-bold mr-2'>Angadi World Technologies</span>{`is a top-tier provider of Web and App Design & Development, along with Digital Marketing services. Renowned for our innovative solutions, we excel in delivering cutting-edge mobile apps and digital experiences to a global clientele.`}</p>
         <div className="flex flex-row justify-between md:gap-24 gap-2 items-center">
           <div className="flex flex-col justify-start items-start gap-4">

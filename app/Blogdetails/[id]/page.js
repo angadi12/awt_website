@@ -100,10 +100,10 @@ const Blogdetails = ({ params }) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center gap-8  justify-between items-start w-11/12 mx-auto">
           <div className="flex flex-col justify-center items-start gap-8">
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="text-3xl font-semibold tracking-wider">{Blogs.title}</h6>
+              <h1 className="text-3xl font-semibold tracking-wider">{Blogs.title}</h1>
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="capitalize font-bold tracking-wider">Description</h6>
+              <h1 className="capitalize font-bold tracking-wider">Description</h1>
               <p className="text-justify text-sm font-medium leading-7">{Blogs.description}</p>
             </div>
           </div>

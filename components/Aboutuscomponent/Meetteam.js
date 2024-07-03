@@ -63,9 +63,9 @@ const Meetteam = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-8  mx-auto">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider capitalize">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider capitalize">
           Meet the team
-        </h6>
+        </h1>
       </div>
 
       <div className="w-11/12 mx-auto grid md:grid-cols-4 lg:grid-cols-4 grid-cols-1 gap-6 place-content-center justify-items-center overflow-hidden">
@@ -88,9 +88,9 @@ const Meetteam = () => {
                 <p className="text-white uppercase text-xs font-medium">
                   {value.designation}
                 </p>
-                <h6 className="text-white capitalize font-bold text-xl">
+                <h1 className="text-white capitalize font-bold text-xl">
                   {value.name}
-                </h6>
+                </h1>
               </div>
               <div className="flex justify-start items-start gap-2 mt-2 px-4 py-4">
                 <AiFillInstagram

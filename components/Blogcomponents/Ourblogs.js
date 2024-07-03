@@ -49,9 +49,9 @@ const Ourblogs = () => {
   if (loading) {
     return (
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
-        <h6 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
+        <h1 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
           Our Blogs.
-        </h6>
+        </h1>
         <div className="w-full flex justify-center items-center flex-col">
           Loading...
         </div>
@@ -62,9 +62,9 @@ const Ourblogs = () => {
   if (error) {
     return (
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
-        <h6 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
+        <h1 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
           Our Blogs.
-        </h6>
+        </h1>
         <div className="w-full flex justify-center items-center flex-col">
           <Image src={Error} alt="error" />
         </div>
@@ -75,9 +75,9 @@ const Ourblogs = () => {
   if (posts.length === 0) {
     return (
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-8">
-        <h6 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
+        <h1 className="md:text-3xl lg:text-3xl text-lg tracking-wider font-bold">
           Our Blogs.
-        </h6>
+        </h1>
         <div className="w-full flex justify-center items-center flex-col">
           <Image className="h-80 object-contain" src={NoData} alt="No data" />
           No blogs available
@@ -97,9 +97,9 @@ const Ourblogs = () => {
   return (
     <section className="w-full flex flex-col justify-center items-center md:py-12 lg:py-12 mx-auto ">
       <div className="w-11/12 mx-auto py-12" ref={postsSectionRef}>
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider capitalize">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider capitalize">
           our Blogs.
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto flex justify-between gap-8 items-start ">
         <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-8 justify-items-center md:w-2/3 lg:w-2/3 ">
@@ -116,7 +116,7 @@ const Ourblogs = () => {
                 width={500}
                 height={300}
               />
-              <h6 className="text-xl font-semibold ">{post.title}</h6>
+              <h1 className="text-xl font-semibold ">{post.title}</h1>
               <p className="text-sm font-medium text-justify text-gray-700 ">
               {truncateText(post.description, 100)}{" "}
               <Button
@@ -145,7 +145,7 @@ const Ourblogs = () => {
           ))}
         </div>
         <div className="md:flex lg:flex w-2/6 flex-col justify-start items-start mx-auto px-4 gap-8 hidden ">
-          <h6 className="text-xl font-bold ">Popular this week!</h6>
+          <h1 className="text-xl font-bold ">Popular this week!</h1>
           <div>
             {posts.slice(0, 7).map((post, index) => (
               <div
@@ -157,7 +157,7 @@ const Ourblogs = () => {
                   {index + 1}
                 </div>
                 <div className="flex flex-col justify-start items-start gap-4">
-                  <h6 className="text-lg font-bold">{post.title}</h6>
+                  <h1 className="text-lg font-bold">{post.title}</h1>
                   <span className="text-sm font-medium uppercase">
                     Team Angadi
                     <span className="text-gray-400">

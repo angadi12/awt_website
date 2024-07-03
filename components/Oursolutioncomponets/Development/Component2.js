@@ -54,9 +54,9 @@ const Component2 = () => {
         alt="background"
       />
       <div className="absolute flex flex-col justify-center items-center left-[50%] top-[50%]  w-full gap-4 rounded-full transform -translate-x-1/2 -translate-y-1/2 z-10">
-        <h6 className="text-xl uppercase font-bold text-white text-center">
+        <h1 className="text-xl uppercase font-bold text-white text-center">
           our simple development process!
-        </h6>
+        </h1>
         <p className="text-white text-sm text-center">
           {`By adhering to a structured development process, you can ensure that your software development endeavors are built upon a`}
           <br></br>{" "}
@@ -70,9 +70,9 @@ const Component2 = () => {
             className='ring-1 ring-white flex flex-col   bg-black rounded-lg  md:h-60 lg:h-60 h-36 py-6 px-4 w-full'
               key={index}
             >
-              <h6 className="text-3xl font-extrabold  text-right text-white">
+              <h1 className="text-3xl font-extrabold  text-right text-white">
                 {value.No}
-              </h6>
+              </h1>
               <h5 className="text-sm md:mt-12 lg:mt-12 uppercase font-bold text-white">
                 {value.subtitle}
               </h5>

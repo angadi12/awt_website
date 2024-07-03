@@ -51,9 +51,9 @@ const Technologiesused = () => {
   return (
      <section className='flex flex-col justify-center items-start gap-8 w-full mx-auto py-12'>
        <div className="w-11/12 mx-auto">
-          <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+          <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
             What Technologies we use for your Project?
-          </h6>
+          </h1>
         </div>
         <div className="w-11/12 mt-4 grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 md:gap-8 lg:gap-8 mx-auto place-content-center justify-center items-center">
           {branddata.map((value, index) => (
@@ -62,7 +62,7 @@ const Technologiesused = () => {
               className="flex flex-col justify-center items-center gap-4 ring-1 ring-gray-300 h-40 p-4"
             >
               <Image className="w-16 h-16" src={value.image} alt="icons" />
-              <h6 className='text-xs font-bold uppercase'>{value.text}</h6>
+              <h1 className='text-xs font-bold uppercase'>{value.text}</h1>
             </div>
           ))}
         </div>

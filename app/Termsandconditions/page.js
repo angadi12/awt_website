@@ -23,7 +23,7 @@ const Page = () => {
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">terms of use</h6>
+          <h1 className="text-lg font-bold uppercase">terms of use</h1>
           <p className="text-sm font-medium leading-7 text-justify">
             {`These terms and conditions outline the rules and regulations for the use of Angadi World Technologies Pvt Ltd's Website, located at www.angadiworldtech.com.
 `}
@@ -40,7 +40,7 @@ const Page = () => {
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">Cookies</h6>
+          <h1 className="text-lg font-bold uppercase">Cookies</h1>
           <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
             <GoDotFill />
             {`We employ the use of cookies.`}
@@ -67,10 +67,10 @@ const Page = () => {
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">License</h6>
+          <h1 className="text-lg font-bold uppercase">License</h1>
           <p className="text-sm font-medium leading-7 text-justify">{`Unless otherwise stated, Angadi World Technologies Pvt Ltd and/or its licensors own the intellectual property rights for all material on Angadi World Technologies. All intellectual property rights are reserved. You may access this from Angadi World Technologies for your own personal use subjected to restrictions set in these terms and conditions.`}</p>
           <div>
-            <h6 className="text-sm font-bold uppercase">You must not:</h6>
+            <h1 className="text-sm font-bold uppercase">You must not:</h1>
             <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
               {" "}
               <GoDotFill />
@@ -103,9 +103,9 @@ website.
           <p className="text-sm font-medium leading-7 text-justify">{`Angadi World Technologies Pvt Ltd reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.
 `}</p>
           <div className="flex flex-col justify-center items-start gap-2">
-            <h6 className="text-sm font-bold uppercase">
+            <h1 className="text-sm font-bold uppercase">
               You warrant and represent that:
-            </h6>
+            </h1>
             <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
               {" "}
               <GoDotFill />
@@ -145,13 +145,13 @@ website.
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">Hyperlinking Content</h6>
+          <h1 className="text-lg font-bold uppercase">Hyperlinking Content</h1>
 
           <div className="flex flex-col justify-center items-start gap-2">
-            <h6 className="text-sm font-bold uppercase">
+            <h1 className="text-sm font-bold uppercase">
               The following organizations may link to our Website without prior
               written approval:
-            </h6>
+            </h1>
             <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
               {" "}
               <GoDotFill />
@@ -182,8 +182,8 @@ website.
           <p className="text-sm font-medium leading-7 text-justify">{`These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.
 `}</p>
           <div className="flex flex-col justify-center items-start gap-2">
-            <h6 className="text-sm font-bold uppercase">{`We may consider and approve other link requests from the following types of organizations:
-`}</h6>
+            <h1 className="text-sm font-bold uppercase">{`We may consider and approve other link requests from the following types of organizations:
+`}</h1>
             <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
               <GoDotFill />
               {`commonly-known consumer and/or business information sources;
@@ -223,9 +223,9 @@ website.
           <p className="text-sm font-medium leading-7 text-justify">{`If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Angadi World Technologies Pvt Ltd. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLS on our site to which you would like to link. Wait 2-3 weeks for a response.
 `}</p>
           <div className="flex flex-col justify-center items-start gap-2">
-            <h6 className="text-sm font-bold uppercase">
+            <h1 className="text-sm font-bold uppercase">
               Approved organizations may hyperlink to our Website as follows:
-            </h6>
+            </h1>
             <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
               <GoDotFill />
               {`By use of our corporate name; or
@@ -252,7 +252,7 @@ website.
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">Iframe</h6>
+          <h1 className="text-lg font-bold uppercase">Iframe</h1>
           <p className="text-sm font-medium leading-7 text-justify">{`Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.`}</p>
         </div>
       </section>
@@ -263,7 +263,7 @@ website.
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">Content Liability</h6>
+          <h1 className="text-lg font-bold uppercase">Content Liability</h1>
           <p className="text-sm font-medium leading-7 text-justify">{`We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous,
 obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.`}</p>
         </div>
@@ -275,7 +275,7 @@ obscene or criminal, or which infringes, otherwise violates, or advocates the in
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">reservation of rights</h6>
+          <h1 className="text-lg font-bold uppercase">reservation of rights</h1>
           <p className="text-sm font-medium leading-7 text-justify">{`We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.`}</p>
         </div>
       </section>
@@ -285,7 +285,7 @@ obscene or criminal, or which infringes, otherwise violates, or advocates the in
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">removal of links</h6>
+          <h1 className="text-lg font-bold uppercase">removal of links</h1>
           <p className="text-sm font-medium leading-7 text-justify">{`
 If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.
 We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy, nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.`}</p>
@@ -298,13 +298,13 @@ We do not ensure that the information on this website is correct, we do not warr
     return (
       <section className="flex justify-start items-start md:py-12 md:px-12 lg:py-12 lg:px-12 px-2 py-2">
         <div className="flex flex-col justify-center items-start md:gap-8 gap-4 lg:gap-8">
-          <h6 className="text-lg font-bold uppercase">Disclaimer</h6>
+          <h1 className="text-lg font-bold uppercase">Disclaimer</h1>
           <p className="text-sm font-medium leading-7 text-justify">{`
 To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website.`}</p>
           <div>
-            <h6 className="text-sm font-bold uppercase">
+            <h1 className="text-sm font-bold uppercase">
               Nothing in this disclaimer will:
-            </h6>
+            </h1>
             <span className="text-sm font-medium leading-7 text-justify flex items-center gap-1">
               {" "}
               <GoDotFill />
@@ -374,9 +374,9 @@ To the maximum extent permitted by applicable law, we exclude all representation
       <div className="md:flex lg:flex justify-center items-start w-full py-16 h-auto hidden">
         <div className="flex-[0.2] py-4 justify-center items-start  bg-[#FF71433B] sticky w-1/3   h-auto">
           <div>
-            <h6 className="uppercase font-bold text-center text-sm mb-6">
+            <h1 className="uppercase font-bold text-center text-sm mb-6">
               Table of Contents
-            </h6>
+            </h1>
           </div>
 
           {navitems.map((value, index) => (
@@ -407,9 +407,9 @@ To the maximum extent permitted by applicable law, we exclude all representation
 
         <div className="flex-[0.8] flex-col   justify-center items- start  w-full  h-auto">
           <div>
-            <h6 className="text-2xl md:text-3xl lg:text-3x font-bold px-12  tracking-wider">
+            <h1 className="text-2xl md:text-3xl lg:text-3x font-bold px-12  tracking-wider">
               Terms & Conditions
-            </h6>
+            </h1>
           </div>
           {contentcomponent.map(
             (value, index) => currentindex === index &&
@@ -424,9 +424,9 @@ To the maximum extent permitted by applicable law, we exclude all representation
 
       <div className="flex md:hidden lg:hidden  flex-col justify-center items-start  w-full mx-auto py-4">
         <div>
-          <h6 className="text-xl md:text-3xl lg:text-3x font-bold px-2  tracking-wider">
+          <h1 className="text-xl md:text-3xl lg:text-3x font-bold px-2  tracking-wider">
             Terms & Conditions
-          </h6>
+          </h1>
         </div>
 
         {contentcomponent.map((value, index) => (

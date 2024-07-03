@@ -89,9 +89,9 @@ const Contactform = () => {
   return (
     <div className="w-full flex flex-col justify-center items-start gap-8 mx-auto md:py-16 lg:py-16">
       <div className="w-11/12 mx-auto flex flex-col justify-start items-start gap-4">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           All Great Achievements began with a<br></br> Simple “Hello”
-        </h6>
+        </h1>
         <p className="text-sm font-bold uppercase">
           Fill out all the required details, our company will contact you within
           48 hours!
@@ -171,43 +171,43 @@ const Contactform = () => {
         </form>
         <div className="flex mt-8  h-auto md:pl-16 lg:pl-16 gap-8 flex-col  md:border-l lg:border-l border-gray-400">
           <div>
-            <h6 className="uppercase font-bold ">call us</h6>
+            <h1 className="uppercase font-bold ">call us</h1>
             <p className="text-gray-500 text-sm font-medium">
               From Monday - Sunday we will be available<br></br> all week!
             </p>
-            <h6 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143]">
+            <h1 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143]">
               <FaPhone />
               <Link href={"tel:+91-9110314465"}>+91-9110314465</Link>
-            </h6>
+            </h1>
             <span className="text-gray-500 text-sm font-medium">UK</span>
-            <h6 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143]">
+            <h1 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143]">
               <FaPhone />
               <Link href="tel:+447918255464">+44 7918255464</Link>
-            </h6>
+            </h1>
           </div>
 
           <div>
-            <h6 className="uppercase font-bold ">email us</h6>
+            <h1 className="uppercase font-bold ">email us</h1>
             <p className="text-gray-500 text-sm font-medium">
               From Monday - Sunday we will be available all week!
             </p>
-            <h6 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143] cursor-pointer">
+            <h1 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143] cursor-pointer">
               <MdEmail />
               <Link href={"mailto:info@angadiworldtech.com"}>
                 info@angadiworldtech.com
               </Link>
-            </h6>
+            </h1>
           </div>
 
           <div>
-            <h6 className="uppercase font-bold ">visit us</h6>
+            <h1 className="uppercase font-bold ">visit us</h1>
             <p className="text-gray-500 text-sm font-medium">
               We have 3 locations globally!
             </p>
-            <h6 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143]">
+            <h1 className="flex items-center gap-2 font-bold mt-2 text-[#FF7143]">
               <FaLocationDot />
               Hyderabad - Bangalore - London
-            </h6>
+            </h1>
           </div>
         </div>
       </div>

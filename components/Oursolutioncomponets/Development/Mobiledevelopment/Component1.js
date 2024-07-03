@@ -55,9 +55,9 @@ const carddata2=[
   return (
     <section className="w-full flex flex-col gap-8 justify-center items-center py-12">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           How Mobile Apps Drive Business Growth?{" "}
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 grid  gap-8 place-content-center items-center md:grid-cols-2 lg:grid-cols-2 grid-cols-1 ">
         {carddata.map((value, index) => (
@@ -69,18 +69,18 @@ const carddata2=[
                 : "ring-1  ring-gray-300 p-4 md:h-48 lg:h-48 flex justify-center items-start gap-4 flex-col"
             }
           >
-            <h6 className="flex items-center text-justify gap-2 uppercase md:text-base text-xs lg:text-base font-bold">
+            <h1 className="flex items-center text-justify gap-2 uppercase md:text-base text-xs lg:text-base font-bold">
               <GoDotFill />
               {value.title}
-            </h6>
+            </h1>
             <p className="text-justify text-sm font-medium ">{value.desc}</p>
           </div>
         ))}
       </div>
       <div className="w-11/12 mx-auto py-4">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
         Our Mobile App Development Services!
-        </h6>
+        </h1>
       </div>
       <div className="md:w-11/12 lg:w-11/12 w-full mx-auto flex justify-start items-start p-4">
         <Image src={Digramservices} alt="digram"/>
@@ -88,9 +88,9 @@ const carddata2=[
 
 
       <div className="w-11/12 mx-auto py-4">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
       Why AWT is best for App Development?
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto flex flex-col justify-center items-center gap-4">
          {
@@ -100,7 +100,7 @@ const carddata2=[
                         <Image className="w-28 h-24" src={value.icon} alt="icon"/>
                     </div>
                     <div className="flex flex-col justify-start items-start gap-2">
-                        <h6 className="uppercase font-bold ">{value.title}</h6>
+                        <h1 className="uppercase font-bold ">{value.title}</h1>
                          {index===0 ?value.subtitle:
                          <p className="text-sm font-medium">{value.subtitle}</p>}
                     </div>

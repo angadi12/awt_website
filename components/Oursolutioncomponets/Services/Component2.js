@@ -7,15 +7,15 @@ const Component2 = () => {
   return (
     <section className="flex justify-start items-start flex-col w-full py-4">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-xl font-bold tracking-wider">
           Is the appearance and user<br></br> experience important for your
           brand?
-        </h6>
+        </h1>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 justify-between items-center w-11/12 mx-auto py-10 md:py-0 lg:py-0">
         <div className="w-full flex flex-col justify-center items-start gap-4">
           <div>
-            <h6 className="uppercase font-bold text-sm ">{`Absolutely! Looks and user experience are crucial aspects of building and maintaining a strong brand.`}</h6>
+            <h1 className="uppercase font-bold text-sm ">{`Absolutely! Looks and user experience are crucial aspects of building and maintaining a strong brand.`}</h1>
           </div>
           <div className="flex justify-start items-start gap-1">
             <GoDotFill />
@@ -36,9 +36,9 @@ const Component2 = () => {
       </div>
 
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
           5 Reasons why it’s Important.
-        </h6>
+        </h1>
       </div>
       <div className="flex justify-center items-start gap-8 md:p-12 p-4 mx-auto mt-4 flex-col md:flex-row">
         <div>

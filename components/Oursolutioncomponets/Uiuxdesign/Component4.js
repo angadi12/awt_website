@@ -69,9 +69,9 @@ const Component4 = () => {
   return (
     <section className='flex flex-col justify-start items-start py-8 gap-8'>
     <div className='w-11/12  mx-auto'>
-        <h6 className='md:text-3xl lg:text-3xl text-2xl font-bold'>
+        <h1 className='md:text-3xl lg:text-3xl text-2xl font-bold'>
         Our Featured <Customanimationslide text={'Clients!'} width={130} style={'md:inline-block lg:inline-block block md:ml-2 lg:ml-2'}/>
-        </h6>
+        </h1>
     </div>
 
     <div className="w-full  bg-gray-100 md:h-52 lg:h-52 h-32 flex justify-center items-center  ">

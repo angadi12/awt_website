@@ -31,9 +31,9 @@ const Digitalbussiness = () => {
   return (
     <section className="w-full flex flex-col gap-8 justify-center items-center py-12">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
         How digital marketing will help your business <br></br> grow?
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 grid  gap-8 place-content-center items-center md:grid-cols-2 lg:grid-cols-2 grid-cols-1 ">
         {carddata.map((value, index) => (
@@ -45,10 +45,10 @@ const Digitalbussiness = () => {
                 : "ring-1  ring-gray-300  p-4 md:h-40 lg:h-48 h-auto flex justify-center items-start gap-4 flex-col"
             }
           >
-            <h6 className="flex items-center text-justify gap-2 uppercase md:text-base lg:text-base text-xs font-bold">
+            <h1 className="flex items-center text-justify gap-2 uppercase md:text-base lg:text-base text-xs font-bold">
               <GoDotFill />
               {value.title}
-            </h6>
+            </h1>
             <p className="text-justify text-sm font-medium ">{value.desc}</p>
           </div>
         ))}

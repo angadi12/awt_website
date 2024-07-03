@@ -72,10 +72,10 @@ const Workwith = () => {
                 >
                   <Image className=" " src={value.banner} alt="banner" />
                 </motion.div>
-                <h6 className="text-4xl tracking-widest  capitalize font-semibold text-black  absolute top-2 w-full left-0">
+                <h1 className="text-4xl tracking-widest  capitalize font-semibold text-black  absolute top-2 w-full left-0">
                   who<br></br> we
                 <Customanimationslide text={<span>work&nbsp;with?</span>} width={260} style={'inline-block ml-2'}/>
-                </h6>
+                </h1>
                
                 <div className="absolute hidden md:flex bottom-8 gap-4 right-8 lg:flex">
                   <span

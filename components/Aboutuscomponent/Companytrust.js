@@ -67,14 +67,14 @@ const Companytrust = () => {
   return (
     <section className="flex flex-col justify-start items-start py-8 gap-8 w-full">
       <div className="w-11/12 mx-auto">
-        <h6 className="md:text-3xl text-2xl font-bold capitalize">
+        <h1 className="md:text-3xl text-2xl font-bold capitalize">
         companies who 
           <Customanimationslide
             text={<p>Trust&nbsp;us</p>}
             width={160}
             style={"inline-block ml-2"}
           />
-        </h6>
+        </h1>
       </div>
 
       {/* <div className="w-full   md:h-52 lg:h-52 flex justify-center items-center  ">

@@ -18,7 +18,7 @@ const Development = () => {
     <section className="w-full flex-col gap-8 ">
     <div className="w-full flex-col flex justify-center items-center mx-auto md:py-12 lg:py-12 py-4">
     <div className="w-11/12 mx-auto">
-          <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold capitalize">Software Development</h6>
+          <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold capitalize">Software Development</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between md:gap-16 lg:gap-16 gap-4 items-center w-11/12 mx-auto  ">
           <div className="w-full flex flex-col justify-center items-start gap-4 order-2 lg:order-1 md:order-2">

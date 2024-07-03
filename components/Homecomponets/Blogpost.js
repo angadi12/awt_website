@@ -54,14 +54,14 @@ const Blogpost = () => {
     return (
       <div className="flex justify-start flex-col items-start gap-4 w-full py-12 mx-auto">
         <div>
-          <h6 className="text-3xl font-semibold capitalize text-black px-12">
+          <h1 className="text-3xl font-semibold capitalize text-black px-12">
             recent{" "}
             <Customanimationslide
               text={<span>blog&nbsp;posts.</span>}
               width={180}
               style={"inline-block ml-2"}
             />
-          </h6>
+          </h1>
         </div>
         <div className="w-full mt-4">
           <Cardskeleton numOfSkeletons={3} />
@@ -74,14 +74,14 @@ const Blogpost = () => {
     return (
       <div className="flex justify-start flex-col items-start gap-4 w-full py-12 mx-auto">
         <div>
-          <h6 className="text-3xl font-semibold capitalize text-black px-12">
+          <h1 className="text-3xl font-semibold capitalize text-black px-12">
             recent{" "}
             <Customanimationslide
               text={<span>blog&nbsp;posts.</span>}
               width={180}
               style={"inline-block ml-2"}
             />
-          </h6>
+          </h1>
         </div>
         <div className="w-full flex justify-center items-center flex-col mt-4">
           <Image src={Error} alt="error" />
@@ -94,14 +94,14 @@ const Blogpost = () => {
     return (
       <div className="flex justify-start flex-col items-start gap-4 w-full py-12 mx-auto">
         <div>
-          <h6 className="text-3xl font-semibold capitalize text-black px-12">
+          <h1 className="text-3xl font-semibold capitalize text-black px-12">
             recent{" "}
             <Customanimationslide
               text={<span>blog&nbsp;posts.</span>}
               width={180}
               style={"inline-block ml-2"}
             />
-          </h6>
+          </h1>
         </div>
         <div className="w-full flex justify-center items-center flex-col mt-4">
           <Image className="h-80 object-contain" src={NoData} alt="No data" />
@@ -120,14 +120,14 @@ const Blogpost = () => {
   return (
     <div className="flex justify-start flex-col items-start gap-4 w-11/12 py-12 mx-auto">
       <div>
-        <h6 className="text-3xl font-semibold capitalize text-black">
+        <h1 className="text-3xl font-semibold capitalize text-black">
           recent{" "}
           <Customanimationslide
             text={<span>blog&nbsp;posts.</span>}
             width={180}
             style={"inline-block ml-2"}
           />
-        </h6>
+        </h1>
       </div>
       <div className="grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-8 place-content-center justify-items-center w-full md:py-12 ">
         {currentPosts.map((post) => (
@@ -147,7 +147,7 @@ const Blogpost = () => {
               width={384}
               height={240}
             />
-            <h6 className="text-xl font-semibold ">{post.title}</h6>
+            <h1 className="text-xl font-semibold ">{post.title}</h1>
             <p className="text-sm font-medium text-justify text-gray-700 cursor-pointer">
               {" "}
               {truncateText(post.description, 100)}{" "}

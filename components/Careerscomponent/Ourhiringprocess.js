@@ -9,9 +9,9 @@ const Ourhiringprocess = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-8 w-full mx-auto py-12">
       <div className="w-11/12 mx-auto ">
-        <h6 className="text-3xl font-bold tracking-wider">
+        <h1 className="text-3xl font-bold tracking-wider">
           Our Hiring Process
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 py-8 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1  items-start place-content-center md:gap-48 lg:gap-40 gap-8">
         <div className="flex justify-center items-center">
@@ -23,7 +23,7 @@ const Ourhiringprocess = () => {
               <FaPhoneAlt size={30} className="absolute" />
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="font-bold uppercase">Screening Call</h6>
+              <h1 className="font-bold uppercase">Screening Call</h1>
               <p className="text-xs md:text-sm lg:text-sm font-medium text-gray-500">
                 Initial discussion with HR to assess <br></br>qualifications.
               </p>
@@ -34,7 +34,7 @@ const Ourhiringprocess = () => {
               <GrTechnology size={30} className="absolute" />
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="font-bold uppercase">Technical Round</h6>
+              <h1 className="font-bold uppercase">Technical Round</h1>
               <p className="text-xs md:text-sm lg:text-sm font-medium text-gray-500">
               Evaluation of technical skills and<br></br> problem-solving abilities.
               </p>
@@ -45,7 +45,7 @@ const Ourhiringprocess = () => {
               <GrTechnology size={30} className="absolute" />
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="font-bold uppercase">HR Round</h6>
+              <h1 className="font-bold uppercase">HR Round</h1>
               <p className="text-xs md:text-sm lg:text-sm font-medium text-gray-500">
               Final assessment for cultural fit and <br></br> alignment with company values.
               </p>

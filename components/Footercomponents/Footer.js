@@ -82,9 +82,9 @@ console.log(selectedTab)
       </div>
       <div className="bg-black md:h-40 lg:h-40 h-56 md:pb-0 lg:pb-0 pb-4 w-full gap-8 flex flex-col md:flex-row lg:flex-row justify-between md:items-center lg:items-center items-start md:px-12 lg:px-12 px-4 ">
         <div className="flex justify-start items-start gap-2 md:w-1/2 lg:w-1/2 w-full flex-col">
-          <h6 className="text-xs font-medium text-[#FF7143] uppercase">
+          <h1 className="text-xs font-medium text-[#FF7143] uppercase">
             newsletter
-          </h6>
+          </h1>
           <p className="text-[0.7rem] md:text-xs lg:text-xs font-medium text-white md:leading-7 lg:leading-7 leading-7 uppercase">
             {`Sign up for our newsletter now! Get exclusive insights, trends, and strategies to fuel your business growth. Stay informed, stay ahead. Subscribe today!`}
           </p>
@@ -207,29 +207,29 @@ console.log(selectedTab)
               <span className="text-sm text-white cursor-pointer uppercase">
                 email
               </span>
-              <h6 className=" text-lg font-medium text-white">
+              <h1 className=" text-lg font-medium text-white">
                 <Link href={"mailto:info@angadiworldtech.com"}>
                   info@angadiworldtech.com
                 </Link>
-              </h6>
+              </h1>
 
               <div className="flex md:flex-col lg:flex-col justify-between items-start gap-8 md:gap-2 lg:gap-2">
                 <div>
                   <span className="text-sm text-white cursor-pointer uppercase">
                     Phone
                   </span>
-                  <h6 className="md:text-xl lg:text-xl text-sm font-medium text-white">
+                  <h1 className="md:text-xl lg:text-xl text-sm font-medium text-white">
                     +91-9492963103
                     <br></br>+91-9110314465
-                  </h6>
+                  </h1>
                 </div>
                 <div>
                   <span className="text-sm text-white cursor-pointer uppercase">
                     UK
                   </span>
-                  <h6 className="md:text-xl lg:text-xl text-sm font-medium text-white">
+                  <h1 className="md:text-xl lg:text-xl text-sm font-medium text-white">
                     +44 7918255464
-                  </h6>
+                  </h1>
                 </div>
               </div>
               <div className="flex justify-start items-center gap-2 mt-2 pb-4">

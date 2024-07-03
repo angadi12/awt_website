@@ -33,9 +33,9 @@ const Graphicdesignpage = () => {
   return (
     <section className="flex flex-col justify-start items-start gap-8 w-full md:py-12 lg:py-12 py-4">
       <div className='w-11/12 mx-auto'>
-        <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
         Benefits of Hiring a Graphic Designer for your<br></br> Brand.
-        </h6>
+        </h1>
       </div>
       <div className="w-11/12 mx-auto grid gap-8 place-content-center items-center md:grid-cols-2 lg:grid-cols-2 grid-cols-1">
         {carddata.map((value, index) => (
@@ -43,10 +43,10 @@ const Graphicdesignpage = () => {
             key={index}
             className="ring-1 ring-gray-300 p-4 h-48 flex justify-center items-start gap-4 flex-col"
           >
-            <h6 className="flex items-center text-justify gap-2 uppercase text-base font-bold">
+            <h1 className="flex items-center text-justify gap-2 uppercase text-base font-bold">
               <GoDotFill />
               {value.title}
-            </h6>
+            </h1>
             <p className="text-justify text-sm font-medium ">{value.desc}</p>
           </div>
         ))}

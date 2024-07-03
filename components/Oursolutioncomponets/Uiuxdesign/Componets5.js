@@ -40,14 +40,14 @@ const Componets5 = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-8 w-full bg-black px-8 py-12 overflow-hidden">
       <div className="w-full mx-auto">
-        <h6 className="text-3xl font-semibold text-white">
+        <h1 className="text-3xl font-semibold text-white">
           Some Related{" "}
           <Customanimationslide
             text={"Projects."}
             width={150}
             style={"inline-block md:ml-2 lg:ml-2"}
           />
-        </h6>
+        </h1>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center w-full  justify-center items-center gap-8">
         {carddata.map((value, index) => (
@@ -62,9 +62,9 @@ const Componets5 = () => {
                 <Image src={value.image} alt="project" />
               </motion.div>
             </div>
-            <h6 className="text-2xl font-semibold text-white">
+            <h1 className="text-2xl font-semibold text-white">
               {value.titile}
-            </h6>
+            </h1>
             <div className="flex items-center gap-2">
               {value.chip.map((item, i) => (
                 <div key={i} className={`${value.backgroundcolor} p-0.5 rounded-full w-auto  flex justify-center items-center `}>

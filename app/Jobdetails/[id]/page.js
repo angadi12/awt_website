@@ -118,20 +118,20 @@ const Jobdetails = ({ params }) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center gap-8 md:gap-0 lg:gap-0 justify-between w-11/12 mx-auto">
           <div className="flex flex-col justify-center items-start gap-8">
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="text-3xl font-semibold tracking-wider">About the Job</h6>
-              <h6 className="text-gray-400 font-bold">
+              <h1 className="text-3xl font-semibold tracking-wider">About the Job</h1>
+              <h1 className="text-gray-400 font-bold">
                 {job.title} - <span className="text-[#FF7143] font-medium">{job.openings} Openings</span>
-              </h6>
+              </h1>
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
-              <h6 className="capitalize font-bold tracking-wider">Description</h6>
+              <h1 className="capitalize font-bold tracking-wider">Description</h1>
               <p className="text-justify text-sm font-medium leading-6">{job.description}</p>
             </div>
           </div>
           <div className="flex md:justify-end lg:justify-end justify-center items-start w-full">
             <div className="flex flex-col justify-center items-center md:w-2/3 lg:w-2/3 w-full">
               <div className="bg-[#FF7143] flex flex-col justify-center items-center w-full h-16">
-                <h6 className="uppercase font-bold text-white text-sm">Job Details</h6>
+                <h1 className="uppercase font-bold text-white text-sm">Job Details</h1>
               </div>
               <div className="flex flex-col justify-start items-start gap-2 p-2 bg-gray-100 h-auto w-full">
                 <div className="flex w-full justify-start px-6 py-2 items-start gap-8">
@@ -180,7 +180,7 @@ const Jobdetails = ({ params }) => {
 
         <div className="w-11/12 mx-auto flex justify-center items-center flex-col gap-4 py-8">
           <div className="w-full mx-auto">
-            <h6 className="text-2xl font-semibold tracking-wider">Key Responsibilities</h6>
+            <h1 className="text-2xl font-semibold tracking-wider">Key Responsibilities</h1>
           </div>
 
           <div className="w-full justify-center items-start gap-6">
@@ -194,7 +194,7 @@ const Jobdetails = ({ params }) => {
 
         <div className="w-11/12 mx-auto flex justify-center items-center flex-col gap-4 py-4">
           <div className="w-full mx-auto">
-            <h6 className="text-2xl font-semibold tracking-wider">Basic Qualifications</h6>
+            <h1 className="text-2xl font-semibold tracking-wider">Basic Qualifications</h1>
           </div>
 
           <div className="w-full justify-center items-start gap-6">
@@ -208,7 +208,7 @@ const Jobdetails = ({ params }) => {
 
         <div className="w-11/12 mx-auto flex justify-center items-center flex-col gap-4 py-4">
           <div className="w-full mx-auto">
-            <h6 className="text-2xl font-semibold tracking-wider">Preferred Qualifications</h6>
+            <h1 className="text-2xl font-semibold tracking-wider">Preferred Qualifications</h1>
           </div>
 
           <div className="w-full justify-center items-start gap-6">

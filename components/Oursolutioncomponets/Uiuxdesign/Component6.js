@@ -6,7 +6,7 @@ const Component6 = () => {
   return (
     <section className="flex justify-start items-start flex-col w-full py-16">
      <div className="w-11/12 mx-auto" >
-      <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">What can you expect from us?</h6>
+      <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">What can you expect from us?</h1>
      </div>
      <div className="grid py-16 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-24 place-content-center justify-between w-11/12 mx-auto">
         <div className="w-full flex flex-col justify-center items-start gap-8 order-2 ">

@@ -79,9 +79,9 @@ const Component3 = () => {
     <section className="py-16">
       <div>
         <div className="py-12">
-          <h6 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
+          <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold tracking-wider">
             What Technologies we use for your Project?
-          </h6>
+          </h1>
         </div>
 
         <div className="w-full mt-4 grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 md:gap-12 mx-auto place-content-center justify-center items-center">
@@ -100,9 +100,9 @@ const Component3 = () => {
 
         <div>
           <div className="py-12">
-            <h6 className="text-3xl font-bold tracking-wider">
+            <h1 className="text-3xl font-bold tracking-wider">
               What you will receive from us?
-            </h6>
+            </h1>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 justify-center">
@@ -113,7 +113,7 @@ const Component3 = () => {
                       <Image className="w-44 h-24" src={value.icon} alt="icons"/>
                       </div>
                       <div className="flex flex-col justify-start items-start gap-2">
-                        <h6 className="uppercase text-base font-bold">{value.title}</h6>
+                        <h1 className="uppercase text-base font-bold">{value.title}</h1>
                         <p className="font-medium text-sm text-black">{value.subtitle}</p>
                       </div>
                     </div>
