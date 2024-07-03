@@ -33,7 +33,7 @@ const Moto = () => {
   return (
     <div className="flex bg-black justify-center mb-8 mt-8 items-center overflow-hidden w-full md:h-screen lg:h-screen h-[60vh] relative ">
       <div>
-        <motion.h6
+        <motion.h1
           onAnimationComplete={starticonanimation}
           initial={{ opacity: 0, y: 200 }}
           viewport={{ once: true }}
@@ -54,7 +54,7 @@ const Moto = () => {
             width={130}
             style={"md:inline-block ml-2 hidden "}
           />
-        </motion.h6>
+        </motion.h1>
       </div>
       {/* <motion.div
         initial={{ scale: 0 }}

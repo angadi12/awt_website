@@ -132,14 +132,14 @@ const Workwith = () => {
                     style={{ backgroundColor: value.color }}
                     className="rounded-[2rem] w-96 p-4 -ml-2 flex flex-col justify-start items-start gap-4"
                   >
-                    <motion.h6
+                    <motion.h1
                       initial={{ opacity: 0.3 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ duration: 0.5 }}
                       className="uppercase font-bold"
                     >
                       {value.tag}
-                    </motion.h6>
+                    </motion.h1>
                     <motion.p
                       initial={{ opacity: 0.3 }}
                       whileInView={{ opacity: 1 }}

@@ -153,7 +153,7 @@ const Hero = () => {
                     i === 2 ? " px-4" : "border-r border-gray-600 px-4 "
                   }
                 >
-                  <motion.h6
+                  <motion.h1
                     initial={{ color: "black", scale: 1 }}
                     animate={
                       currentIndex1 === i
@@ -172,7 +172,7 @@ const Hero = () => {
                     <p className="inline-block text-[#FF7143] ml-2 md:text-sm lg:text-sm text-[0.5rem] font-semibold uppercase">
                       {value?.subtitle}
                     </p>
-                  </motion.h6>
+                  </motion.h1>
                   <p className="md:text-sm lg:text-sm text-[0.5rem] uppercase font-semibold">
                     {value.Experience}
                   </p>

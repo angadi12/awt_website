@@ -14,7 +14,7 @@ const Development = () => {
   return (
     <section className="w-wfull flex-col gap-8 -mt-12 md:mt-0 lg:mt-0">
     <div className="w-11/12 mx-auto">
-      <h2 className="md:text-3xl lg:text-3xl text-2xl font-semibold capitalize tracking-wider">
+      <h1 className="md:text-3xl lg:text-3xl text-2xl font-semibold capitalize tracking-wider">
         Tailored{" "}
         <Customanimationslide
           text={"Solutions "}
@@ -22,7 +22,7 @@ const Development = () => {
           style={"ml-2 inline-block"}
         />
         <br></br>for your Requirements!
-      </h2>
+      </h1>
     </div>
 
     <div className="w-full flex-col flex justify-center items-center mx-auto ">

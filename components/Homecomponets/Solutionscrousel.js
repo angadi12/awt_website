@@ -449,7 +449,7 @@ const Solutionscrousel = () => {
           </div>
           {carouselIndex === 12 && (
             <div className="md:flex lg:flex hidden justify-start items-start gap-4 flex-col absolute right-60 bottom-8">
-              <h2 className="text-white text-sm  font-medium">{`Do you have any doubts? Consult now!`}</h2>
+              <h1 className="text-white text-sm  font-medium">{`Do you have any doubts? Consult now!`}</h1>
               <Button onPress={()=>router.push('/Contactus')} className="bg-transparent text-white uppercase ring-1 ring-white rounded-full w-40">
                 consult
               </Button>
