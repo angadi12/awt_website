@@ -12,16 +12,16 @@ const productdata=[
   {
     title:'Customized QR Generation',
     productname:"QR Angadi",
-    desc:'QR Angadi is a flagship product of Angadi World Technologies Pvt Ltd, a company founded with a commitment to innovation and excellence. Our team of dedicated professionals is driven to simplify and enhance the QR code experience for users across various industries.',
+    desc:'Explore the future of digital interaction with QR Angadi, a cutting-edge platform that enhances user engagement through QR code technology. QR Angadi empowers businesses to create, manage, and analyze QR code campaigns effortlessly, driving seamless customer interactions and operational efficiency. Learn more about QR Angadi and how it can elevate your digital strategy.',
     link:'https://www.qrangadi.com/',
     productimage:QRANGADI,
     style:'md:order-first order-last',
     alt:'QR Code Technology - Angadi World Technologies'
 },
   {
-    title:'franchising and business expansion',
+    title:'International Business Expedition Trailblazers (IBETS) – Coming Soon!',
     productname:"IBETS",
-    desc:'At International Business Expedition Trailblazers, we are dedicated to revolutionizing the world of franchising and international business expansion. As your trusted partner, we offer comprehensive solutions for franchise listing, module development, and global market entry, ensuring a seamless transition from local to global business landscapes.',
+    desc:`At IBETS, we're committed to revolutionizing franchising and international business expansion. As your trusted partner, we provide comprehensive solutions for franchise listing, module development, and global market entry. Stay tuned for our upcoming launch and discover how IBETS can seamlessly transition your business from local success to global prominence.',
     link:'',
     productimage:IBGTLOGO,
     style:'order-last'
@@ -35,9 +35,9 @@ const productdata=[
 //     style:'md:order-first order-last'
 // },
   {
-    title:'job finding or publishing platform',
+    title:'Job Streamers AI – Launching Soon!',
     productname:"Job Streamers Ai",
-    desc:'At International Business Expedition Trailblazers, we are dedicated to revolutionizing the world of franchising and international business expansion. As your trusted partner, we offer comprehensive solutions for franchise listing, module development, and global market entry, ensuring a seamless transition from local to global business landscapes.',
+    desc:'At Job Streamers AI, our mission is to revolutionize the recruitment process by leveraging cutting-edge technology. Our vision is to create a seamless and efficient platform that enhances how companies and candidates connect, ensuring the perfect fit for every role. Stay tuned for our upcoming launch and join us in reshaping the future of hiring!.',
     link:'',
     productimage:Jobstremers,
     style:'md:order-first order-last'
