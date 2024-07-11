@@ -67,33 +67,72 @@ const page = () => {
     {
       image: [Winkadsdesktop, Winkadsiphone],
       logo: Winklogo,
-      desc: `Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
+      desc: `Wink Ads revolutionizes the advertising landscape by providing interactive and engaging ad formats tailored to the needs of modern businesses. Their platform facilitates effective customer engagement through targeted ad campaigns and real-time analytics.`,
       iconcolor: "#00BFB5",
       cardborder: "winkadscardborder",
       className: "winkadscard",
       tag: ["Branding", "web dev", "social media handling"],
       link: "https://winkads.in/",
+      servicesProvided: [
+        "Interactive ad formats (video, carousel, etc.)",
+        "Targeted ad campaigns",
+        "Real-time analytics and reporting",
+        "Customizable ad solutions for various industries",
+      ],
+      keyFeatures: [
+        "Intuitive and responsive website design",
+        "Advanced ad targeting and analytics integration",
+        "Customizable campaign management interface",
+        "High-performance hosting and ongoing support",
+      ],
+      developmentOutput:"Angadi World Technologies crafted a user-friendly website for Wink Ads, focusing on high performance and scalability. We integrated advanced targeting and analytics features, ensuring a seamless user experience and robust backend support.",
     },
     {
       image: [Solardesktop, Solariphone],
       logo: Solarlogo,
-      desc: `We proudly partnered with Petrichor Solar to pioneer the future of sustainable energy solutions. Our collaboration with Petrichor Solar forecasts rooftop solar panel installations as the leading force in the renewable energy sector. This visionary project exemplifies our commitment to revolutionizing the energy landscape, reducing carbon footprints, and promoting green energy adoption. Through expert consultation, top-notch installation services, and ongoing support, we aim to empower households and businesses worldwide to harness the power of the sun.`,
+      desc: `Petrichor Solar focuses on delivering sustainable and efficient solar energy solutions for residential, commercial, and industrial applications. They provide customized solar installations designed to maximize energy savings and reduce environmental impact`,
       iconcolor: "#F3850E",
       cardborder: "Solarcardborder",
       className: "Solarcard",
       tag: ["Branding", "web dev", "social media handling"],
       link: "https://petrichorsolar.com/",
+      servicesProvided: [
+        "Solar panel installation",
+        "Energy efficiency consulting",
+        "Maintenance and support services",
+        "Customized solar solutions for different needs",
+      ],
+      keyFeatures: [
+        "Detailed product and service descriptions",
+        "Interactive solar savings calculator",
+        "Case studies and client testimonials",
+        "Educational resources on solar energy",
+      ],
+      developmentOutput:"Angadi World Technologies developed a comprehensive and interactive website for Petrichor Solar, highlighting their innovative products and services. The site includes educational resources and an interactive solar calculator to assist customers in making informed decisions.",
     },
 
     {
       image: [Vitamindesktop, Vitaminiphone],
       logo: Vitaminslogo,
-      desc: `Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
+      desc: `Vitamins and Me is an e-commerce platform dedicated to offering high-quality vitamins, supplements, and health products. Their mission is to provide customers with reliable and effective health solutions`,
       iconcolor: "#9747FF",
       cardborder: "vitaminscardborder",
       className: "vitaminscard",
       tag: ["Branding", "web dev", "social media handling"],
       link: "https://vitaminsandme.in/",
+      servicesProvided: [
+        "Wide range of vitamins and supplements",
+        "Detailed product descriptions and health benefits",
+        "Customer reviews and ratings",
+        "Health and wellness blog",
+      ],
+      keyFeatures: [
+        "Responsive and user-friendly design",
+        "Extensive product catalog with detailed descriptions",
+        "Customer reviews and ratings",
+        "Health and wellness blog",
+      ],
+      developmentOutput:"We designed and developed a sleek, responsive website for Vitamins and Me, ensuring easy navigation and a seamless shopping experience. The site features comprehensive product information, a review system, and a health blog to engage and inform customers.",
     },
     {
       image: [biryanidesktop, biryaniiphone],
@@ -108,34 +147,74 @@ const page = () => {
     {
       image: [Pioneerdesktop, Pioneeriphone],
       logo: Pioneerlogo,
-      desc: `Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
+      desc: `Pioneer Online is a premier ISP offering high-speed internet and comprehensive digital solutions to both residential and commercial clients. They are committed to providing reliable and efficient internet services with exceptional customer support.`,
       iconcolor: "#3FBFAA",
       cardborder: "pioneercardborder",
       className: "pioneercard",
       tag: ["Branding", "web dev", "social media handling"],
       link: "https://pioneeronline.com/",
+      "servicesProvided": [
+        "High-speed internet services",
+        "Digital solutions for businesses",
+        "24/7 customer support",
+        "Flexible subscription plans"
+      ],
+      "keyFeatures": [
+      "Modern, user-friendly interface",
+      "Simplified service subscription process",
+      "Detailed service information and FAQs",
+      "Secure and scalable backend infrastructure"
+    ],
+    "developmentOutput":`We redesigned Pioneer Online's website to enhance usability and customer engagement. The site features a modern layout, easy navigation, and secure service subscription processes, ensuring a smooth user experience.`
     },
     {
       image: [Mythridesktop, Mythriiphone],
       logo: Mythrilogo,
-      desc: `Wink Ads empowers businesses with compelling marketing messages crafted to captivate audiences. Our collaboration with Wink Ads showcases our dedication to delivering impactful solutions that drive results, all while maintaining affordability. Together, we redefine the standards of effective advertising strategies, setting the stage for success in the modern market.`,
+      desc: `Mythri Tech offers state-of-the-art technology solutions and services across various industries, specializing in IT consulting, software development, and system integration.`,
       iconcolor: "#1877F2",
       cardborder: "mythricardborder",
       className: "mythricard",
       tag: ["Branding", "web dev", "social media handling"],
       link: "https://mythritech.com/",
+      "servicesProvided": [
+        "IT consulting and strategy",
+        "Custom software development",
+        "System integration and support",
+        "Technology innovation and implementation"
+      ],
+      "keyFeatures": [
+      "Comprehensive service descriptions",
+      "Case studies and project highlights",
+      "Tech trends and news blog",
+      "Interactive contact forms and customer support"
+    ],
+    "developmentOutput":`We collaborated with Mythri Tech to create a dynamic and informative website that showcases their expertise and successful projects. The site includes detailed service offerings, case studies, and a blog to keep clients updated on the latest tech trends.`
     },
 
     {
       image: [Brandsagadesktop, Brandsagaiphone],
       logo: Brandsagalogo,
-      desc: `We are excited to collaborate with BrandSaga, a leader in celebrity and influencer marketing services. By partnering with top influencers and celebrities, BrandSaga helps brands amplify their presence and achieve remarkable growth. This initiative reflects our dedication to innovating marketing strategies and driving brand success in the ever-evolving digital landscape.`,
+      desc: `Brand Saga is a full-service branding and marketing agency known for crafting compelling brand stories and delivering strategic marketing solutions. They help businesses build strong, memorable brands.`,
       iconcolor: "#A71E22",
       cardborder: "Brandsagacardborder",
       className: "Brandsagacard",
       tag: ["Branding", "web dev", "social media handling"],
-      link: "#",
+      link: "https://www.brandsaga.co.in/",
+      "servicesProvided": [
+        "Brand strategy and identity",
+        "Marketing campaigns and advertising",
+        "Digital marketing and social media management",
+        "Creative design and content creation"
+      ],
+      "keyFeatures": [
+        "Visually appealing and creative design",
+        "Portfolio showcasing past projects",
+        "Client testimonials and success stories",
+        "Informative blog on branding and marketing strategies"
+      ],
+      "developmentOutput":`Angadi World Technologies developed a vibrant and visually appealing website for BrandSaga, emphasizing their creative portfolio and strategic services. The website features case studies, client testimonials, and a blog offering insights into branding and marketing.`
     },
+    
   ];
 
   return (
