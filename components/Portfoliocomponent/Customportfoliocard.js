@@ -55,8 +55,9 @@ const Customportfoliocard = ({ data }) => {
             <div className="flex items-center gap-2 flex-wrap mt-2">
               {tab.map((value, index) => (
                 <Button
+                  style={selectedtab === index ? {backgroundColor:data.tabcolor}:{}}
                   onPress={() => handleTabChange(index)}
-                  className={selectedtab === index ? active : unactive}
+                  className={selectedtab === index ? `rounded-md bg-[${data.tabcolor}] text-white font-semibold uppercase` : unactive}
                   key={index}
                 >
                   {value.tabname}

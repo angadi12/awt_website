@@ -86,6 +86,7 @@ const page = () => {
         "High-performance hosting and ongoing support",
       ],
       developmentOutput:"Angadi World Technologies crafted a user-friendly website for Wink Ads, focusing on high performance and scalability. We integrated advanced targeting and analytics features, ensuring a seamless user experience and robust backend support.",
+      tabcolor:"#00B0EF"
     },
     {
       image: [Solardesktop, Solariphone],
@@ -109,6 +110,7 @@ const page = () => {
         "Educational resources on solar energy",
       ],
       developmentOutput:"Angadi World Technologies developed a comprehensive and interactive website for Petrichor Solar, highlighting their innovative products and services. The site includes educational resources and an interactive solar calculator to assist customers in making informed decisions.",
+    tabcolor:"#422174"
     },
 
     {
@@ -133,6 +135,7 @@ const page = () => {
         "Health and wellness blog",
       ],
       developmentOutput:"We designed and developed a sleek, responsive website for Vitamins and Me, ensuring easy navigation and a seamless shopping experience. The site features comprehensive product information, a review system, and a health blog to engage and inform customers.",
+       tabcolor:"#DB0B82"
     },
     {
       image: [biryanidesktop, biryaniiphone],
@@ -165,8 +168,9 @@ const page = () => {
       "Detailed service information and FAQs",
       "Secure and scalable backend infrastructure"
     ],
-    "developmentOutput":`We redesigned Pioneer Online's website to enhance usability and customer engagement. The site features a modern layout, easy navigation, and secure service subscription processes, ensuring a smooth user experience.`
-    },
+    "developmentOutput":`We redesigned Pioneer Online's website to enhance usability and customer engagement. The site features a modern layout, easy navigation, and secure service subscription processes, ensuring a smooth user experience.`,
+    tabcolor:"#01770B"
+  },
     {
       image: [Mythridesktop, Mythriiphone],
       logo: Mythrilogo,
@@ -188,8 +192,9 @@ const page = () => {
       "Tech trends and news blog",
       "Interactive contact forms and customer support"
     ],
-    "developmentOutput":`We collaborated with Mythri Tech to create a dynamic and informative website that showcases their expertise and successful projects. The site includes detailed service offerings, case studies, and a blog to keep clients updated on the latest tech trends.`
-    },
+    "developmentOutput":`We collaborated with Mythri Tech to create a dynamic and informative website that showcases their expertise and successful projects. The site includes detailed service offerings, case studies, and a blog to keep clients updated on the latest tech trends.`,
+    tabcolor:"#EC3439"
+  },
 
     {
       image: [Brandsagadesktop, Brandsagaiphone],
@@ -212,7 +217,8 @@ const page = () => {
         "Client testimonials and success stories",
         "Informative blog on branding and marketing strategies"
       ],
-      "developmentOutput":`Angadi World Technologies developed a vibrant and visually appealing website for BrandSaga, emphasizing their creative portfolio and strategic services. The website features case studies, client testimonials, and a blog offering insights into branding and marketing.`
+      "developmentOutput":`Angadi World Technologies developed a vibrant and visually appealing website for BrandSaga, emphasizing their creative portfolio and strategic services. The website features case studies, client testimonials, and a blog offering insights into branding and marketing.`,
+       tabcolor:"#222222"
     },
     
   ];
